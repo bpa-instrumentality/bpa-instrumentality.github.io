@@ -1,0 +1,204 @@
+@import "_variables";
+@import "_mixins";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// HTML RESET + Fonts/Coloring
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: $primary-bg-blue;
+    color: white;
+}
+
+.navbarmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+
+    .nav__logo{
+        cursor: pointer;
+
+        span{
+            color: $primary-orange;
+        }
+    }
+
+    li,a,button{
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .nav__links {
+        list-style: none;
+        position: relative;
+
+        li {
+            display: inline-block;
+            padding: 0px 20px;
+
+            .nav__link{
+                @include navbarlinks;
+            }
+        }
+    }
+
+    .loginsignup{
+        button{
+            padding: 9px 17px;
+            border-radius: 50px;
+            border: none;
+            background-color: $primary-blue;
+            color: white;
+            margin: 0px 20px;
+            cursor: pointer;
+            transition: all .5s;
+
+            &:hover{
+                color: white;
+                background-color: $primary-blue-hover;
+            }
+        }
+
+        .loginlink{
+            @include navbarlinks;
+        }
+    }
+}
+
+.hero__section{
+    height: 90vh;
+    .hero__content{
+        .hero__text{
+            height: 75vh;
+            padding: 15px 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 100;
+            max-width: 60%;
+            position: relative;
+            transition: all 1s;
+
+            h1{
+                font-size: 2rem;
+                margin: 100px 0 50px 0;
+                transition: all .3s;
+            }
+
+            p{
+                font-size: 1.2rem;
+                transition: all .3s;
+            }
+            .hero__btns{
+                width: 100%;
+                background-color: none;
+                display: inline-block;
+
+                button{
+                    width: 100%;
+                    height: 43px;
+                    margin: 10px 0;
+                    border-radius: 7px;
+                    border: none;
+                    color: white;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                }
+
+                #btn1{
+                    background: $primary-orange;
+                    margin-top: 40px;
+                    transition: all .5s;
+
+                    &:hover{
+                        background-color: $primary-orange-hover;
+                    }
+                }
+                #btn2{
+                    background: $primary-blue;
+                    transition: all 1s;
+
+                    &:hover{
+                        background-color: $primary-blue-hover;
+                    }
+                }
+            }
+        }
+        .hero__img{
+            #heroviolin{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 400px;
+                z-index: -500;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+
+// MEDIA QUERIES
+@media (max-width: 923px){
+    #optionallink1 {
+        display: none;
+    }
+}
+@media (max-width: 783px){
+    .nav__links{
+        display: none;
+    }
+    .hero__section{
+        .hero__content{
+            .hero__text{
+                h1{
+                    font-size: 1.6rem;
+                    margin: 100px 0 30px 0;
+                    transition: all .3s;
+                }
+                p{
+                    font-size: 1.1rem;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .hero__section {
+        .hero__content {
+            .hero__text {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .hero__img{
+        #heroviolin{
+            opacity: .5;
+            transition: all .3s;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .navbarmain {
+        .loginsignup{
+            display: none;
+        }
+        .nav__logo {
+            width: 100%;
+            text-align: center;
+            transition: all .3s;
+        }
+    }
+}

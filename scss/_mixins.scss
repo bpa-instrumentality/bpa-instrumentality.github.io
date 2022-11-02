@@ -1,0 +1,19 @@
+@mixin navbarlinks {
+    color: #fff;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: $primary-blue;
+        transition: all .5s;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+}
