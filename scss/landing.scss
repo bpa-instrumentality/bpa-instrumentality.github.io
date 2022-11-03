@@ -177,6 +177,21 @@ body{
 }
 
 
+// Scrollbar Styling
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #3e5461; 
+}
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #1a242b;
+    border-radius: 5px;
+}
+
+
 // MEDIA QUERIES
 @media (max-width: 923px){
     #optionallink1 {
