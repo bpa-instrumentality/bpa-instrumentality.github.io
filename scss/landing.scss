@@ -74,7 +74,7 @@ body{
 }
 
 .hero__section{
-    height: 90vh;
+    height: calc(100vh - 70px);
     .hero__content{
         .hero__text{
             height: 75vh;
@@ -140,6 +140,37 @@ body{
                 width: 400px;
                 z-index: -500;
                 transition: all .3s;
+            }
+        }
+    }
+}
+
+.stats__section {
+    min-height: 20vh;
+    background-color: $dark-bg-blue;
+    width: 100%;
+
+    .stats {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: none;
+        min-height: 20vh;
+        padding: 0 10%;
+        text-align: center;
+        background-color: none;
+
+        .stat {
+            max-width: 100px;
+
+            p {
+                max-width: 70px;
+                width: 100%;
+                font-size: 1.1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
             }
         }
     }

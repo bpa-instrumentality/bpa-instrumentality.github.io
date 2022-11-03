@@ -87,7 +87,7 @@ body {
 }
 
 .hero__section {
-  height: 90vh;
+  height: calc(100vh - 70px);
 }
 .hero__section .hero__content .hero__text {
   height: 75vh;
@@ -146,6 +146,34 @@ body {
   width: 400px;
   z-index: -500;
   transition: all 0.3s;
+}
+
+.stats__section {
+  min-height: 20vh;
+  background-color: #26323b;
+  width: 100%;
+}
+.stats__section .stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: none;
+  min-height: 20vh;
+  padding: 0 10%;
+  text-align: center;
+  background-color: none;
+}
+.stats__section .stats .stat {
+  max-width: 100px;
+}
+.stats__section .stats .stat p {
+  max-width: 70px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.stats__section .stats .stat h1 {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 923px) {
