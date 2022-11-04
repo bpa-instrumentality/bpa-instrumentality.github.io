@@ -75,6 +75,18 @@ body{
 
 .hero__section{
     height: calc(100vh - 70px);
+    
+    .hero__img {
+        #heroviolin {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 400px;
+            z-index: -500;
+            transition: all .3s;
+        }
+    }
+
     .hero__content{
         .hero__text{
             height: 75vh;
@@ -130,16 +142,6 @@ body{
                         background-color: $primary-blue-hover;
                     }
                 }
-            }
-        }
-        .hero__img{
-            #heroviolin{
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: 400px;
-                z-index: -500;
-                transition: all .3s;
             }
         }
     }

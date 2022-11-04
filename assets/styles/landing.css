@@ -89,6 +89,14 @@ body {
 .hero__section {
   height: calc(100vh - 70px);
 }
+.hero__section .hero__img #heroviolin {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  z-index: -500;
+  transition: all 0.3s;
+}
 .hero__section .hero__content .hero__text {
   height: 75vh;
   padding: 15px 5%;
@@ -138,14 +146,6 @@ body {
 }
 .hero__section .hero__content .hero__text .hero__btns #btn2:hover {
   background-color: #027468;
-}
-.hero__section .hero__content .hero__img #heroviolin {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 400px;
-  z-index: -500;
-  transition: all 0.3s;
 }
 
 .stats__section {
