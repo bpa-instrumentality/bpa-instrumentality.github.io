@@ -17,3 +17,151 @@
         width: 100%;
     }
 }
+
+@mixin htmlreset {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin loginsignupbox {
+    height: 550px;
+            width: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            color: black;
+            padding: 20px;
+            
+            .top__section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                }
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 1.8rem; 
+
+                    span {
+                        color: $primary-orange;
+                    }
+                }
+            }
+
+            .divider {
+                width: 100%;
+                height: 2px;
+                background-color: rgb(214, 214, 214);
+                margin: 20px 0;
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin: 15px 0;
+                    height: 50px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: 1px solid rgb(199, 199, 199);
+                    padding: 0px 15px;
+                    font-size: 1rem;
+
+                    &:focus{
+                        border: none;
+                        outline: 1px solid rgb(199, 199, 199);
+                        box-shadow: 0px 2px 0px rgb(199, 199, 199);
+                        transition: box-shadow .1s;
+                    }
+                }
+            }
+
+            .submitdetails {
+                margin: 20px 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                button {
+                    width: 100%;
+                    height: 38px;
+                    color: white;
+                    background-color: $primary-orange;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 0.987rem;
+                    font-weight: 500;
+                    transition: background-color .3s;
+
+                    &:hover{
+                        background-color: $primary-orange-hover;
+                    }
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    margin: 17px 0;
+                    color: rgb(0, 0, 0);
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(12, 135, 192);
+                        transition: color .3s;
+
+                        &:hover {
+                            color: rgb(9, 85, 121);
+                        }
+                    }
+                }
+            }
+
+            #divider2 {
+                margin: 5px 0;
+                position: relative;
+            }
+            #divider2::before {
+                content: 'Or Use';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #FFF;
+                color: #8b8b8b;
+                padding: 0 15px;
+            }
+            .auth__options {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                position: relative;
+                margin: 10% 0;
+
+                .auth_circle {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: none;
+                    outline: 2px solid #d6d6d6;
+                    border-radius: 50%;
+                    transition: outline .3s;
+                    cursor: pointer;
+                    .authImg {
+                        width: 25px;
+                    }
+
+                    &:hover {
+                        outline: 2px solid #a8a8a8;
+                    }
+                }
+            }
+}

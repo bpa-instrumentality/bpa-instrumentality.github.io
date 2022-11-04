@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.login__section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__section .box {
+  height: 550px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  padding: 20px;
+}
+.login__section .box .top__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__section .box .top__section h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.login__section .box .top__section h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.login__section .box .top__section h1 span {
+  color: #DF652B;
+}
+.login__section .box .divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(214, 214, 214);
+  margin: 20px 0;
+}
+.login__section .box .inputs {
+  display: flex;
+  flex-direction: column;
+}
+.login__section .box .inputs input {
+  margin: 15px 0;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid rgb(199, 199, 199);
+  padding: 0px 15px;
+  font-size: 1rem;
+}
+.login__section .box .inputs input:focus {
+  border: none;
+  outline: 1px solid rgb(199, 199, 199);
+  box-shadow: 0px 2px 0px rgb(199, 199, 199);
+  transition: box-shadow 0.1s;
+}
+.login__section .box .submitdetails {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__section .box .submitdetails button {
+  width: 100%;
+  height: 38px;
+  color: white;
+  background-color: #DF652B;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.987rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.login__section .box .submitdetails button:hover {
+  background-color: #a34b21;
+}
+.login__section .box .submitdetails p {
+  font-size: 0.9rem;
+  margin: 17px 0;
+  color: rgb(0, 0, 0);
+}
+.login__section .box .submitdetails p a {
+  text-decoration: none;
+  color: rgb(12, 135, 192);
+  transition: color 0.3s;
+}
+.login__section .box .submitdetails p a:hover {
+  color: rgb(9, 85, 121);
+}
+.login__section .box #divider2 {
+  margin: 5px 0;
+  position: relative;
+}
+.login__section .box #divider2::before {
+  content: "Or Use";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  color: #8b8b8b;
+  padding: 0 15px;
+}
+.login__section .box .auth__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin: 10% 0;
+}
+.login__section .box .auth__options .auth_circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  outline: 2px solid #d6d6d6;
+  border-radius: 50%;
+  transition: outline 0.3s;
+  cursor: pointer;
+}
+.login__section .box .auth__options .auth_circle .authImg {
+  width: 25px;
+}
+.login__section .box .auth__options .auth_circle:hover {
+  outline: 2px solid #a8a8a8;
+}
+
+.section {
+  min-height: 100vh;
+  background-color: #2D3F4A;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=login.css.map */
