@@ -11,11 +11,13 @@ function toggleView() {
         toph3.textContent = "Login To";
         midp.textContent = "Don't have an account?";
         mida.textContent = " Sign up";
+        document.title = "Instrumentality | Login";
     }
     else {
         btn.textContent = "Signup";
         toph3.textContent = "Signup To";
         midp.textContent = "Already have an account?";
         mida.textContent = " Log in";
+        document.title = "Instrumentality | Signup";
     }
 }
