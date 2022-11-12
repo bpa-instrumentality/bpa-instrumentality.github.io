@@ -90,12 +90,36 @@ body {
 .hero__section {
   height: calc(100vh - 70px);
 }
+.hero__section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 55, 64, 0.89);
+  top: 0;
+  left: 0;
+  -webkit-clip-path: circle(55% at 100% -10%);
+          clip-path: circle(55% at 100% -10%);
+  z-index: -500;
+}
+.hero__section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 55, 64, 0.89);
+  top: 0;
+  left: 0;
+  -webkit-clip-path: circle(55% at -10% 100%);
+          clip-path: circle(55% at -10% 100%);
+  z-index: -500;
+}
 .hero__section .hero__img #heroviolin {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 400px;
-  z-index: -500;
+  width: 600px;
+  z-index: -400;
   transition: all 0.3s;
 }
 .hero__section .hero__content .hero__text {
@@ -239,5 +263,51 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     text-align: center;
     transition: all 0.3s;
+  }
+}
+@media (max-width: 1440px) {
+  .hero__section .hero__img #heroviolin {
+    width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__section .hero__content .hero__text h1 {
+    font-size: 2.7rem;
+    margin: 100px 0 50px 0;
+    transition: all 0.3s;
+  }
+  .hero__section .hero__content .hero__text p {
+    font-size: 1.3rem;
+    transition: all 0.3s;
+  }
+  .hero__section .hero__content .hero__text .hero__btns {
+    width: 100%;
+    background-color: none;
+    display: inline-block;
+  }
+  .hero__section .hero__content .hero__text .hero__btns button {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  .hero__section .hero__content .hero__text .hero__btns #btn1 {
+    background: #DF652B;
+    margin-top: 40px;
+    transition: all 0.5s;
+  }
+  .hero__section .hero__content .hero__text .hero__btns #btn1:hover {
+    background-color: #a34b21;
+  }
+  .hero__section .hero__content .hero__text .hero__btns #btn2 {
+    background: #009687;
+    transition: all 1s;
+  }
+  .hero__section .hero__content .hero__text .hero__btns #btn2:hover {
+    background-color: #027468;
   }
 }/*# sourceMappingURL=landing.css.map */

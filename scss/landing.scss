@@ -72,14 +72,38 @@ body{
 
 .hero__section{
     height: calc(100vh - 70px);
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(41, 55, 64, 89%);
+        top: 0;
+        left: 0;
+        clip-path: circle(55% at 100% -10%);
+        z-index: -500;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(41, 55, 64, 89%);
+        top: 0;
+        left: 0;
+        clip-path: circle(55% at -10% 100%);
+        z-index: -500;
+    }
     
     .hero__img {
         #heroviolin {
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 400px;
-            z-index: -500;
+            width: 600px;
+            z-index: -400;
             transition: all .3s;
         }
     }
@@ -266,4 +290,70 @@ body::-webkit-scrollbar-track {
             transition: all .3s;
         }
     }
+}
+
+@media (max-width: 1440px) {
+    .hero__section{
+        .hero__img {
+            #heroviolin {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero__section {
+        .hero__content{
+            .hero__text{
+            h1{
+                font-size: 2.7rem;
+                margin: 100px 0 50px 0;
+                transition: all .3s;
+            }
+
+            p{
+                font-size: 1.3rem;
+                transition: all .3s;
+            }
+            .hero__btns{
+                width: 100%;
+                background-color: none;
+                display: inline-block;
+
+                button{
+                    width: 100%;
+                    height: 50px;
+                    margin: 10px 0;
+                    border-radius: 7px;
+                    border: none;
+                    color: white;
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                }
+
+                #btn1{
+                    background: $primary-orange;
+                    margin-top: 40px;
+                    transition: all .5s;
+
+                    &:hover{
+                        background-color: $primary-orange-hover;
+                    }
+                }
+                #btn2{
+                    background: $primary-blue;
+                    transition: all 1s;
+
+                    &:hover{
+                        background-color: $primary-blue-hover;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
 }
