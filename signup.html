@@ -12,34 +12,38 @@
     <main class="signup__card">
             <h2 id="main__heading">Sign<span>up</span></h2>
             <div class="signup__form">
-                <form action="#">
+                <form>
                     <div class="input_field_wrapper">
-                        <input type="email" placeholder="Enter Email">
+                        <input type="email" placeholder="Enter Email" id="emailInput">
                         <p id="emailError">This field cannot be empty</p>
                     </div>
                     <div class="input_field_wrapper">
-                        <input type="password" placeholder="Enter Password">
+                        <input type="password" placeholder="Enter Password" id="passInput">
                         <p id="passError">This field cannot be empty</p>
                     </div>
                     <div class="input_field_wrapper" id="confirm">
-                        <input type="password" placeholder="Confirm Password">
+                        <input type="password" placeholder="Confirm Password" id="passConfirm">
                         <p id="passError2">Does not match password</p>
-                        <i class="fa-regular fa-eye opt" id="show"></i>
+                        <i class="fa-regular fa-eye opt" id="showPass"></i>
+                        <i class="fa-regular fa-eye-slash opt" id="hidePass"></i>
                     </div>
                     <div class="button_field_wrapper">
-                        <button>Sign Up</button>
+                        <button id="submitBtn" type="button" onclick="validateSignup()"><div class="loader" id="loader"></div><span id="submitTxt">Sign Up</span></button>
+                        <p>Already have an account? <a href="login.html">Log In</a></p>
                     </div>
                 </form>
                 <div class="divider"></div>
                 <div class="other__options">
                     <div class="option__wrapper">
-                        <button id="google">  Login with Google</button>
+                        <button id="google" onclick="window.location.replace('https://google.com')"><i class="fa-brands fa-google"></i>  <p>Signup with Google</p> </button>
                     </div>
                     <div class="option__wrapper">
-                        <button id="facebook">Login with Facebook</button>
+                        <button id="facebook" onclick="window.location.replace('https://facebook.com')"><i class="fa-brands fa-facebook-f"></i>Signup with Facebook</button>
                     </div>
                 </div>
             </div>
     </main>
+
+    <script src="/javascript/signup-validator.js"></script>
 </body>
 </html>

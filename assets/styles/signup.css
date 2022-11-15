@@ -41,7 +41,7 @@ body::before {
 
 main.signup__card {
   width: 400px;
-  height: 575px;
+  height: 615px;
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -102,6 +102,7 @@ main.signup__card .signup__form .input_field_wrapper p {
   font-size: 0.75rem;
   color: red;
   opacity: 0;
+  transition: all 0.3s;
 }
 main.signup__card .signup__form button {
   width: 100%;
@@ -113,17 +114,60 @@ main.signup__card .signup__form button {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.5s;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main.signup__card .signup__form button:hover {
   background: #a34b21;
 }
+main.signup__card .signup__form button .loader {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
+  -webkit-animation: loader 0.75s ease infinite;
+          animation: loader 0.75s ease infinite;
+  display: none;
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+main.signup__card .signup__form .button_field_wrapper p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgb(73, 73, 73);
+}
+main.signup__card .signup__form .button_field_wrapper p a {
+  text-decoration: none;
+  color: rgb(23, 124, 218);
+}
+main.signup__card .signup__form .button_field_wrapper p a:hover {
+  text-decoration: underline;
+}
 main.signup__card .divider {
-  margin: 5px 0;
   position: relative;
   width: 100%;
   height: 1px;
   background-color: #8b8b8b;
-  margin: 20px 0;
+  margin: 30px 0;
+  margin-bottom: 20px;
 }
 main.signup__card .divider::before {
   content: "Or Use";
@@ -135,12 +179,38 @@ main.signup__card .divider::before {
   color: #8b8b8b;
   padding: 0 10px;
 }
+main.signup__card .other__options {
+  height: 100%;
+}
 main.signup__card .other__options .option__wrapper button {
-  margin: 8px 0;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px;
+  gap: 25%;
+  font-size: 0.85rem;
+}
+main.signup__card .other__options .option__wrapper button i {
+  font-size: 1.3rem;
+  width: 10px;
 }
 main.signup__card .other__options .option__wrapper #google {
-  background-color: #4c8bf5;
+  background-color: #de5246;
+}
+main.signup__card .other__options .option__wrapper #google:hover {
+  background-color: #af4137;
 }
 main.signup__card .other__options .option__wrapper #facebook {
   background-color: #4267B2;
+}
+main.signup__card .other__options .option__wrapper #facebook:hover {
+  background-color: #2c4a85;
+}
+
+@media (max-width: 415px) {
+  main.signup__card {
+    width: 100%;
+    border-radius: 0;
+  }
 }/*# sourceMappingURL=signup.css.map */

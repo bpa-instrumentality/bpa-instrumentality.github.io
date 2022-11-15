@@ -43,124 +43,15 @@ body {
 
 main.signup__card {
     width:400px;
-    height: 575px;
-    background-color: $white;
-    border-radius: 10px;
-    padding: 20px;
+    height: 615px;
+    
+    @include loginAndSignup;
+}
 
-    #main__heading {
-        margin-top: 10px;
-        text-align: center;
-        font-weight: 600;
-        font-size: 1.9rem;
 
-        span {
-            color: $primary-orange
-        }
-    }
-
-    .signup__form {
-        text-align: center;
-        margin: 10px 0;
-        display: flex;
-        flex-direction: column;
-        padding: 0 1%;
-        input {
-            margin: 15px 0;
-            width: 100%;
-            height: 50px;
-            padding: 0 20px;
-            border-radius: 6px;
-            border: 1px solid#CACACA;
-            font-size: 1rem;
-            position: relative;
-
-            &:focus{
-                border-bottom-width: 2px;
-                outline: none;
-            }
-        }
-
-        #confirm {
-            position: relative;
-            .opt {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 15px;
-                cursor: pointer;
-                color: #9c9c9c;
-                background-color: white;
-                height: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-        .input_field_wrapper {
-            position: relative;
-
-            p {
-                position: absolute;
-                bottom: -3px;
-                left: 2px;
-                font-size: .75rem;
-                color: red;
-                opacity: 0;
-            }
-        }
-
-        button {
-            width: 100%;
-            height: 45px;
-            margin: 15px 0;
-            border: none;
-            background-color: $primary-orange;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all .5s;
-
-            &:hover {
-                background: $primary-orange-hover;
-            }
-        }
-    }
-
-    .divider {
-        margin: 5px 0;
-        position: relative;
+@media (max-width: 415px) {
+    main.signup__card {
         width: 100%;
-        height: 1px;
-        background-color: #8b8b8b;
-        margin: 20px 0;
-
-        &::before {
-            content: 'Or Use';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #FFF;
-            color: #8b8b8b;
-            padding: 0 10px;
-        }
-    }
-
-    .other__options {
-        .option__wrapper {
-            button {
-                margin: 8px 0;
-            }
-
-            #google {
-                background-color: #4c8bf5;
-            }
-
-            #facebook {
-                background-color: #4267B2;
-            }
-        }
+        border-radius: 0;
     }
 }
