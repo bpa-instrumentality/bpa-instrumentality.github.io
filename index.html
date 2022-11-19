@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrumentality | Home</title>
     <link rel="stylesheet" href="/assets/styles/landing.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <!-- Home Screen: HERO + TOP NAVBAR -->
@@ -17,7 +21,7 @@
             </div>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#" class="nav__link">About</a></li>
+                    <li><a href="#browse" class="nav__link">Browse</a></li>
                     <li><a href="#help" class="nav__link">Help</a></li>
                     <li><a href="#" class="nav__link">Reviews</a></li>
                     <li id="optionallink1"><a href="#" class="nav__link" >Newsletter</a></li>
@@ -90,26 +94,35 @@
         </div>
     </section> -->
     <!-- Browse Instrument Section -->
-    <!-- <section class="browse" id="browse">
-        <div class="topHeading">
-            <h1>Browse Instruments</h1>
-        </div>
-        <div class="mainFlex">
-            <div class="left">
-            <img src="/assets/images/ViolinSelector.svg" alt="">
-            </div>
-            <div class="right">
-                <div class="box">
-                    <h1>The Violin</h1>
-                    <p>The violin is a classical string 
-                        instrument which consists of 4 strings: G, D, A, and E. The violin is a great instrument to learn playing, and helps build a strong foundation in music.</p>
+    <section class="browse" id="browse">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="inner-swipe-content">
+            <img src="/assets/images/ViolinSelector.svg" alt="violin" id="violin-swipe">
+            <div class="info-card">
+                <h1>The Violin</h1>
+                <p>The violin is a classical string 
+                    instrument which consists of 4 strings: G, D, A, and E. The violin is a great instrument to learn playing, and helps build a strong foundation in music.</p>
                     <button>Learn More</button>
-                    <button class="pricingBtn">View Pricing</button>
-                </div>
+                    <button class="get-started">Get Started</button>
             </div>
-
         </div>
-    </section> -->
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev swiper-btn"></div>
+    <div class="swiper-button-next swiper-btn"></div>
+  </div>
+    </section>
     <!-- Help / Link to the questionnaire page -->
     <section class="help" id="help">
         <h1>Having trouble finding your dream instrument?
@@ -137,6 +150,8 @@
 
     </footer>
     <!-- Javscript Linking -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/javascript/landing-num-animate.js"></script>
+    <script src="/javascript/browse-swiper.js"></script>
 </body>
 </html>
