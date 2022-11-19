@@ -328,7 +328,11 @@ section.help button {
   border-radius: 5px;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
   transition: all 0.3s;
+}
+section.help button:hover {
+  background-color: #a34b21;
 }
 section.help #heading2 {
   display: none;

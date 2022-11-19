@@ -347,7 +347,12 @@ section.help {
         border-radius: 5px;
         border: none;
         font-size: 1rem;
+        cursor: pointer;
         transition: all .3s;
+
+        &:hover {
+            background-color: $primary-orange-hover;
+        }
     }
 
     #heading2 {
