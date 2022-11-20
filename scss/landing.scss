@@ -293,12 +293,12 @@ section.browse {
 
             .inner-swipe-content {
                 width: 100%;
-                position: relative;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 20%;
+                gap: 23%;
+                transition: all .3s ease;
 
                 img#violin-swipe {
                     width: 17rem;
@@ -307,7 +307,65 @@ section.browse {
                 .info-card {
                     width: 500px;
                     height: 625px;
-                    background-color: red;
+                    background-color: $primary-bg-blue;
+                    border-radius: 5px;
+                    border: 2px solid $outline-contrast;
+                    text-align: center;
+                    padding: 30px;
+
+                    h1 {
+                        margin-top: 10px;
+                        font-size: 3em;
+
+                        span {
+                            color: $primary-orange
+                        }
+                    }
+                    p {
+                        margin-top: 30px;
+                        font-size: 1.15em;
+
+                        span {
+                            color: $text-one;
+                        }
+                    }
+                    p.fun-fact {
+                        color: $text-one;
+                        margin-top: 15px;
+                    }
+
+                    div.btns {
+                        display: flex;
+                        width: 100%;
+                        background-color: none;
+                        flex-direction: column;
+                        margin-top: 20px;
+
+                        button {
+                            width: 100%;
+                            margin: 10px 0;
+                            height: 40px;
+                            color: $white;
+                            background-color: $primary-orange;
+                            border-radius: 5px;
+                            border: none;
+                            font-size: 0.95em;
+                            cursor: pointer;
+                            transition: all .5s;
+
+                            &:hover {
+                                background-color: $primary-orange-hover;
+                            }
+
+                        }
+                        button.get-started {
+                            background-color: $primary-blue;
+
+                            &:hover {
+                                background-color: $primary-blue-hover;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -614,6 +672,74 @@ body::-webkit-scrollbar-track {
         button {
             width: 100%;
             height: 40px;
+        }
+    }
+}
+
+@media (max-width: 1314px) {
+    section.browse {
+        .swiper {      
+            .swiper-slide {
+                .inner-swipe-content {
+                    gap: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1001px) {
+    section.browse {
+        .swiper {      
+            .swiper-slide {
+                .inner-swipe-content {
+                    img#violin-swipe {
+                        position: absolute;
+                        z-index: -500;
+                        width: 25rem;
+                        transform: rotate(30deg);
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    section.browse {
+        .swiper {      
+            .swiper-slide {
+                .inner-swipe-content {
+                    .info-card {
+                        h1 {
+                        }
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    section.browse {
+        .swiper {      
+            .swiper-slide {
+                .inner-swipe-content {
+                    .info-card {
+                        h1 {
+                            font-size: 2.5em;
+                            margin-top: 5px;
+                        }
+
+                        div.btns { 
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

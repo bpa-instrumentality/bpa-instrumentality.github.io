@@ -286,12 +286,12 @@ section.browse .swiper .swiper-slide {
 }
 section.browse .swiper .swiper-slide .inner-swipe-content {
   width: 100%;
-  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20%;
+  gap: 23%;
+  transition: all 0.3s ease;
 }
 section.browse .swiper .swiper-slide .inner-swipe-content img#violin-swipe {
   width: 17rem;
@@ -299,7 +299,57 @@ section.browse .swiper .swiper-slide .inner-swipe-content img#violin-swipe {
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card {
   width: 500px;
   height: 625px;
-  background-color: red;
+  background-color: #2D3F4A;
+  border-radius: 5px;
+  border: 2px solid #374c58;
+  text-align: center;
+  padding: 30px;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card h1 {
+  margin-top: 10px;
+  font-size: 3em;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card h1 span {
+  color: #DF652B;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card p {
+  margin-top: 30px;
+  font-size: 1.15em;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card p span {
+  color: #7a95a5;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card p.fun-fact {
+  color: #7a95a5;
+  margin-top: 15px;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns {
+  display: flex;
+  width: 100%;
+  background-color: none;
+  flex-direction: column;
+  margin-top: 20px;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns button {
+  width: 100%;
+  margin: 10px 0;
+  height: 40px;
+  color: #ffffff;
+  background-color: #DF652B;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns button:hover {
+  background-color: #a34b21;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns button.get-started {
+  background-color: #009687;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns button.get-started:hover {
+  background-color: #027468;
 }
 section.browse .swiper .swiper-btn {
   color: #445f70;
@@ -525,5 +575,33 @@ body::-webkit-scrollbar-thumb {
   section.help button {
     width: 100%;
     height: 40px;
+  }
+}
+@media (max-width: 1314px) {
+  section.browse .swiper .swiper-slide .inner-swipe-content {
+    gap: 10%;
+  }
+}
+@media (max-width: 1001px) {
+  section.browse .swiper .swiper-slide .inner-swipe-content img#violin-swipe {
+    position: absolute;
+    z-index: -500;
+    width: 25rem;
+    transform: rotate(30deg);
+    opacity: 0.5;
+  }
+}
+@media (max-width: 460px) {
+  section.browse .swiper .swiper-slide .inner-swipe-content .info-card p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  section.browse .swiper .swiper-slide .inner-swipe-content .info-card h1 {
+    font-size: 2.5em;
+    margin-top: 5px;
+  }
+  section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns {
+    margin-top: 5px;
   }
 }/*# sourceMappingURL=landing.css.map */
