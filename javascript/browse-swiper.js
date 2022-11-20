@@ -1,4 +1,15 @@
 const swiper = new Swiper('.swiper', {
+  effect: 'creative',
+  creativeEffect: {
+    prev: {
+      translate: ['-100%', 0, 0],
+      opacity: 0,
+    },
+    next: {
+      translate: ['100%', 0, 0],
+      opacity: 1,
+    },
+  },
     // Optional parameters
     direction: 'horizontal',
     loop: true,

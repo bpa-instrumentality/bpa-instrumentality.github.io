@@ -10,6 +10,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
+<script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Home Screen: HERO + TOP NAVBAR -->
@@ -23,6 +24,7 @@
                 <ul class="nav__links">
                     <li><a href="#browse" class="nav__link">Browse</a></li>
                     <li><a href="#help" class="nav__link">Help</a></li>
+                    <li><a href="#faq" class="nav__link">FAQ</a></li>
                     <li><a href="#" class="nav__link">Reviews</a></li>
                     <li id="optionallink1"><a href="#" class="nav__link" >Newsletter</a></li>
                 </ul>
@@ -102,7 +104,7 @@
       <!-- Slides -->
       <div class="swiper-slide">
         <div class="inner-swipe-content">
-            <img src="/assets/images/ViolinSelector.svg" alt="violin" id="violin-swipe">
+            <img src="/assets/images/ViolinSelector.svg" alt="violin" class="instrument-swipe">
             <div class="info-card">
                 <h1>The <span>Violin</span></h1>
                 <p>The violin is a classical string 
@@ -118,8 +120,26 @@
             </div>
         </div>
       </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">
+        <div class="inner-swipe-content">
+            <img src="/assets/images/guitar-swipe-pic.svg" alt="guitar" class="instrument-swipe">
+            <div class="info-card">
+                <h1>The <span>Guitar</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec. Sed lectus vestibulum mattis ullamcorper velit sed. Rhoncus est pellentesque elit ullamcorper. Phasellus faucibus scelerisque eleifend donec. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin.
+                    <br></p>
+                    <p class="fun-fact">
+                        Fun Fact: This is a random fun fact to fill out later.
+                    </p>
+                    <div class="btns">
+                        <button>Learn More</button>
+                    <button class="get-started">Purchase Guitars</button>
+                    </div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        More images/slides to be added soon
+      </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -140,12 +160,54 @@
                 <p id="paragraph2">Don‘t worry. We’ve got you covered. Fill out our questionnaire and we will find you a perfect instrument!</p>
                 <button>Help me out!</button>
     </section>
-    <!-- Testimonials -->
-    <section class="testimonials" id="reviews">
-    </section>
     <!-- FAQ Section -->
     <section class="faq" id="faq">
-
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordian">
+            <div class="accordian-card">
+                <div class="shown-content"><p>What is an instrument?</p> 
+                    <p class="faq-toggle" id="toggle1" onclick="showContent('faq1', 'toggle1');">+</p>
+                </div>
+                
+                <div class="hidden-content" id="faq1">
+                    <div class="faq-divider"></div>
+                    <p>The answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiasThe answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias</p>
+                </div>
+            </div>
+            <div class="accordian-card">
+                <div class="shown-content"><p>What is an instrument?</p> 
+                    <p class="faq-toggle" id="toggle2" onclick="showContent('faq2', 'toggle2');">+</p>
+                </div>
+                
+                <div class="hidden-content" id="faq2">
+                    <div class="faq-divider"></div>
+                    <p>The answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiasThe answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias</p>
+                </div>
+            </div>
+            <div class="accordian-card">
+                <div class="shown-content"><p>What is an instrument?</p> 
+                    <p class="faq-toggle" id="toggle3" onclick="showContent('faq3', 'toggle3');">+</p>
+                </div>
+                
+                <div class="hidden-content" id="faq3">
+                    <div class="faq-divider"></div>
+                    <p>The answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiasThe answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias</p>
+                </div>
+            </div>
+            <div class="accordian-card">
+                <div class="shown-content"><p>What is an instrument?</p> 
+                    <p class="faq-toggle" id="toggle4" onclick="showContent('faq4', 'toggle4');">+</p>
+                </div>
+                
+                <div class="hidden-content" id="faq4">
+                    <div class="faq-divider"></div>
+                    <p>The answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiasThe answer to this, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials" id="reviews">
     </section>
     <!-- CTA -->
     <section class="cta" id="cta">
@@ -159,5 +221,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/javascript/landing-num-animate.js"></script>
     <script src="/javascript/browse-swiper.js"></script>
+    <script src="/javascript/faq-accordian.js"></script>
 </body>
 </html>

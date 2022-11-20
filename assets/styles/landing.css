@@ -293,7 +293,7 @@ section.browse .swiper .swiper-slide .inner-swipe-content {
   gap: 23%;
   transition: all 0.3s ease;
 }
-section.browse .swiper .swiper-slide .inner-swipe-content img#violin-swipe {
+section.browse .swiper .swiper-slide .inner-swipe-content img.instrument-swipe {
   width: 17rem;
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card {
@@ -303,7 +303,7 @@ section.browse .swiper .swiper-slide .inner-swipe-content .info-card {
   border-radius: 5px;
   border: 2px solid #374c58;
   text-align: center;
-  padding: 30px;
+  padding: 30px 25px;
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card h1 {
   margin-top: 10px;
@@ -406,6 +406,72 @@ section.help #paragraph2 {
   display: none;
 }
 
+section.faq {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #293740;
+  padding: 30px;
+  position: relative;
+}
+section.faq h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+}
+section.faq .accordian {
+  margin-top: 70px;
+  position: relative;
+  width: 100%;
+}
+section.faq .accordian .accordian-card {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #364a57;
+  padding: 15px 20px;
+  border-radius: 7px;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: 20px 0;
+}
+section.faq .accordian .accordian-card .shown-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+section.faq .accordian .accordian-card .shown-content .retract {
+  display: none;
+}
+section.faq .accordian .accordian-card .shown-content .faq-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+section.faq .accordian .accordian-card .shown-content .faq-toggle:hover {
+  background-color: #4e6c7e;
+}
+section.faq .accordian .accordian-card .shown-content p {
+  font-weight: 600;
+}
+section.faq .accordian .accordian-card .hidden-content {
+  display: none;
+}
+section.faq .accordian .accordian-card .faq-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: #4e6c7e;
+}
+
 body::-webkit-scrollbar {
   width: 13px;
 }
@@ -430,12 +496,12 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
   }
 }
-@media (max-width: 923px) {
+@media (max-width: 1000px) {
   #optionallink1 {
     display: none;
   }
 }
-@media (max-width: 783px) {
+@media (max-width: 890px) {
   .nav__links {
     display: none;
   }
@@ -583,12 +649,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 1001px) {
-  section.browse .swiper .swiper-slide .inner-swipe-content img#violin-swipe {
+  section.browse .swiper .swiper-slide .inner-swipe-content img.instrument-swipe {
     position: absolute;
     z-index: -500;
     width: 25rem;
     transform: rotate(30deg);
     opacity: 0.5;
+    display: none;
   }
 }
 @media (max-width: 460px) {
@@ -603,5 +670,29 @@ body::-webkit-scrollbar-thumb {
   }
   section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns {
     margin-top: 5px;
+  }
+}
+@media (max-width: 375px) {
+  section.browse .swiper .swiper-slide .inner-swipe-content .info-card h1 {
+    font-size: 2.5em;
+    margin-top: 5px;
+  }
+  section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns {
+    margin-top: 5px;
+  }
+  section.browse .swiper .swiper-slide .inner-swipe-content .info-card p {
+    margin-top: 1em;
+  }
+}
+@media (max-width: 326px) {
+  .info-card h1 {
+    font-size: 2.3em !important;
+    margin-top: 5px;
+  }
+  .info-card div.btns {
+    margin-top: 5px;
+  }
+  .info-card p {
+    margin-top: 1em;
   }
 }/*# sourceMappingURL=landing.css.map */
