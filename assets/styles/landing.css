@@ -783,11 +783,15 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 761px) {
   .review-row {
     flex-direction: column;
+    margin-top: 20px !important;
   }
   .review-row .review-card {
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
+  }
+  #row1 {
+    margin-top: 40px !important;
   }
 }
 @media (max-width: 601px) {
