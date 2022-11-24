@@ -600,6 +600,67 @@ section.testimonials {
     }
 }
 
+section.cta {
+    min-height: 25vh;
+    width: 100%;
+    background-color: $primary-bg-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+
+    div.left {
+        margin-right: 75px;
+        h1 {
+            font-size: 2.7em;
+        }
+        p {
+            font-size: 0.95em;
+            margin-top: 10px;
+            color: $text-one;
+        }
+    }
+    div.right {
+        position: relative;
+        input {
+            width: 530px;
+            height: 60px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 5px 4px hsl(0deg 0% 0% / 20%);
+            padding: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
+            color: $text-one;
+
+            &:focus {
+                outline: 2px solid $dark-bg-blue;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 90%;
+            width: 35%;
+            background-color: $primary-orange;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all .5s;
+            font-size: 0.95em;
+
+            &:hover {
+                background-color: $primary-orange-hover;
+            }
+        }
+    }
+}
+
 // Scrollbar Styling
 body::-webkit-scrollbar {
     width: 13px;
@@ -982,5 +1043,58 @@ body::-webkit-scrollbar-track {
 @media (max-width: 601px) {
     h1.top-review-header {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 1305px) {
+    section.cta {
+        h1 {
+            font-size: 2em !important;
+        }
+    }
+}
+
+@media (max-width: 1128px) {
+    section.cta {
+        gap: 0 !important;
+        div.left {
+            margin-right: 25px !important;
+        }
+        h1 {
+            font-size: 2em !important;
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    section.cta {
+        flex-direction: column;
+        text-align: center;
+
+        p {
+            margin-top: 0 !important;
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+
+@media (max-width: 570px) {
+    section.cta {
+        input {
+            width: 100% !important;
+        }
+        div.right {
+            width: 100% !important;
+            position: relative !important;
+        }
+        p {
+            display: none;
+        }
+
+        h1 {
+            font-size: 1.8em !important;
+            margin-bottom: 10px;
+        }
     }
 }
