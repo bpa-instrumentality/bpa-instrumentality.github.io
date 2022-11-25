@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrumentality | Home</title>
+    <script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/assets/styles/landing.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-<script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Home Screen: HERO + TOP NAVBAR -->
@@ -33,7 +33,21 @@
                 <a href="login.html" class="loginlink" >Login</a>
                 <a href="signup.html"><button>Signup</button></a>
             </div>
+            <div class="hamburger-icons">
+                <i class="fa-solid fa-bars icon" id="open-hamburger"></i>
+                <i class="fa-solid fa-xmark icon" id="close-hamburger"></i>
+            </div>
+
         </header>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#" id="top-nav-link" class="mobile-link">Home</a>
+            <a href="#browse" class="mobile-link">Browse</a>
+            <a href="#help" class="mobile-link">Help</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#reviews" class="mobile-link">Reviews</a>
+            <a href="signup.html" class="mobile-link">Signup</a>
+        </div>
+        <div class="bg-blur" id="bg-blur"></div>
         <!-- HERO SECTION -->
         <section class="hero__section" id="home">
             <div class="hero__content">
@@ -314,5 +328,6 @@
     <script src="/javascript/landing-num-animate.js"></script>
     <script src="/javascript/browse-swiper.js"></script>
     <script src="/javascript/faq-accordian.js"></script>
+    <script src="/javascript/hamburger-menu.js"></script>
 </body>
 </html>
