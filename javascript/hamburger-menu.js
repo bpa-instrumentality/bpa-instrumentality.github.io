@@ -18,7 +18,7 @@ close.addEventListener('click', () => {
     close.style.display = "none";
     open.style.display = "block";
     menu.style.transition = "top 0.6s";
-    menu.style.top = "-340px";
+    menu.style.top = "-380px";
     blur.style.opacity = "0"
 })
 
@@ -27,7 +27,7 @@ document.querySelectorAll('.mobile-link').forEach((link) => {
         close.style.display = "none";
         open.style.display = "block";
         menu.style.transition = "top 0s";
-        menu.style.top = "-340px";
+        menu.style.top = "-380px";
         blur.style.opacity = "0"
     })
   })

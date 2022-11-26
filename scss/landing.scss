@@ -95,7 +95,7 @@ div.mobile-menu {
     background-color: $mobile-menu-bg;
     padding: 0;
     text-align: center;
-    top: -340px;
+    top: -380px;
     align-items: center;
     justify-content: center;
     z-index: 500;
@@ -110,6 +110,7 @@ div.mobile-menu {
         border-bottom: 1px solid $dark-bg-blue;
         border-top: 1px solid $dark-bg-blue;
         cursor: pointer;
+        font-size: 1rem;
     }
 
     #top-nav-link {
@@ -711,6 +712,98 @@ section.cta {
     }
 }
 
+
+footer.footer {
+    background-color: $footer-bg;
+    width: 100%;
+    position: relative;
+
+    .main-footer {
+        padding: 3rem;
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        // position: relative;
+
+        .promote {
+            // width: 40%;
+            margin-right: 25px;
+            .footer-logo {
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: white;
+                span {
+                    color: $primary-orange;
+                }
+            }
+            p {
+                font-size: 0.9rem;
+                color: $text-three;
+            }
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            gap: 5px;
+
+            .footer-column {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+
+                h2 {
+                    font-weight: 500;
+                    letter-spacing: 0.05rem;
+                }
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: $text-four;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: $dark-bg-blue;
+        bottom: 0;
+        width: 100%;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 3rem;
+        justify-content: center;
+        position: relative;
+        gap: 7px;
+        flex-wrap: wrap;
+        text-align: center;
+
+        p {
+            color: $text-five;
+        }
+
+        .footer-bottom-divider {
+            width: 1px;
+            height: 20px;
+            background-color: $off-white;
+        }
+
+    }
+}
+
 // Scrollbar Styling
 body::-webkit-scrollbar {
     width: 13px;
@@ -722,13 +815,81 @@ body::-webkit-scrollbar-track {
   
   body::-webkit-scrollbar-thumb {
     background-color: #1a242b;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 
 
 
 // MEDIA QUERIES
+
+
+@media (max-width: 594px) {
+    .second-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 584px) {
+    .footer-bottom-divider {
+        display: block;
+        width: 100% !important;
+        height: 1px !important;
+    }
+    .footer-bottom {
+        row-gap: 10px !important;
+        flex-direction: column;
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-columns {
+        width: 100% !important;
+        margin-top: 30px;
+
+        .footer-column {
+            li {
+                text-align: center;
+            }
+        }
+    }
+    .promote {
+        text-align: center;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .footer-columns {
+        justify-content: space-between !important;
+    }
+}
+
+@media (max-width: 507px) {
+    .footer-columns {
+        flex-direction: column;
+        row-gap: 50px !important;
+
+        .footer-column {
+            h2 {
+                text-align: left;
+            }
+
+            li {
+                text-align: left;
+            }
+        }
+    }
+    .promote {
+        text-align: left;
+    }
+
+    .main-footer {
+        justify-content: flex-start !important;
+    }
+}
+
 @media (max-width: 1550px) {
     .hero__section {
         .hero__content{
@@ -795,6 +956,13 @@ body::-webkit-scrollbar-track {
     #bg-blur {
         opacity: 0;
         backdrop-filter: blur(0px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .swiper-btn {
+        display: none !important;
     }
 }
 
@@ -1099,7 +1267,7 @@ body::-webkit-scrollbar-track {
         }
     }
     #row1 {
-        margin-top: 40px !important;
+        margin-top: 30px !important;
     }
 }
 
