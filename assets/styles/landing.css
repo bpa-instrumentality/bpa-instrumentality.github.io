@@ -479,7 +479,7 @@ section.faq .accordian .accordian-card {
   background-color: #364a57;
   padding: 15px 20px;
   border-radius: 7px;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 1000px;
   margin: 20px 0;
   transition: background-color 0.5s;
@@ -729,6 +729,104 @@ footer.footer .footer-bottom .footer-bottom-divider {
   background-color: #d7dfe6;
 }
 
+div.signup-popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 450;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  color: #03314b;
+  opacity: 0;
+  pointer-events: none;
+}
+div.signup-popup .popup-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  position: absolute;
+  z-index: -1;
+}
+div.signup-popup div.signup-popup-modal {
+  width: 475px;
+  height: 600px;
+  background-color: white;
+  transition: all 0.2s;
+}
+div.signup-popup div.signup-popup-modal .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 2rem;
+}
+div.signup-popup div.signup-popup-modal .top-section .popup-x {
+  cursor: pointer;
+  color: rgb(41, 41, 41);
+  transition: color 0.3s;
+}
+div.signup-popup div.signup-popup-modal .top-section .popup-x:hover {
+  color: #DF652B;
+}
+div.signup-popup div.signup-popup-modal .popup-text {
+  padding: 2rem 2.5rem 1rem 3rem;
+}
+div.signup-popup div.signup-popup-modal .popup-text h1 {
+  font-size: 1.8rem;
+}
+div.signup-popup div.signup-popup-modal .popup-text h1 span {
+  color: #DF652B;
+}
+div.signup-popup div.signup-popup-modal .popup-text p {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+}
+div.signup-popup div.signup-popup-modal .popup-form {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+div.signup-popup div.signup-popup-modal .popup-form input {
+  height: 50px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #CACACA;
+  transition: border 0.2s;
+  color: #3f3f3f;
+  font-weight: 500;
+}
+div.signup-popup div.signup-popup-modal .popup-form input:focus {
+  outline: none;
+  border: 2px solid #DF652B;
+}
+div.signup-popup div.signup-popup-modal .popup-form button {
+  height: 50px;
+  padding: 0.8rem;
+  background-color: #DF652B;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+div.signup-popup div.signup-popup-modal .popup-form button:hover {
+  background-color: #a34b21;
+}
+div.signup-popup div.signup-popup-modal .popup-form .popup-pwd {
+  margin: 2rem 0;
+}
+
+@media (max-width: 416px) {
+  div.signup-popup div.signup-popup-modal {
+    height: 670px;
+  }
+}
 body::-webkit-scrollbar {
   width: 13px;
 }
@@ -786,6 +884,9 @@ body::-webkit-scrollbar-thumb {
   }
   .footer-columns .footer-column li {
     text-align: left;
+  }
+  .fend {
+    display: none;
   }
   .promote {
     text-align: left;
@@ -1031,9 +1132,9 @@ body::-webkit-scrollbar-thumb {
     font-size: 0.9rem !important;
   }
 }
-@media (max-width: 1084px) {
+@media (max-width: 330px) {
   .review-body p {
-    font-size: 0.9rem !important;
+    font-size: 0.7rem !important;
   }
 }
 @media (max-width: 761px) {
