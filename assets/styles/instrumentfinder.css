@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main.finder-page-survey {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+main.finder-page-survey div.banner {
+  background-color: #2D3F4A;
+  flex: 1 1 550px;
+  transition: flex 0.2s;
+  position: relative;
+}
+main.finder-page-survey div.banner img {
+  position: absolute;
+  width: 390px;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+main.finder-page-survey section.main-survey {
+  background-color: #ffffff;
+  flex: 1 1 100%;
+  transition: flex 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem 2rem 3rem;
+  flex-direction: column;
+  text-align: center;
+}
+main.finder-page-survey section.main-survey button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #DF652B;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main.finder-page-survey section.main-survey button:hover {
+  background-color: #a34b21;
+}
+main.finder-page-survey section.main-survey .page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.9rem;
+  transition: all 0.3s;
+}
+main.finder-page-survey section.main-survey .page h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+main.finder-page-survey section.main-survey .page select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+main.finder-page-survey section.main-survey .page p {
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+@media (max-width: 900px) {
+  div.banner {
+    flex: 1 1 350px !important;
+  }
+}
+@media (max-width: 700px) {
+  main.finder-page-survey {
+    flex-direction: column;
+  }
+  main.finder-page-survey div.banner {
+    flex: 1 1 25% !important;
+  }
+  main.finder-page-survey div.banner img {
+    top: 90%;
+    left: 50%;
+    width: 250px !important;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 1121px) {
+  main.finder-page-survey div.banner img {
+    width: 250px;
+    left: 50%;
+  }
+}/*# sourceMappingURL=instrumentfinder.css.map */

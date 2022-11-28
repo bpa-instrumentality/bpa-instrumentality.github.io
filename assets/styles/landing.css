@@ -823,8 +823,17 @@ div.signup-popup div.signup-popup-modal .popup-form .popup-pwd {
 }
 
 @media (max-width: 416px) {
+  div.signup-popup {
+    z-index: 1100 !important;
+  }
   div.signup-popup div.signup-popup-modal {
-    height: 670px;
+    height: 100% !important;
+    position: relative;
+  }
+}
+@media (max-height: 741px) {
+  .navbarmain {
+    z-index: 0 !important;
   }
 }
 body::-webkit-scrollbar {

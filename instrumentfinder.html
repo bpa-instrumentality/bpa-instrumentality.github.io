@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument Finder Tool</title>
+    <link rel="stylesheet" href="/assets/styles/instrumentfinder.css">
+</head>
+<body>
+    <main class="finder-page-survey">
+        <div class="banner">
+            <img src="/assets/images/finder-survey-img.png" alt="woman-holding-survey-page">
+        </div>
+        <section class="main-survey">
+            <div class="page1 page" id="page1">
+                <h1>Answer some questions so we can help you out!</h1>
+                <p>Have you ever owned an instrument before?</p>
+                <select name="experience" id="experience">
+                    <option selected disabled hidden value="none">Choose an option</option>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+                <button>Continue</button>
+            </div>
+            <div class="page2 page" id="page2">
+                <h1>Answer some questions so we can help you out!</h1>
+                <p>What instrument are you looking for?</p>
+                <select name="experience" id="experience">
+                    <option selected disabled hidden value="none">Choose an option</option>
+                    <option value="1">Violin</option>
+                    <option value="2">Cello</option>
+                    <option value="3">Saxophone</option>
+                    <option value="4">Trumpet</option>
+                    <option value="5">Flute</option>
+                </select>
+                <button>Continue</button>
+            </div>
+            <div class="page3 page" id="page3">
+                <h1>Answer some questions so we can help you out!</h1>
+                <p>What is your preferred price range?</p>
+                <select name="experience" id="experience">
+                    <option selected disabled hidden value="none">Choose an option</option>
+                    <option value="1"><$5 per month</option>
+                    <option value="2">$5 - $10 per month</option>
+                    <option value="3">$10 - $20 per month</option>
+                    <option value="4">$20 - $40 per month</option>
+                    <option value="5">>$40 per month</option>
+                </select>
+                <button>Continue</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/javascript/survey-multipage.js"></script>
+</body>
+</html>
