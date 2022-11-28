@@ -18,7 +18,10 @@ overlay.addEventListener("click", () => {
 
 window.addEventListener('load', () => {
     setTimeout(() => {
-        popup.style.opacity = "1";
-        popup.style.pointerEvents = "all";
+        let myMediaQuery = window.matchMedia('(min-width: 500px)');
+        if (myMediaQuery.matches) {
+            popup.style.opacity = "1";
+            popup.style.pointerEvents = "all";
+        }
       }, "3500")
 })

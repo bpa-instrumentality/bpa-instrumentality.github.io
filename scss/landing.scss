@@ -1335,3 +1335,9 @@ body::-webkit-scrollbar-track {
         }
     }
 }
+
+@media (max-width: 510px) {
+    div#signup-popup {
+        display: none !important;
+    }
+}

@@ -320,19 +320,15 @@
             }
         }
     }
-
-    @media (max-width: 416px) {
-        div.signup-popup {
-            z-index: 1100 !important; 
-            div.signup-popup-modal {
-                height: 100% !important;
-                position: relative;
-            }
-        }
-    }
     @media (max-height: 741px) {
         .navbarmain {
             z-index: 0 !important;
+        }
+    }
+
+    @media (max-width: 510px) {
+        div#signup-popup {
+            display: none !important;
         }
     }
 }

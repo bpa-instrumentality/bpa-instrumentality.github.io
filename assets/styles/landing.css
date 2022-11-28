@@ -822,18 +822,14 @@ div.signup-popup div.signup-popup-modal .popup-form .popup-pwd {
   margin: 2rem 0;
 }
 
-@media (max-width: 416px) {
-  div.signup-popup {
-    z-index: 1100 !important;
-  }
-  div.signup-popup div.signup-popup-modal {
-    height: 100% !important;
-    position: relative;
-  }
-}
 @media (max-height: 741px) {
   .navbarmain {
     z-index: 0 !important;
+  }
+}
+@media (max-width: 510px) {
+  div#signup-popup {
+    display: none !important;
   }
 }
 body::-webkit-scrollbar {
@@ -1205,5 +1201,10 @@ body::-webkit-scrollbar-thumb {
   section.cta h1 {
     font-size: 1.8em !important;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 510px) {
+  div#signup-popup {
+    display: none !important;
   }
 }/*# sourceMappingURL=landing.css.map */
