@@ -12,23 +12,37 @@ main.finder-page-survey {
     width: 100%;
 
     div.banner {
-        background-color: $primary-bg-blue;
-        flex: 1 1 550px;
+        background: linear-gradient($primary-bg-blue, $gradient-bg);
+        flex: 1 1 50%;
         transition: flex .2s;
         position: relative;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2rem 0 2rem;
+
+
+        #mobile-pic {
+            display: none;
+        }
+
+        h1 {
+            margin: 1rem 0 0 0;
+            font-size: 1.8rem;
+        }
 
         img {
-            position: absolute;
-            width: 390px;
-            top: 50%;
-            left: 80%;
-            transform: translate(-50%, -50%);
+            width: 450px;
+            margin-bottom: 2.5rem;
         }
     }
 
     section.main-survey {
         background-color: $white;
-        flex: 1 1 100%;
+        flex: 1 1 50%;
         transition: flex .2s;
         display: flex;
         align-items: center;
@@ -36,6 +50,12 @@ main.finder-page-survey {
         padding: 2rem 3rem 2rem 3rem;
         flex-direction: column;
         text-align: center;
+
+
+        .btns {
+            display: flex;
+            gap: 5px;
+        }
 
 
         button {
@@ -49,6 +69,10 @@ main.finder-page-survey {
             transition: all .3s;
 
             &:hover {
+                background-color: $primary-orange-hover;
+            }
+
+            &:disabled {
                 background-color: $primary-orange-hover;
             }
         }
@@ -67,6 +91,8 @@ main.finder-page-survey {
                 width: 100%;
                 border-radius: 5px;
                 padding: 0.5rem;
+                -webkit-appearance: none;
+                cursor: pointer;
             }
 
             p {
@@ -89,14 +115,25 @@ main.finder-page-survey {
         flex-direction: column;
 
         div.banner {
-            flex: 1 1 25% !important;
+            flex: 1 1 10% !important;
+
+            .desc {
+                display: none;
+            }
 
             img {
-                top: 90%;
-                left: 50%;
                 width: 250px !important;
-                transform: translate(-50%, -50%);
+                margin-bottom: 0;
+                display: none;
             }
+
+            #mobile-pic {
+                display: block;
+            }
+        }
+
+        main.main-survey {
+            flex: 1 1 90% !important;
         }
     }
 }
@@ -106,7 +143,6 @@ main.finder-page-survey {
         div.banner { 
             img {
                 width: 250px;
-                left: 50%;
             }
         }
     }

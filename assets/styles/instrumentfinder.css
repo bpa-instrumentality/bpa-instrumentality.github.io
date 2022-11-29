@@ -12,21 +12,32 @@ main.finder-page-survey {
   width: 100%;
 }
 main.finder-page-survey div.banner {
-  background-color: #2D3F4A;
-  flex: 1 1 550px;
+  background: linear-gradient(#2D3F4A, #1f2830);
+  flex: 1 1 50%;
   transition: flex 0.2s;
   position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+}
+main.finder-page-survey div.banner #mobile-pic {
+  display: none;
+}
+main.finder-page-survey div.banner h1 {
+  margin: 1rem 0 0 0;
+  font-size: 1.8rem;
 }
 main.finder-page-survey div.banner img {
-  position: absolute;
-  width: 390px;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+  width: 450px;
+  margin-bottom: 2.5rem;
 }
 main.finder-page-survey section.main-survey {
   background-color: #ffffff;
-  flex: 1 1 100%;
+  flex: 1 1 50%;
   transition: flex 0.2s;
   display: flex;
   align-items: center;
@@ -34,6 +45,10 @@ main.finder-page-survey section.main-survey {
   padding: 2rem 3rem 2rem 3rem;
   flex-direction: column;
   text-align: center;
+}
+main.finder-page-survey section.main-survey .btns {
+  display: flex;
+  gap: 5px;
 }
 main.finder-page-survey section.main-survey button {
   width: 100%;
@@ -46,6 +61,9 @@ main.finder-page-survey section.main-survey button {
   transition: all 0.3s;
 }
 main.finder-page-survey section.main-survey button:hover {
+  background-color: #a34b21;
+}
+main.finder-page-survey section.main-survey button:disabled {
   background-color: #a34b21;
 }
 main.finder-page-survey section.main-survey .page {
@@ -62,6 +80,8 @@ main.finder-page-survey section.main-survey .page select {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
 main.finder-page-survey section.main-survey .page p {
   margin-top: -10px;
@@ -78,18 +98,25 @@ main.finder-page-survey section.main-survey .page p {
     flex-direction: column;
   }
   main.finder-page-survey div.banner {
-    flex: 1 1 25% !important;
+    flex: 1 1 10% !important;
+  }
+  main.finder-page-survey div.banner .desc {
+    display: none;
   }
   main.finder-page-survey div.banner img {
-    top: 90%;
-    left: 50%;
     width: 250px !important;
-    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    display: none;
+  }
+  main.finder-page-survey div.banner #mobile-pic {
+    display: block;
+  }
+  main.finder-page-survey main.main-survey {
+    flex: 1 1 90% !important;
   }
 }
 @media (max-width: 1121px) {
   main.finder-page-survey div.banner img {
     width: 250px;
-    left: 50%;
   }
 }/*# sourceMappingURL=instrumentfinder.css.map */

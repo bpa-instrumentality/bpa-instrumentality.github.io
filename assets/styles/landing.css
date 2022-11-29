@@ -755,6 +755,7 @@ div.signup-popup div.signup-popup-modal {
   height: 600px;
   background-color: white;
   transition: all 0.2s;
+  border-radius: 5px;
 }
 div.signup-popup div.signup-popup-modal .top-section {
   display: flex;
