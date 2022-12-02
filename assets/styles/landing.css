@@ -259,68 +259,19 @@ div.bg-blur {
   font-size: 1.5rem;
 }
 
-.about__section {
-  min-height: 100vh;
-  background-color: #293740;
-  text-align: center;
-  padding: 30px;
-  position: relative;
-}
-.about__section::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 44, 51, 0.89);
-  top: 0;
-  left: 0;
-  -webkit-clip-path: circle(70% at 50% 155%);
-          clip-path: circle(70% at 50% 155%);
-  z-index: 0;
-}
-.about__section .top__about__section {
-  position: relative;
-  width: 100%;
-  z-index: 500;
-}
-.about__section h1 {
-  font-size: 3.5rem;
-}
-.about__section p {
-  font-size: 1.4rem;
-  margin-top: 5px;
-  color: #7a95a5;
-}
-.about__section .about__us__cards {
-  z-index: 500;
-  position: relative;
-  background-color: none;
-  display: flex;
-  width: 100%;
-  min-height: 75vh;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-.about__section .about__us__cards .about__us__card {
-  max-width: 500px;
-}
-.about__section .about__us__cards .about__us__card img {
-  width: 250px;
-}
-.about__section .about__us__cards .about__us__card h3 {
-  font-size: 2rem;
-}
-.about__section .about__us__cards .about__us__card p {
-  font-size: 1.2rem;
-  margin-top: 15px;
-}
-
 section.browse {
   min-height: 100vh;
   background-color: #293740;
   width: 100%;
   position: relative;
+}
+section.browse .browse-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #242f38;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 section.browse .swiper {
   min-height: 100vh;
@@ -534,6 +485,7 @@ section.testimonials h1.top-review-header {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  z-index: 100;
 }
 section.testimonials h1.top-review-header span {
   background-color: #DF652B;

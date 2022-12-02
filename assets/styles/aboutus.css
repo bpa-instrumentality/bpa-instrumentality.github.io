@@ -76,9 +76,10 @@ section.hero::before {
   z-index: -500;
 }
 section.hero h1 {
-  font-size: 4.5rem;
+  font-size: 4.4rem;
   text-align: center;
   max-width: 70rem;
+  margin-top: 5rem;
 }
 section.hero p {
   font-size: 1.25rem;

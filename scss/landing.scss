@@ -260,77 +260,20 @@ div.bg-blur {
     }
 }
 
-.about__section {
-    min-height: 100vh;
-    background-color: $secondary-bg-blue;
-    text-align: center;
-    padding: 30px;
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(33, 44, 51, 0.89);
-        top: 0;
-        left: 0;
-        clip-path: circle(70% at 50% 155%);
-        z-index: 0;
-    }
-
-
-
-    .top__about__section {
-        position: relative;
-        width: 100%;
-        z-index: 500;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    p {
-        font-size: 1.4rem;
-        margin-top: 5px;
-        color: $text-one;
-    }
-
-    .about__us__cards {
-        z-index: 500;
-        position: relative;
-        background-color: none;
-        display: flex;
-        width: 100%;
-        min-height: 75vh;
-        align-items: center;
-        justify-content: space-between;
-        gap: 60px;
-
-        .about__us__card {
-            max-width: 500px;
-            img {
-                width: 250px;
-            }
-
-            h3 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-                margin-top: 15px;
-            }
-        }
-    }
-}
 
 section.browse {
     min-height: 100vh;
     background-color: $secondary-bg-blue;
     width: 100%;
     position: relative;
+
+    .browse-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $footer-bg;
+        clip-path: circle(50% at 50% 50%);
+    }
 
     .swiper {
         min-height: 100vh;
@@ -581,6 +524,7 @@ section.testimonials {
         align-items: center;
         justify-content: center;
         gap: 10px;
+        z-index: 100;
 
         span {
             background-color: $primary-orange;
