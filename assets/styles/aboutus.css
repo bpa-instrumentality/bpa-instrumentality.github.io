@@ -212,11 +212,11 @@ body::-webkit-scrollbar-thumb {
     margin-top: 50px;
   }
 }
-@media (max-height: 710px) {
+@media (max-height: 660px) {
   section.hero {
     row-gap: 2rem !important;
   }
   section.hero h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 }/*# sourceMappingURL=aboutus.css.map */

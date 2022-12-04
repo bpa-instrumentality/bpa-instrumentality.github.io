@@ -262,12 +262,12 @@ body::-webkit-scrollbar-track {
     }
 }
 
-@media (max-height: 710px) {
+@media (max-height: 660px) {
     section.hero {
         row-gap: 2rem !important;
 
         h1 {
-            font-size: 2rem;
+            font-size: 3.5rem;
         }
     }
 }
