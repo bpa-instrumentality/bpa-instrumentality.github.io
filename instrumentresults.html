@@ -13,7 +13,7 @@
         <p>Click on an instrument card for more information!</p>
     </div>
     <section class="results">
-        <div class="card">
+        <!-- <div class="card">
             <div class="overlay"></div>
             <div class="img"><img src="/assets/images/yetanothertest.jpg" alt=""></div>
             <div class="card-text">
@@ -76,10 +76,20 @@
                 <p class="img-desc">Great for intermediate level musicians</p>
                 <p class="img-price">$13 per month</p>
             </div>
-        </div>
+        </div> -->
+        <instrument-result-card picture="/assets/images/yetanothertest.jpg" class="irs" title="Eastman Violin">
+            <span slot="desc">Great for intermediate level musicians</span>
+            <span slot="price">13</span>
+        </instrument-result-card>
+
+        <instrument-result-card title="Jean Paul USA AS-400" picture="/assets/images/saxPic1.jpg" class="irs">
+            <span slot="desc">Great for intermediate level musicians</span>
+            <span slot="price">13</span>
+        </instrument-result-card>
         
         
-        
-    </section>
+    </section>   
+
+    <script src="/javascript/custom-elements.js"></script>
 </body>
 </html>

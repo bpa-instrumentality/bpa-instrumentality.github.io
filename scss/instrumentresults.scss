@@ -56,27 +56,29 @@ section.results {
     gap: 3.1rem;
     margin-top: 25px;
     flex-wrap: wrap;
-
-    div.card {
+    .irs{
         background-color: $primary-bg-blue;
-        // border: 2px solid $outline-contrast;
-        width: 425px;
-        border-radius: 10px;
-        height: 300px;
-        position: relative;
-        cursor: pointer;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        // background:url("/assets/images/yetanothertest.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: all .5s;
-        object-fit: cover;
-        flex-grow: 1;
+            // border: 2px solid $outline-contrast;
+            width: 425px;
+            border-radius: 10px;
+            height: 300px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all .5s;
+            object-fit: cover;
+            flex-grow: 1;
 
-        .img {
+        &::part(card) {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
 
-            img {
+        &::part(img){
                 position: absolute;
             width: 100%;
             height: 100%;
@@ -84,16 +86,12 @@ section.results {
             z-index: 0;
                 object-fit: cover;
             }
-            
+
+        &::part(overlay):hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65));
         }
 
-        &:hover {
-            .overlay {
-                background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65));
-            }
-        }
-
-        .overlay {
+        &::part(overlay) {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -101,17 +99,7 @@ section.results {
             z-index: 10;
         }
 
-        // &:hover {
-        //     background: linear-gradient(
-        //     rgba(0, 0, 0, 0.3), 
-        //     rgba(0, 0, 0, 0.65)
-        //   ), url("/assets/images/yetanothertest.jpg");
-        //   background-repeat: no-repeat;
-        //     background-size: cover;
-        //     transition: all .5s;
-        // }
-
-        .card-text {
+        &::part(card-text) {
             z-index: 1000;
             // background-color: red;
             height: 100%;
@@ -120,33 +108,26 @@ section.results {
             flex-direction: column;
             justify-content: flex-end;
             padding: 1rem;
-            // p {
-            //     font-size: 0.8rem;
-            //     text-align: center;
-            //     margin: 1rem;
-               
-            // }
+        }
 
-            h1.img-title{
-                font-size: 1.4rem;
-                font-weight: 600;
-                z-index: 1000;
-            }
+        &::part(img-title){
+            font-size: 1.4rem;
+            font-weight: 600;
+            z-index: 1000;
+        }
 
-            p.img-desc, p.img-price {
-                font-size: 0.85rem;
-                font-weight: 400;
-                opacity: 0.7;
-                z-index: 1000;
-            }
-            p.img-price {
-                margin-top: 1px;
-                font-size: 0.8rem;
-            }
+        &::part(img-desc), &::part(img-price) {
+            font-size: 0.85rem;
+            font-weight: 400;
+            opacity: 0.7;
+            z-index: 1000;
+        }
+        &::part(img-price) {
+            margin-top: 1px;
+            font-size: 0.8rem;
         }
     }
 }
-
 
 
 section.results::-webkit-scrollbar {

@@ -56,7 +56,7 @@ section.results {
   margin-top: 25px;
   flex-wrap: wrap;
 }
-section.results div.card {
+section.results .irs {
   background-color: #2D3F4A;
   width: 425px;
   border-radius: 10px;
@@ -72,7 +72,12 @@ section.results div.card {
      object-fit: cover;
   flex-grow: 1;
 }
-section.results div.card .img img {
+section.results .irs::part(card) {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+section.results .irs::part(img) {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -81,17 +86,17 @@ section.results div.card .img img {
   z-index: 0;
   object-fit: cover;
 }
-section.results div.card:hover .overlay {
+section.results .irs::part(overlay):hover {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65));
 }
-section.results div.card .overlay {
+section.results .irs::part(overlay) {
   position: absolute;
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
   z-index: 10;
 }
-section.results div.card .card-text {
+section.results .irs::part(card-text) {
   z-index: 1000;
   height: 100%;
   display: flex;
@@ -100,18 +105,18 @@ section.results div.card .card-text {
   justify-content: flex-end;
   padding: 1rem;
 }
-section.results div.card .card-text h1.img-title {
+section.results .irs::part(img-title) {
   font-size: 1.4rem;
   font-weight: 600;
   z-index: 1000;
 }
-section.results div.card .card-text p.img-desc, section.results div.card .card-text p.img-price {
+section.results .irs::part(img-desc), section.results .irs::part(img-price) {
   font-size: 0.85rem;
   font-weight: 400;
   opacity: 0.7;
   z-index: 1000;
 }
-section.results div.card .card-text p.img-price {
+section.results .irs::part(img-price) {
   margin-top: 1px;
   font-size: 0.8rem;
 }
