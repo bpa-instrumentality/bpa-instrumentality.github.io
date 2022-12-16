@@ -67,7 +67,7 @@ main.main {
   width: 100%;
   position: relative;
   align-items: center;
-  background-color: #fffdfc;
+  background-color: #fcfbfb;
 }
 main.main .main-nav {
   max-width: 1280px;
@@ -75,7 +75,6 @@ main.main .main-nav {
   width: 100%;
   margin-top: 3rem;
   padding: 0 2.5rem;
-  border-bottom: 1px solid #eff1f6;
 }
 main.main .main-nav .mnp1 {
   display: flex;
@@ -114,18 +113,22 @@ main.main .main-nav .mnp1 div i {
   font-size: 1rem;
 }
 main.main .main-nav .mnp2 {
+  border-bottom: 1px solid #eff1f6;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin: 1.5rem 0 0 0;
-  gap: 15px;
+  gap: 20px;
   position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 main.main .main-nav .mnp2 p {
   position: relative;
   cursor: pointer;
   padding: 1rem 0;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 main.main .main-nav .mnp2 p::before {
   content: "";
@@ -133,7 +136,7 @@ main.main .main-nav .mnp2 p::before {
   bottom: -3px;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 6.5px;
   background-color: #DF652B;
   opacity: 0;
   transition: all 0.2s ease;
@@ -149,6 +152,49 @@ main.main .main-nav .mnp2 .active-mnp2 {
 }
 main.main .main-nav .mnp2 .active-mnp2::before {
   opacity: 1;
+}
+main.main section.main-content {
+  width: 100%;
+  max-width: 1280px;
+  padding: 1rem 2.5rem;
+}
+main.main section.main-content .desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.8rem 0;
+  color: #282a32;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eff1f6;
+}
+main.main section.main-content .desc h1 {
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+main.main section.main-content .desc p {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  color: #6a6887;
+  margin-bottom: 2rem;
+}
+main.main section.main-content .desc button {
+  margin-bottom: 2rem;
+  width: 170px;
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid #eff1f6;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main.main section.main-content .desc button:hover {
+  border: 2px solid #DF652B;
+  color: #DF652B;
+}
+
+.mnp2::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 @media (max-width: 500px) {
@@ -172,11 +218,23 @@ main.main .main-nav .mnp2 .active-mnp2::before {
     padding: 0 0.5rem !important;
   }
 }
+@media (max-width: 465px) {
+  .desc {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+}
 @media (max-width: 362px) {
   .user-detail {
     display: none !important;
   }
   .nav-wrapper {
     justify-content: center !important;
+  }
+}
+@media (max-width: 300px) {
+  .mnp1 div input {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=dashboard.css.map */
