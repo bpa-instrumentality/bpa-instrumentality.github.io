@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #282a32;
+  display: flex;
+  flex-direction: column;
+}
+
+header.top-nav {
+  width: 100%;
+  max-height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eff1f6;
+  flex: 1 1 auto;
+}
+header.top-nav .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 100%;
+  padding: 0 2rem;
+}
+header.top-nav .nav-wrapper img {
+  width: 225px;
+  height: auto;
+  cursor: pointer;
+}
+header.top-nav .nav-wrapper .user-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+}
+header.top-nav .nav-wrapper .user-detail:hover {
+  background: #fef6ec;
+  color: #DF652B;
+}
+
+main.main {
+  flex: 1 1 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  background-color: #fffdfc;
+}
+main.main .main-nav {
+  max-width: 1280px;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+}
+main.main .main-nav .mnp1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2.5rem;
+}
+main.main .main-nav .mnp1 h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+main.main .main-nav .mnp1 div {
+  position: relative;
+  color: #404089;
+}
+main.main .main-nav .mnp1 div:hover i, main.main .main-nav .mnp1 div:focus i {
+  color: #DF652B;
+}
+main.main .main-nav .mnp1 div input {
+  padding: 0.4rem 2.3rem;
+  max-width: 300px;
+  width: 300px;
+  border-radius: 6px;
+  border: 2px solid #eff1f6;
+  transition: all 0.4s ease;
+  font-size: 0.95rem;
+}
+main.main .main-nav .mnp1 div input:focus, main.main .main-nav .mnp1 div input:hover {
+  outline: none;
+  border: 2px solid #DF652B;
+}
+main.main .main-nav .mnp1 div i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}/*# sourceMappingURL=dashboard.css.map */
