@@ -74,13 +74,14 @@ main.main .main-nav {
   position: relative;
   width: 100%;
   margin-top: 3rem;
+  padding: 0 2.5rem;
+  border-bottom: 1px solid #eff1f6;
 }
 main.main .main-nav .mnp1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 2.5rem;
 }
 main.main .main-nav .mnp1 h1 {
   font-weight: 600;
@@ -88,13 +89,12 @@ main.main .main-nav .mnp1 h1 {
 }
 main.main .main-nav .mnp1 div {
   position: relative;
-  color: #404089;
 }
 main.main .main-nav .mnp1 div:hover i, main.main .main-nav .mnp1 div:focus i {
   color: #DF652B;
 }
 main.main .main-nav .mnp1 div input {
-  padding: 0.4rem 2.3rem;
+  padding: 0.4rem 2.4rem;
   max-width: 300px;
   width: 300px;
   border-radius: 6px;
@@ -112,4 +112,71 @@ main.main .main-nav .mnp1 div i {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1rem;
+}
+main.main .main-nav .mnp2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5rem 0 0 0;
+  gap: 15px;
+  position: relative;
+}
+main.main .main-nav .mnp2 p {
+  position: relative;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: all 0.2s ease;
+}
+main.main .main-nav .mnp2 p::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #DF652B;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+main.main .main-nav .mnp2 p:hover::before {
+  opacity: 1;
+}
+main.main .main-nav .mnp2 p:hover {
+  color: #DF652B;
+}
+main.main .main-nav .mnp2 .active-mnp2 {
+  color: red;
+}
+main.main .main-nav .mnp2 .active-mnp2::before {
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  main.main .main-nav {
+    margin-top: 1rem !important;
+  }
+  main.main .main-nav .mnp1 {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  main.main .main-nav .mnp2 {
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+}
+@media (max-width: 432px) {
+  main.main .main-nav {
+    padding: 0 0.5rem !important;
+  }
+  .nav-wrapper {
+    padding: 0 0.5rem !important;
+  }
+}
+@media (max-width: 362px) {
+  .user-detail {
+    display: none !important;
+  }
+  .nav-wrapper {
+    justify-content: center !important;
+  }
 }/*# sourceMappingURL=dashboard.css.map */

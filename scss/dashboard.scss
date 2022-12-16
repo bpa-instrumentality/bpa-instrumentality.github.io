@@ -84,6 +84,8 @@ main.main {
         position: relative;
         width: 100%;
         margin-top: 3rem;
+        padding: 0 2.5rem;
+        border-bottom: 1px solid #eff1f6;
 
         .mnp1 {
             display: flex;
@@ -91,7 +93,6 @@ main.main {
             justify-content: space-between;
             width: 100%;
             // background-color: blue;
-            padding: 0 2.5rem;
 
 
             h1 {
@@ -101,12 +102,11 @@ main.main {
 
             div {
                 position: relative;
-                color: #404089;
                 &:hover i, &:focus i {
                     color: $primary-orange;
                 }
                 input {
-                    padding: 0.4rem 2.3rem;
+                    padding: 0.4rem 2.4rem;
                     max-width: 300px;
                     width: 300px;
                     border-radius: 6px;
@@ -129,5 +129,87 @@ main.main {
                 }
             }
         }
+
+        .mnp2 {
+            display: flex;
+            align-items: center;justify-content: flex-start;
+            margin: 1.5rem 0 0 0;
+            gap: 15px;
+            position: relative;
+            
+
+            p {
+                position: relative;
+                cursor: pointer;
+                padding: 1rem 0;
+                transition: all .2s ease;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    width: 100%;
+                    height: 5px;
+                    background-color: $primary-orange;
+                    opacity: 0;
+                    transition: all .2s ease;
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    color: $primary-orange;
+                }
+            }
+
+            .active-mnp2 {
+                color: red;
+                &::before {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media(max-width: 500px) {
+    main.main {
+        .main-nav {
+            margin-top: 1rem !important;
+            .mnp1 {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+            .mnp2 {
+                justify-content:space-between !important;
+                gap: 10px !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 432px) {
+    main.main {
+        .main-nav {
+            padding: 0 .5rem !important;
+        }
+    }
+
+    .nav-wrapper {
+        padding: 0 .5rem !important;
+    }
+}
+
+@media (max-width: 362px) {
+    .user-detail {
+        display: none !important;
+    }
+
+    .nav-wrapper {
+        justify-content: center !important;
     }
 }
