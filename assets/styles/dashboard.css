@@ -193,6 +193,7 @@ main.main section.main-content .desc button {
   background-color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #33312f;
 }
 main.main section.main-content .desc button:hover {
   border: 2px solid #DF652B;
@@ -227,13 +228,71 @@ main.main section.main-content .content .filters button.filter-active {
   background-color: #fef6ec;
   color: #DF652B;
 }
+main.main section.main-content .content .billing-res {
+  flex-direction: row !important;
+  display: flex !important;
+  gap: 15px;
+}
 main.main section.main-content .content .results {
   color: rgb(80, 75, 72);
   flex: 1 1 auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 0rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main.main section.main-content .content .results a {
+  text-decoration: none;
+  color: #DF652B;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main.main section.main-content .content .results a:hover {
+  text-decoration: underline;
+}
+main.main section.main-content .content .results input {
+  max-width: 200px;
+  width: 100%;
+  min-width: 5px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  border: none;
+}
+main.main section.main-content .content .results input:disabled {
+  cursor: pointer;
+  border: 1px solid rgb(180, 180, 180);
+}
+main.main section.main-content .content .results .billing-card {
+  padding: 1rem;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #DF652B;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+main.main section.main-content .content .results .billing-card h1 {
+  margin: 0.5rem 0;
+}
+main.main section.main-content .content .results .billing-card p {
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+main.main section.main-content .content .results .billing-card .bill-type {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
 }
 
 .mnp2::-webkit-scrollbar {
@@ -269,6 +328,12 @@ main.main section.main-content .content .results {
     text-align: center;
     row-gap: 20px;
   }
+  .results {
+    text-align: center !important;
+  }
+  .results a {
+    width: 100% !important;
+  }
 }
 @media (max-width: 465px) {
   .desc {
@@ -285,8 +350,13 @@ main.main section.main-content .content .results {
     justify-content: center !important;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 310px) {
   .mnp1 div input {
     width: 100% !important;
+  }
+}
+@media (max-width: 846px) {
+  .content #billing-res {
+    flex-direction: column !important;
   }
 }/*# sourceMappingURL=dashboard.css.map */

@@ -218,6 +218,7 @@ main.main {
                 background-color: $white;
                 cursor: pointer;
                 transition: all .3s ease;
+                color: #33312f;
 
                 &:hover {
                     border: 2px solid $primary-orange;
@@ -259,12 +260,77 @@ main.main {
                 }
             }
 
+            .billing-res {
+                flex-direction: row !important;
+                display: flex !important;
+                gap: 15px;
+            }
+
             .results {
                 color: rgb(80, 75, 72);
                 // background-color: red;
                 flex: 1 1 auto;
                 height: fit-content;
-                padding: 0.5rem 3rem;
+                padding: 0.5rem 0rem 0 3rem;
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                width: fit-content;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-orange;
+                    width: fit-content;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                input{    
+                    max-width: 200px;
+                    width: 100%;
+                    min-width: 5px;
+                    overflow-y: hidden;
+                    overflow-x: auto;
+                    padding: .3rem .6rem;
+                    border-radius: 3px;
+                    border: none;
+                    
+
+                    &:disabled {
+                        cursor: pointer;
+                        border: 1px solid rgb(180, 180, 180);
+                    }
+                }
+
+                .billing-card {
+                    padding: 1rem;
+                    flex-grow: 1;
+                    // max-width: 100px !important;
+                    background-color: $white;
+                    border-radius: 5px;
+                    border: 2px solid $primary-orange;
+                    position: relative;
+                    text-align: center;
+                    cursor: pointer;
+
+                    h1 {
+                        margin: .5rem 0;
+                    }
+
+                    p {
+                        margin: .3rem 0;
+                        font-size: 0.8rem;
+                        margin-top: 0.5rem;
+                    }
+
+                    .bill-type {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        margin: .5rem 0;
+                    }
+
+                }
             }
         }
     }
@@ -310,6 +376,14 @@ main.main {
         text-align: center;
         row-gap: 20px;
     }
+
+    .results {
+        text-align: center !important;
+
+        a {
+            width: 100% !important;
+        }
+    }
 }
 
 @media(max-width: 465px) {
@@ -330,12 +404,20 @@ main.main {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 310px) {
     .mnp1 {
         div {
             input {
                 width: 100% !important;
             }
+        }
+    }
+}
+
+@media (max-width: 846px) {
+    .content {
+        #billing-res {
+            flex-direction: column !important;
         }
     }
 }

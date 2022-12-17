@@ -29,7 +29,6 @@
             <div class="mnp2">
                 <p class="tabSelect" id="instruments">My Instruments</p>
                 <p class="tabSelect" id="details">My Details</p>
-                <p class="tabSelect" id="security">Security</p>
                 <p class="tabSelect" id="billing">Billing</p>
                 <p class="tabSelect" id="notifications">Notifications</p>
             </div>
@@ -67,9 +66,37 @@
                         <button>Contact Info</button>
                     </div>
                     <div class="results">
-                        <p>Username: [Username]</p>
-                        <p>Password: [password]</p>
-                        <p>This part is unfinished</p>
+                       <a href="#">Edit</a>
+                       <p>Email: </p>
+                       <input type="text" disabled placeholder="example.email@mail.com" class="accInfoBtn">
+                       <p>Password: </p>
+                       <input type="password" disabled class="accInfoBtn" value="testpass">
+                    </div>
+                </div>
+            </div>
+            <div class="tab billing">
+                <div class="desc">
+                    <div>
+                        <h1>Billing</h1>
+                        <p>View your transactions and billing cycles</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="filters">
+                        <button class="filter-active">Billing Cycles</button>
+                        <button>Payment History</button>
+                    </div>
+                    <div class="results billing-res" id="billing-res">
+                        <div class="billing-card">
+                            <h1>$18 per month</h1>
+                            <p class="bill-type">Eastman Violin</p>
+                            <p>Payment due in 12 days</p>
+                        </div>
+                        <div class="billing-card">
+                            <h1>$18 per month</h1>
+                            <p class="bill-type">Eastman Violin</p>
+                            <p>Payment due in 12 days</p>
+                        </div>
                     </div>
                 </div>
             </div>
