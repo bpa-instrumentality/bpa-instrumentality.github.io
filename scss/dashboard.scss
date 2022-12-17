@@ -22,6 +22,7 @@ body {
 header.top-nav {
     width: 100%;
     max-height: 75px;
+    min-height: 65px;
     // background-color: red;
     position: relative;
     display: flex;
@@ -134,7 +135,7 @@ main.main {
             display: flex;
             align-items: center;justify-content: flex-start;
             margin: 1.5rem 0 0 0;
-            gap: 20px;
+            gap: 25px;
             position: relative;
             overflow-x: auto;
             overflow-y: hidden;
@@ -183,6 +184,14 @@ main.main {
         max-width: 1280px;
         padding: 1rem 2.5rem;
 
+        .tab {
+            display: none;
+        }
+
+        .shown {
+            display: block;
+        }
+
         .desc {
             display: flex;
             align-items: center;
@@ -217,6 +226,47 @@ main.main {
             }
             border-bottom: 1px solid #eff1f6;
         }
+
+        .content {
+            display: flex;
+
+            .filters {
+                display: flex;
+                flex-direction: column;
+                row-gap: 7px;
+
+                button {
+                    text-align: left;
+                    padding: 0.6rem 0.9rem;
+                    width: 200px;
+                    cursor: pointer;
+                    background: none;
+                    border-radius: 7px;
+                    border: none;
+                    font-size: 0.96rem;
+                    font-weight: 500;
+                    color: rgb(43, 42, 41);
+                    transition: all .3s ease;
+
+                    &:hover {
+                        background-color: #fef6ec;
+                    color: $primary-orange;
+                    }
+                }
+                button.filter-active {
+                    background-color: #fef6ec;
+                    color: $primary-orange;
+                }
+            }
+
+            .results {
+                color: rgb(80, 75, 72);
+                // background-color: red;
+                flex: 1 1 auto;
+                height: fit-content;
+                padding: 0.5rem 3rem;
+            }
+        }
     }
 }
 
@@ -250,6 +300,15 @@ main.main {
 
     .nav-wrapper {
         padding: 0 .5rem !important;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
     }
 }
 

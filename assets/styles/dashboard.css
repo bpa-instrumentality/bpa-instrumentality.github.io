@@ -22,6 +22,7 @@ body {
 header.top-nav {
   width: 100%;
   max-height: 75px;
+  min-height: 65px;
   position: relative;
   display: flex;
   align-items: center;
@@ -118,7 +119,7 @@ main.main .main-nav .mnp2 {
   align-items: center;
   justify-content: flex-start;
   margin: 1.5rem 0 0 0;
-  gap: 20px;
+  gap: 25px;
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
@@ -158,6 +159,12 @@ main.main section.main-content {
   max-width: 1280px;
   padding: 1rem 2.5rem;
 }
+main.main section.main-content .tab {
+  display: none;
+}
+main.main section.main-content .shown {
+  display: block;
+}
 main.main section.main-content .desc {
   display: flex;
   align-items: center;
@@ -191,6 +198,43 @@ main.main section.main-content .desc button:hover {
   border: 2px solid #DF652B;
   color: #DF652B;
 }
+main.main section.main-content .content {
+  display: flex;
+}
+main.main section.main-content .content .filters {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+main.main section.main-content .content .filters button {
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  width: 200px;
+  cursor: pointer;
+  background: none;
+  border-radius: 7px;
+  border: none;
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: rgb(43, 42, 41);
+  transition: all 0.3s ease;
+}
+main.main section.main-content .content .filters button:hover {
+  background-color: #fef6ec;
+  color: #DF652B;
+}
+main.main section.main-content .content .filters button.filter-active {
+  background-color: #fef6ec;
+  color: #DF652B;
+}
+main.main section.main-content .content .results {
+  color: rgb(80, 75, 72);
+  flex: 1 1 auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5rem 3rem;
+}
 
 .mnp2::-webkit-scrollbar {
   width: 0;
@@ -216,6 +260,14 @@ main.main section.main-content .desc button:hover {
   }
   .nav-wrapper {
     padding: 0 0.5rem !important;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
   }
 }
 @media (max-width: 465px) {

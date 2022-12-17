@@ -27,15 +27,15 @@
                 </div>
             </div>
             <div class="mnp2">
-                <p class="active-mnp2">Instruments</p>
-                <p>My Details</p>
-                <p>Security</p>
-                <p>Billing</p>
-                <p>Notification</p>
+                <p class="tabSelect" id="instruments">My Instruments</p>
+                <p class="tabSelect" id="details">My Details</p>
+                <p class="tabSelect" id="security">Security</p>
+                <p class="tabSelect" id="billing">Billing</p>
+                <p class="tabSelect" id="notifications">Notifications</p>
             </div>
         </section>
         <section class="main-content">
-            <div class="instruments">
+            <div class="tab instruments">
                 <div class="desc">
                     <div>
                         <h1>Instruments</h1>
@@ -43,8 +43,40 @@
                     </div>
                     <button><i class="fa-solid fa-plus"></i> Rent Instruments</button>
                 </div>
+                <div class="content">
+                    <div class="filters">
+                        <button class="filter-active">View All</button>
+                        <button>Currently Renting</button>
+                        <button>Previously Rented</button>
+                    </div>
+                    <div class="results">
+                        You have not rented any instruments.
+                    </div>
+                </div>
+            </div>
+            <div class="tab details">
+                <div class="desc">
+                    <div>
+                        <h1>Account Details</h1>
+                        <p>View your account details</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="filters">
+                        <button class="filter-active">Account Info</button>
+                        <button>Contact Info</button>
+                    </div>
+                    <div class="results">
+                        <p>Username: [Username]</p>
+                        <p>Password: [password]</p>
+                        <p>This part is unfinished</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+
+    <script src="/javascript/dashboard.js"></script>
 </body>
 </html>
