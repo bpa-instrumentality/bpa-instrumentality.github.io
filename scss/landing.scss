@@ -185,7 +185,10 @@ div.bg-blur {
                 font-size: 2.3rem;
                 margin: 100px 0 75px 0;
                 transition: all .3s;
+                
             }
+
+            
 
             p{
                 font-size: 1.3rem;
@@ -211,7 +214,7 @@ div.bg-blur {
                 #btn1{
                     background: $primary-orange;
                     margin-top: 40px;
-                    transition: all .5s;
+                    transition: all .5s ease;
 
                     &:hover{
                         background-color: $primary-orange-hover;
@@ -219,7 +222,7 @@ div.bg-blur {
                 }
                 #btn2{
                     background: $primary-blue;
-                    transition: all 1s;
+                    transition: all 1s ease;
 
                     &:hover{
                         background-color: $primary-blue-hover;

@@ -218,14 +218,14 @@ div.bg-blur {
 .hero__section .hero__content .hero__text .hero__btns #btn1 {
   background: #DF652B;
   margin-top: 40px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 .hero__section .hero__content .hero__text .hero__btns #btn1:hover {
   background-color: #a34b21;
 }
 .hero__section .hero__content .hero__text .hero__btns #btn2 {
   background: #009687;
-  transition: all 1s;
+  transition: all 1s ease;
 }
 .hero__section .hero__content .hero__text .hero__btns #btn2:hover {
   background-color: #027468;

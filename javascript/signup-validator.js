@@ -36,7 +36,7 @@ function validateSignup() {
                     submitBtn.style.transition = "background 1s"
 
                     setTimeout(() => {
-                        window.location.replace('./index.html')
+                        window.location.replace('./dashboard.html')
                     }, 1500)
 
                 }, Math.floor(Math.random() * 500) + 1500)
