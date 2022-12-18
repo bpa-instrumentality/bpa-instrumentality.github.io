@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instrumentality | Login</title>
     <link rel="stylesheet" href="/assets/styles/login.css">
+    <title>Instrumentality | Login</title>
 </head>
 <body>
-    <main class="signup__card">
-        <h2 id="main__heading">Log<span>in</span></h2>
-        <div class="signup__form">
-            <form>
-                <div class="input_field_wrapper">
-                    <input type="email" placeholder="Enter Email" id="emailInput">
-                    <p id="emailError">This field cannot be empty</p>
-                </div>
-                <div class="input_field_wrapper">
-                    <input type="password" placeholder="Enter Password" id="passInput">
-                    <p id="passError">This field cannot be empty</p>
-                    <i class="fa-regular fa-eye opt" id="showPass"></i>
-                    <i class="fa-regular fa-eye-slash opt" id="hidePass"></i>
-                </div>
-                <div class="button_field_wrapper">
-                    <button id="submitBtn" type="button" onclick="validateSignup()"><div class="loader" id="loader"></div><span id="submitTxt">Log in</span></button>
-                    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-                </div>
-            </form>
-            <div class="divider"></div>
-            <div class="other__options">
-                <div class="option__wrapper">
-                    <button id="google" onclick="window.location.replace('https://google.com')"><i class="fa-brands fa-google"></i>  <p>Login with Google</p> </button>
-                </div>
-                <div class="option__wrapper">
-                    <button id="facebook" onclick="window.location.replace('https://facebook.com')"><i class="fa-brands fa-facebook-f"></i>Login with Facebook</button>
-                </div>
+    <section class="img-section section"></section>
+    <section class="form section">
+        <div class="box">
+            <img src="/assets/images/logo-favicon.svg" alt="instrumentality-favicon" class="logo-fav">
+            <h1 class="prompt" id="propmt">Login to <span>Instru<span>mentality</span></span></h1>
+            <p class="desc">Resume your journey at Instrumentality by logging in</p>
+            <!-- <p class="label">Email</p> -->
+            <div class="input-field" style="margin-top: 2rem;">
+                <input type="email" placeholder="Enter Email">
+                <div class="underline"></div>
             </div>
+            <div class="input-field" style="margin-top: 2rem;">
+                <input type="password" placeholder="Enter Password">
+                <div class="underline"></div>
+            </div>
+            <p class="alternate">Don't have an account? <a href="signup.html">Signup</a> or <a href="index.html">Go Home</a></p>
+            <button>Log In</button>
+
         </div>
-</main>
+    </section>
+    
 </body>
 </html>
