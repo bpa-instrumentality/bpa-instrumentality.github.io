@@ -27,6 +27,9 @@ body{
     background-color: none;
     width: 100%;
     z-index: 1000;
+    max-width: 1900px;
+    left: 50%;
+    transform: translateX(-50%);
 
     .nav__logo{
         cursor: pointer;
@@ -132,6 +135,10 @@ div.bg-blur {
 
 .hero__section{
     height: 100vh;
+    max-height: 1240px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
 
     &::after {
