@@ -16,23 +16,33 @@
             <p class="desc">Begin your journey at Instrumentality by signing up</p>
             <!-- <p class="label">Email</p> -->
             <div class="input-field" style="margin-top: 2rem;">
-                <input type="email" placeholder="Enter Email">
+                <input type="email" placeholder="Enter Email" id="email" onfocus="resetErrors()">
                 <div class="underline"></div>
             </div>
             <div class="input-field" style="margin-top: 2rem;">
-                <input type="password" placeholder="Create Password">
+                <input type="password" placeholder="Create Password" id="password" onfocus="resetErrors()">
                 <div class="underline"></div>
             </div>
             <div class="input-field" style="margin-top: 2rem;">
-                <input type="password" placeholder="Confirm Password">
+                <input type="password" placeholder="Confirm Password" id="confirm-password" onfocus="resetErrors()">
                 <div class="underline"></div>
             </div>
             <p class="alternate">Already have an account? <a href="login.html">Login</a> or <a href="index.html">Go Home</a></p>
-            <button>Sign Up</button>
+            <button onclick="validate()">Sign Up</button>
+            <p class="error" id="emailerror1">Email cannot be empty</p>
+            <p class="error" id="emailerror2">Email is linked to another account</p>
+            <p class="error" id="passerror1">Password fields cannot be empty</p>
+            <p class="error" id="passerror2">Passwords dont match</p>
 
         </div>
     </section>
     <section class="img-section section"></section>
-    
+    <script>
+        if (localStorage.getItem('session')) {
+        window.location.replace('./dashboard.html')
+    }
+    </script>
+    <script src="/javascript/accounts.js"></script>
+    <script src="/javascript/signup-validator.js"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
-localStorage.clear()
-
 if (!localStorage.getItem('users')) {
     usersData = {
+        "usersData": []
     }
     localStorage.setItem('users', JSON.stringify(usersData));
 }
@@ -15,8 +14,8 @@ if ((currFile == "dashboard.html") || (currFile == "instrumentresults.html")){
     }
 }
 
-if ((currFile == "login.html") || (currFile = "signup.html")) {
-    if (localStorage.getItem('session')) {
-        window.location.replace('./dashboard.html')
-    }
-}
+// if ((currFile == "login.html") || (currFile = "signup.html")) {
+//     if (localStorage.getItem('session')) {
+//         window.location.replace('./dashboard.html')
+//     }
+// }

@@ -12,7 +12,7 @@
     <header class="top-nav">
         <div class="nav-wrapper">
             <img src="/assets/images/BlackLogo 1.png" alt="logo">
-            <div class="user-detail"><i class="fa-solid fa-user"></i>
+            <div class="user-detail" onclick="localStorage.removeItem('session'); window.location.replace('./login.html');"><i class="fa-solid fa-user"></i>
             <p>Rohit K.</p></div>
         </div>
     </header>
@@ -105,5 +105,6 @@
 
 
     <script src="/javascript/dashboard.js"></script>
+    <script src="/javascript/accounts.js"></script>
 </body>
 </html>

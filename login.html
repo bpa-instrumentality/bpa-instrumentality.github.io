@@ -16,18 +16,29 @@
             <p class="desc">Resume your journey at Instrumentality by logging in</p>
             <!-- <p class="label">Email</p> -->
             <div class="input-field" style="margin-top: 2rem;">
-                <input type="email" placeholder="Enter Email">
+                <input type="email" placeholder="Enter Email" id="email" onfocus="resetErrors()">
                 <div class="underline"></div>
             </div>
             <div class="input-field" style="margin-top: 2rem;">
-                <input type="password" placeholder="Enter Password">
+                <input type="password" placeholder="Enter Password" id="password" onfocus="resetErrors()">
                 <div class="underline"></div>
             </div>
             <p class="alternate">Don't have an account? <a href="signup.html">Signup</a> or <a href="index.html">Go Home</a></p>
-            <button>Log In</button>
+            <button onclick="validate()">Log In</button>
+            <p class="error" id="emailerror1">Email cannot be empty</p>
+            <p class="error" id="passerror1">Password field cannot be empty</p>
+            <p class="error" id="passerror2">Passwords is incorrect</p>
 
         </div>
     </section>
+
+    <script>
+        if (localStorage.getItem('session')) {
+        window.location.replace('./dashboard.html')
+    }
+    </script>
     
+    <script src="/javascript/accounts.js"></script>
+    <script src="/javascript/login-validator.js"></script>
 </body>
 </html>

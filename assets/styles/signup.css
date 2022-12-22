@@ -26,6 +26,16 @@ body {
   height: 100%;
 }
 
+.active-error {
+  display: block !important;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
 .form {
   flex: 1 1 auto;
   display: flex;
@@ -113,7 +123,7 @@ body {
 }
 .form div.box button {
   width: 100%;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
   height: 50px;
   border-radius: 4px;
   border: none;
