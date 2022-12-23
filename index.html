@@ -18,17 +18,17 @@
     <!-- Home Screen: HERO + TOP NAVBAR -->
     <section class="homedisplay__section">
         <!-- NAVBAR -->
-        <header class="navbarmain">
+        <header class="navbarmain" id="navbarmain">
             <div class="nav__logo">
                 <!-- <h1>Instru<span>mentality</span></h1> -->
-                <img src="/assets/images/logo.png" alt="logo" style="width: 250px;">
+                <a href="#"><img src="/assets/images/logo.png" alt="logo" style="width: 250px;"></a>
             </div>
             <nav>
                 <ul class="nav__links">
                     <li><a href="#browse" class="nav__link">Instruments</a></li>
                     <li><a href="#help" class="nav__link">Help</a></li>
                     <li><a href="#faq" class="nav__link">FAQ</a></li>
-                    <li id="optionallink1"><a href="#" class="nav__link">Reviews</a></li>
+                    <li id="optionallink1"><a href="#reviews" class="nav__link">Reviews</a></li>
                 </ul>
             </nav>
             <div class="loginsignup">
@@ -78,8 +78,8 @@
                         so they can further follow their dreams and passions as a musician, without the hefty
                     price tag. </p>
                     <div class="hero__btns">
-                        <a href="#"><button id="btn1">Get Started</button></a>
-                        <a href="#" ><button id="btn2">Browse Instruments</button></a>
+                        <a href="signup.html"><button id="btn1">Get Started</button></a>
+                        <a href="#browse" ><button id="btn2">Browse Instruments</button></a>
                     </div>
                 </div>
             </div>
@@ -340,8 +340,9 @@
                     <h2 class="footer-title">Useful Links</h2>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="signup.html">Signup</a></li>
-                    <li><a href="#">Finder Tool</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Finder Tool</a>
+                    </li>
+                    <!-- <li><a href="#">Pricing</a></li> -->
                 </div>
             </div>
         </div>
@@ -362,6 +363,19 @@
     <script src="/javascript/accounts.js"></script>
     <script>
         feather.replace()
+      </script>
+      <script>
+      window.onscroll = function() {checkScroll()};
+
+      function checkScroll() {
+        let navbar = document.getElementById('navbarmain');
+        if (document.documentElement.scrollTop > 75) {
+            navbar.style.background = "#1b242b"
+        }
+        else {
+            navbar.style.background = "none"
+        }
+      }
       </script>
       <script src="/javascript/signup-modal.js"></script>
 </body>

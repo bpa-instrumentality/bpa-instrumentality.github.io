@@ -11,9 +11,15 @@
 <body>
     <header class="top-nav">
         <div class="nav-wrapper">
-            <img src="/assets/images/BlackLogo 1.png" alt="logo">
-            <div class="user-detail" onclick="localStorage.removeItem('session'); window.location.replace('./login.html');"><i class="fa-solid fa-user"></i>
-            <p>Rohit K.</p></div>
+            <a href="index.html"><img src="/assets/images/BlackLogo 1.png" alt="logo" id="logo"></a>
+            <div class="user-detail">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px"><i class="fa-solid fa-user"></i>
+                    <p id="email">BLANK</p></div>
+
+                    <div class="logout" onclick="localStorage.removeItem('session'); window.location.replace('./login.html');">
+                        <p><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</p>
+                    </div>
+        </div>
         </div>
     </header>
 
@@ -106,5 +112,8 @@
 
     <script src="/javascript/dashboard.js"></script>
     <script src="/javascript/accounts.js"></script>
+    <script>
+        document.getElementById('email').textContent = JSON.parse(localStorage.getItem('session')).email;
+    </script>
 </body>
 </html>

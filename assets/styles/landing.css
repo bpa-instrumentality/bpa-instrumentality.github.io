@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   background-color: #2D3F4A;
   color: white;
+  height: 100% !important;
 }
 
 .navbarmain {
@@ -21,13 +22,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
-  position: absolute;
-  background-color: none;
+  position: fixed;
+  background: none;
   width: 100%;
   z-index: 1000;
-  max-width: 1900px;
   left: 50%;
   transform: translateX(-50%);
+  transition: background 0.3s ease;
 }
 .navbarmain .nav__logo {
   cursor: pointer;
@@ -61,10 +62,11 @@ body {
   width: 0;
   height: 4px;
   background-color: #009687;
-  transition: all 0.5s;
+  transition: all 0.25s ease;
 }
 .navbarmain .nav__links li .nav__link:hover::after {
   width: 100%;
+  transition: all 0.5s;
 }
 .navbarmain .loginsignup button {
   padding: 9px 17px;
@@ -93,10 +95,11 @@ body {
   width: 0;
   height: 4px;
   background-color: #009687;
-  transition: all 0.5s;
+  transition: all 0.25s ease;
 }
 .navbarmain .loginsignup .loginlink:hover::after {
   width: 100%;
+  transition: all 0.5s;
 }
 .navbarmain .hamburger-icons {
   display: none;
@@ -148,7 +151,7 @@ div.bg-blur {
 }
 
 .hero__section {
-  height: 100vh;
+  height: calc(100vh + 1px);
   max-height: 1240px;
   position: relative;
   left: 50%;
@@ -693,7 +696,7 @@ div.signup-popup {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
-  z-index: 450;
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -912,7 +915,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
   }
   .navbarmain {
-    background-color: #1b242b;
+    background-color: #1b242b !important;
     position: fixed;
   }
   .navbarmain .loginsignup {

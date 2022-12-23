@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     background-color: $primary-bg-blue;
     color: white;
+    height: 100% !important;
 }
 
 .navbarmain{
@@ -23,13 +24,13 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    position: absolute;
-    background-color: none;
+    position: fixed;
+    background: none;
     width: 100%;
     z-index: 1000;
-    max-width: 1900px;
     left: 50%;
     transform: translateX(-50%);
+    transition: background .3s ease;
 
     .nav__logo{
         cursor: pointer;
@@ -134,7 +135,7 @@ div.bg-blur {
 }
 
 .hero__section{
-    height: 100vh;
+    height: calc(100vh + 1px);
     max-height: 1240px;
     position: relative;
     left: 50%;
@@ -933,7 +934,7 @@ body::-webkit-scrollbar-track {
         display: flex;
     }
     .navbarmain {
-        background-color: $mobile-menu-bg;
+        background-color: $mobile-menu-bg !important;
         position: fixed;
         .loginsignup{
             display: none;

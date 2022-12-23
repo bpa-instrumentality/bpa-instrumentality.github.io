@@ -31,6 +31,7 @@ header.top-nav {
   flex: 1 1 auto;
 }
 header.top-nav .nav-wrapper {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,15 +50,43 @@ header.top-nav .nav-wrapper .user-detail {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 15px;
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 7px;
   transition: all 0.2s ease;
+  position: relative;
+}
+header.top-nav .nav-wrapper .user-detail .logout {
+  background-color: white;
+  position: absolute;
+  top: 42px;
+  border-radius: 7px;
+  padding: 0.7rem 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100000;
+  opacity: 0;
+  color: #282a32 !important;
+  pointer-events: none;
+  border: 2px solid #fef6ec;
+}
+header.top-nav .nav-wrapper .user-detail .logout i {
+  color: #DF652B;
+  margin-right: 10px;
+}
+header.top-nav .nav-wrapper .user-detail .logout:hover {
+  background: #fef6ec;
+  color: #DF652B !important;
 }
 header.top-nav .nav-wrapper .user-detail:hover {
   background: #fef6ec;
   color: #DF652B;
+}
+header.top-nav .nav-wrapper .user-detail:hover .logout {
+  opacity: 1;
+  pointer-events: all;
 }
 
 main.main {
@@ -342,9 +371,9 @@ main.main section.main-content .content .results .billing-card .bill-type {
     text-align: center;
   }
 }
-@media (max-width: 362px) {
-  .user-detail {
-    display: none !important;
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 10px;
   }
   .nav-wrapper {
     justify-content: center !important;

@@ -29,9 +29,18 @@ function validate() {
         passError2.classList.add('active-error')
         errors += 1;
     }
+
     if (errors == 0) {
         let users = JSON.parse(localStorage.getItem('users'))
         let usersData = users.usersData;
+        let filter = usersData.filter(function(item){
+            return item.email == email;         
+        });
+        if (filter.length > 0) {
+            console.log('error! email already used')
+            emailError2.classList.add('active-error')
+            return
+        }
         let newUser = {
             "email": email,
             "password": password

@@ -24,7 +24,25 @@ function validate() {
     }
 
     if (errors == 0) {
-        let users = JSON.parse(localStorage.getItem('users')).usersData
-        
+        let users = JSON.parse(localStorage.getItem('users'))
+        let usersData = users.usersData;
+        let filter = usersData.filter(function(item){
+            return item.email == email;         
+        });
+        if (!(filter.length > 0)) {
+            passError2.classList.add('active-error')
+            return
+        }
+        if (!(filter[0].password == password)) {
+            console.log('incorrect')
+            passError2.classList.add('active-error')
+            return
+        }
+        let session = {
+            "email": email,
+            "password": password
+        }
+        localStorage.setItem('session', JSON.stringify(session))
+        window.location.replace('./dashboard.html')
     }
 }
