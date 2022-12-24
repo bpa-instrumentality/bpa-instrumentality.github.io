@@ -24,7 +24,18 @@ fetch("./instruments.json")
     .then((response) => response.json())
     .then(json => {
         let instruments = json.instruments;
-        let originalFilter = "118437"
+        let originalFilter = "118437";
         let filter = originalFilter;
-        
+        let newArr = []
+        instruments.sort((a, b) => a.filterid - b.filterid)
+        console.log(instruments)
+        instruments.sort((a, b) => {
+            if (b.filterid.toString().includes(filter)) {
+                return 1
+            }
+            else {
+                return -1
+            }
+        })
+        console.log(instruments)
     })
