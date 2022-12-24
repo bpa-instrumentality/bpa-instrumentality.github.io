@@ -18,6 +18,30 @@ body {
   height: 100% !important;
 }
 
+[data-aos-duration="500"] {
+  transition-duration: 0.5s !important;
+}
+
+[data-aos-duration="1000"] {
+  transition-duration: 1s !important;
+}
+
+[data-aos-duration="1500"] {
+  transition-duration: 1.5s !important;
+}
+
+[data-aos-duration="2000"] {
+  transition-duration: 2s !important;
+}
+
+[data-aos-duration="2500"] {
+  transition-duration: 2.5s !important;
+}
+
+[data-aos-duration="3000"] {
+  transition-duration: 3s !important;
+}
+
 .navbarmain {
   display: flex;
   justify-content: space-between;

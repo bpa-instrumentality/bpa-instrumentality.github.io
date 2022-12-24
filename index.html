@@ -13,7 +13,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-<link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
@@ -116,8 +116,8 @@
       <!-- Slides -->
       <div class="swiper-slide">
         <div class="inner-swipe-content">
-            <img src="/assets/images/ViolinSelector.svg" alt="violin" class="instrument-swipe" data-sal="slide-up" data-sal-duration="500">
-            <div class="info-card" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
+            <img src="/assets/images/ViolinSelector.svg" alt="violin" class="instrument-swipe" data-aos="fade-up">
+            <div class="info-card" data-aos="fade-up" data-aos-delay="150">
                 <h1>The <span>Violin</span></h1>
                 <p>The violin is a classical string 
                     instrument which consists of 4 strings: G, D, A, and E. The violin is a great instrument to learn playing, and helps build a strong foundation in music. Violins range from about $15 to 50$ a month, depending on the violin's size and quality. They come in a range of sizes, but the most common are the 1/4, 1/2, 3/4 and full size violins. 
@@ -163,19 +163,19 @@
     </section>
     <!-- Help / Link to the questionnaire page -->
     <section class="help" id="help">
-        <h1 data-sal="zoom-out">Having trouble finding your dream instrument?
+        <h1 data-aos="zoom-out">Having trouble finding your dream instrument?
             Don’t know what you’re looking for?</h1>
-            <h1 id="heading2" data-sal="zoom-out">Having Trouble?</h1>
-            <p data-sal="zoom-out" data-sal-delay="100">Don‘t worry. We’ve got you covered. We provide a free tool to help you 
+            <h1 id="heading2" data-aos="zoom-out">Having Trouble?</h1>
+            <p data-aos="zoom-out" data-aos-delay="150">Don‘t worry. We’ve got you covered. We provide a free tool to help you 
                 decide which instrument, model, and type fit your budget and fulfull 
                 your needs. Just answer some questions, and let us do the rest!</p>
-                <p id="paragraph2" data-sal="zoom-out" data-sal-delay="100">Don‘t worry. We’ve got you covered. Fill out our questionnaire and we will find you a perfect instrument!</p>
-                <button onclick="window.location.replace('instrumentfinder.html')" data-sal="zoom-out" data-sal-delay="200">Help me out!</button>
+                <p id="paragraph2" data-aos="zoom-out" data-aos-delay="150">Don‘t worry. We’ve got you covered. Fill out our questionnaire and we will find you a perfect instrument!</p>
+                <button onclick="window.location.replace('instrumentfinder.html')" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="500">Help me out!</button>
     </section>
     <!-- FAQ Section -->
     <section class="faq" id="faq">
-        <h1 data-sal="slide-up" data-sal-duration="300">Frequently Asked Questions</h1>
-        <div class="accordian" data-sal="zoom-out" data-sal-delay="150"> 
+        <h1 data-aos="fade-up">Frequently Asked Questions</h1>
+        <div class="accordian" data-aos="zoom-out" data-aos-delay="150"> 
             <div class="accordian-card" onclick="showContent('faq1', 'toggle1');">
                 <div class="shown-content"><p>What is an instrument?</p> 
                     <p class="faq-toggle" id="toggle1">+</p>
@@ -220,9 +220,9 @@
     </section>
     <!-- Testimonials -->
     <section class="testimonials" id="reviews">
-        <h1 class="top-review-header" data-sal="slide-up" data-sal-duration="300">Reviews From <span>Our Customers</span></h1>
+        <h1 class="top-review-header" data-aos="zoom-out">Reviews From <span>Our Customers</span></h1>
         <div class="review-row" style="margin-top: 90px" id="row1">
-            <div class="review-card" data-sal="slide-up" data-sal-duration="300" data-sal-delay="100">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="150">
                 <div class="review-header">
                     <div class="review-left">
                         <p>Fergus Sterling</p>
@@ -235,7 +235,7 @@
                     <p>“So far, I have rented 4 instruments for my children through instrumentality and using InstruMentality was a great choice for me. Using their amazing instrument finder tool, I was able to easily rent my dream instrument at a low cost price.”</p>
                 </div>
             </div>
-            <div class="review-card" data-sal="slide-up" data-sal-duration="300" data-sal-delay="100">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="150">
                 <div class="review-header">
                     <div class="review-left">
                         <p>Amita Leela</p>
@@ -250,7 +250,7 @@
             </div>
         </div>
         <div class="review-row">
-            <div class="review-card" data-sal="slide-up" data-sal-duration="300" data-sal-delay="150">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="review-header">
                     <div class="review-left">
                         <p>Juliet Kaylee</p>
@@ -263,7 +263,7 @@
                     <p>“InstruMentality had a wide variety of instruments and brands to choose from, and a great tool to decide which one to choose. I would definetely recommend!”</p>
                 </div>
             </div>
-            <div class="review-card" data-sal="slide-up" data-sal-duration="300" data-sal-delay="150">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="review-header">
                     <div class="review-left">
                         <p>Test Person</p>
@@ -278,7 +278,7 @@
             </div>
         </div>
         <div class="review-row">
-            <div class="review-card" data-sal="slide-up" data-sal-duration="300" data-sal-delay="200">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="250">
                 <div class="review-header">
                     <div class="review-left">
                         <p>Test Person</p>
@@ -291,7 +291,7 @@
                     <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, aperiam quo eos ut ipsam quidem vitae veritatis hic voluptatum minima veniam quia culpa perferendis excepturi, eius provident cum sed sint!"</p>
                 </div>
             </div>
-            <div class="review-card" data-sal="slide-up" data-sal-duration="300" data-sal-delay="200">
+            <div class="review-card" data-aos="fade-up" data-aos-delay="250">
                 <div class="review-header">
                     <div class="review-left">
                         <p>Test Person</p>
@@ -309,10 +309,10 @@
     <!-- CTA -->
     <section class="cta" id="cta">
         <div class="left">
-            <h1 data-sal="slide-up">Subscribe to our Newsletter</h1>
-            <p data-sal="slide-up" data-sal-delay="100">Enter your email and be the first one to know when prices drop!</p>
+            <h1 data-aos="zoom-in">Subscribe to our Newsletter</h1>
+            <p data-aos="zoom-in" data-aos-delay="100">Enter your email and be the first one to know when prices drop!</p>
         </div>
-        <div class="right" data-sal="slide-up" data-sal-delay="200">
+        <div class="right" data-aos="zoom-in" data-aos-delay="150">
             <input type="email" placeholder="Enter your email">
             <button>Subscribe</button>
         </div>
@@ -380,11 +380,9 @@
       }
       </script>
       <script src="/javascript/signup-modal.js"></script>
-      <script src="./node_modules/sal.js/dist/sal.js"></script>
-      <script>
-        sal({
-            once: true,
-        });
-      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>
 </html>
