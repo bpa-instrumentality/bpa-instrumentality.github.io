@@ -5,7 +5,8 @@
 // HTML RESET + Fonts/Coloring
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 *{
@@ -954,7 +955,7 @@ body::-webkit-scrollbar-track {
     .hero__section{
         .hero__img {
             #heroviolin {
-                width: 400px;
+                width: 450px;
             }
         }
     }
