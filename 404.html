@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/404.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Page Not Found | Instrumentality</title>
 </head>
 <body>
     <div>
-        <h1>404</h1>
-        <p>Uh Oh! A page does not exist here.</p>
-        <p>Let's get you where you need to be.</p>
-        <a href="index.html"><button>Go Home</button></a>
+        <h1 data-aos="fade-up">404</h1>
+        <p data-aos="fade-up" data-aos-delay="50">Uh Oh! A page does not exist here.</p>
+        <p data-aos="fade-up" data-aos-delay="100">Let's get you where you need to be.</p>
+        <div data-aos="fade-up" data-aos-delay="150">
+            <a href="index.html"><button>Go Home</button></a>
+        </div>
+        
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>
 </html>

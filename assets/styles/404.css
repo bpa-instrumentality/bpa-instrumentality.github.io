@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden !important;
 }
 body::after {
   content: "";
