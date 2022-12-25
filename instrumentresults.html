@@ -9,90 +9,16 @@
 </head>
 <body>
     <div class="header">
-        <h1>Finder <span>Results</span></h1>
-        <p>Click on an instrument card for more information!</p>
+        <h1 style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img src="/assets/images/logo-favicon.svg" alt="logo" style="width: 30px;" onclick="window.location.replace('/index.html')"> Finder <span>Results</span></h1>
+        <p>Here are the instruments that best satisfy MOST of the options that you selected! Click on an instrument card for more information!</p>
     </div>
     <section class="results" id="results">
-        <!-- <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/yetanothertest.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Eastman Violin</h1>
-                <p class="img-desc">A high quality advanced instrument</p>
-                <p class="img-price">$19 per month</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/guitarCard1.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Rickenbacker Guitar</h1>
-                <p class="img-desc">A wonderful instrument for beginners</p>
-                <p class="img-price">$6 per month</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/saxPic1.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Jean Paul USA AS-400</h1>
-                <p class="img-desc">Great for intermediate level musicians</p>
-                <p class="img-price">$13 per month</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/yetanothertest.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Eastman Violin</h1>
-                <p class="img-desc">A high quality advanced instrument</p>
-                <p class="img-price">$19 per month</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/guitarCard1.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Rickenbacker Guitar</h1>
-                <p class="img-desc">A wonderful instrument for beginners</p>
-                <p class="img-price">$6 per month</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/saxPic1.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Jean Paul USA AS-400</h1>
-                <p class="img-desc">Great for intermediate level musicians</p>
-                <p class="img-price">$13 per month</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="overlay"></div>
-            <div class="img"><img src="/assets/images/saxPic1.jpg" alt=""></div>
-            <div class="card-text">
-                <h1 class="img-title">Jean Paul USA AS-400</h1>
-                <p class="img-desc">Great for intermediate level musicians</p>
-                <p class="img-price">$13 per month</p>
-            </div>
-        </div> -->
-        <!-- <instrument-result-card picture="/assets/images/yetanothertest.jpg" class="irs" title="Eastman Violin">
-            <span slot="desc">Great for intermediate level musicians</span>
-            <span slot="price">13</span>
-        </instrument-result-card>
-
-        <instrument-result-card title="Jean Paul USA AS-400" picture="/assets/images/saxPic1.jpg" class="irs">
-            <span slot="desc">Great for intermediate level musicians</span>
-            <span slot="price">13</span>
-        </instrument-result-card> -->
-        
-        
-        
+       <p style="text-align: center; width: 100%; color: #93b1c2;" id="searching">Searching for instruments...</p>
     </section>   
 
     <script src="/javascript/custom-elements.js"></script>
     <script src="/javascript/instruments-loader.js"></script>
     <script src="/javascript/accounts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 </body>
 </html>

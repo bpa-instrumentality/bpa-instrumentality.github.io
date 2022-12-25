@@ -5,63 +5,81 @@
             "picture": "/assets/images/yetanothertest.jpg",
             "desc": "Great for Advanced level musicians",
             "price": 18,
-            "filterid": 118437
+            "filterid": "118437",
+            "nameid": "11",
+            "priceid": "37"
         },
         {
             "title": "Rickenbacker Guitar",
             "picture": "/assets/images/guitarCard1.jpg",
             "desc": "A wonderful instrument for beginners",
             "price": 8,
-            "filterid": 128234
+            "filterid": "128234",
+            "nameid": "12",
+            "priceid": "34"
         },
         {
             "title": "Jean Paul USA AS-400",
             "picture": "/assets/images/saxPic1.jpg",
             "desc": "Great for intermediate level musicians",
             "price": 13,
-            "filterid": 138336
+            "filterid": "138336",
+            "nameid": "13",
+            "priceid": "36"
+        },  
+        {
+            "title": "Eastman Violin",
+            "picture": "/assets/images/yetanothertest.jpg",
+            "desc": "Great for Advanced level musicians",
+            "price": 18,
+            "filterid": "118437",
+            "nameid": "11",
+            "priceid": "37"
+        },
+        {
+            "title": "Rickenbacker Guitar",
+            "picture": "/assets/images/guitarCard1.jpg",
+            "desc": "A wonderful instrument for beginners",
+            "price": 8,
+            "filterid": "128234",
+            "nameid": "12",
+            "priceid": "34"
+        },
+        {
+            "title": "Jean Paul USA AS-400",
+            "picture": "/assets/images/saxPic1.jpg",
+            "desc": "Great for intermediate level musicians",
+            "price": 13,
+            "filterid": "138336",
+            "nameid": "13",
+            "priceid": "36"
         },
         {
             "title": "Eastman Violin",
             "picture": "/assets/images/yetanothertest.jpg",
             "desc": "Great for Advanced level musicians",
             "price": 18,
-            "filterid": 118437
+            "filterid": "118437",
+            "nameid": "11",
+            "priceid": "37"
         },
         {
             "title": "Rickenbacker Guitar",
             "picture": "/assets/images/guitarCard1.jpg",
             "desc": "A wonderful instrument for beginners",
             "price": 8,
-            "filterid": 128234
+            "filterid": "128234",
+            "nameid": "12",
+            "priceid": "34"
         },
         {
             "title": "Jean Paul USA AS-400",
             "picture": "/assets/images/saxPic1.jpg",
             "desc": "Great for intermediate level musicians",
             "price": 13,
-            "filterid": 138336
-        },
-        {
-            "title": "Eastman Violin",
-            "picture": "/assets/images/yetanothertest.jpg",
-            "desc": "Great for Advanced level musicians",
-            "price": 18,
-            "filterid": 118437
-        },
-        {
-            "title": "Rickenbacker Guitar",
-            "picture": "/assets/images/guitarCard1.jpg",
-            "desc": "A wonderful instrument for beginners",
-            "price": 8,
-            "filterid": 128234
-        },
-        {
-            "title": "Jean Paul USA AS-400",
-            "picture": "/assets/images/saxPic1.jpg",
-            "desc": "Great for intermediate level musicians",
-            "price": 13,
-            "filterid": 138336
+            "filterid": "138336",
+            "nameid": "13",
+            "priceid": "36"
         }
     ]
 }
