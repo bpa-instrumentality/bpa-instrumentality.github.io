@@ -65,8 +65,15 @@ fetch("./instruments.json")
         ]
           }
 
+          const params = new URLSearchParams(window.location.search)
+          let filterParam = params.get('filter');
+          
+          if (!filterParam) {
+            filterParam = "1"
+          }
+
           const fuse = new Fuse(instruments, options)
-          const sorted = fuse.search("118236")
+          const sorted = fuse.search(filterParam)
 
           console.log('fuse: ', sorted)
 
@@ -86,6 +93,10 @@ fetch("./instruments.json")
             irsCard.appendChild(span2)
             document.getElementById('results').appendChild(irsCard);
         }
-        document.getElementById('searching').style.display = "none"
+        document.getElementById('searching').style.display = "none";
+         if ((document.getElementById('results').getElementsByTagName('*').length)<2) {
+            document.getElementById('searching').textContent = "Sorry, but we could not find the instruments that you wanted."
+            document.getElementById('searching').style.display = "block"
+         }
         
     })
