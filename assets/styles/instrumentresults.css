@@ -122,6 +122,9 @@ section.results .irs::part(img-desc), section.results .irs::part(img-price) {
 section.results .irs::part(img-price) {
   margin-top: 1px;
   font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 0.87rem;
 }
 
 section.results::-webkit-scrollbar {
@@ -146,4 +149,10 @@ section.results::-webkit-scrollbar-thumb {
   section.results .card {
     width: 100% !important;
   }
+}
+a {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 20px;
 }/*# sourceMappingURL=instrumentresults.css.map */

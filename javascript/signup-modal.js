@@ -24,6 +24,6 @@ if (!localStorage.getItem('session')) {
                 popup.style.opacity = "1";
                 popup.style.pointerEvents = "all";
             }
-          }, "3500")
+          }, "12000")
     })
 }

@@ -8,92 +8,46 @@
     <link rel="stylesheet" href="/assets/styles/instrumentfinder.css">
 </head>
 <body>
-    <main class="box">
-        <div class="heading">
-            <h1>Answer a few questions</h1>
-            <a href="index.html"><button>Home</button></a>
+    <main class="box content">
+        <div class="box" id="box">
+            <div class="header">
+                <img src="/assets/images/logo-favicon.svg" alt="logo">
+                <h1>Instru<span>Finder</span></h1>
+            </div>
+            <p>Answer a few questions, and we will do the rest!</p>
+            <div class="selects">
+                <select name="test" id="select1">
+                    <option value="none" selected disabled hidden>What instrument do you prefer?</option>
+                    <option value="11" >Violin</option>
+                    <option value="12">Guitar</option>
+                    <option value="13">Saxophone</option>
+                    <option value="14">Trumpet</option>
+                    <option value="15">Drums</option>
+                    <option value="16">Flute</option>
+                </select>
+                <select name="test" id="select2">
+                    <option value="none" selected disabled hidden>What skill level of instrument?</option>
+                    <option value="82" >Beginner</option>
+                    <option value="83">Intermediate</option>
+                    <option value="84">Advanced</option>
+                </select>
+                <select name="test" id="select3">
+                    <option value="none" selected disabled hidden>What is your price range?</option>
+                    <option value="33" ><$5</option>
+                    <option value="34" >$5-$8</option>
+                    <option value="35" >$8-$12</option>
+                    <option value="36" >$12-$17</option>
+                    <option value="37" >$17-$25</option>
+                    <option value="38" >>$25</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button onclick="submit()">Submit</button>
+            </div>
         </div>
-        <section class="question-rows">
-            <div class="row">
-                <div>
-                    <p>Have you owned an instrument before?</p>
-                    <select id="exp">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0">Yes</option>
-                        <option value="1">No</option>
-                    </select>
-                </div>
-                <div>
-                    <p>What instrument do you have in mind?</p>
-                    <select id="kind">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0">Violin</option>
-                        <option value="1">Cello</option>
-                        <option value="2">Saxophone</option>
-                        <option value="3">Trumpet</option>
-                        <option value="4">Flute</option>
-                        <option value="5">Guitar</option>
-                    </select>
-                </div>
-                <div>
-                    <p>What price range are you looking for?</p>
-                    <select id="exp">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0"><$5 per month</option>
-                        <option value="1">$5-$8 per month</option>
-                        <option value="2">$8-$12 per month</option>
-                        <option value="3">$12-$17 per month</option>
-                        <option value="4">$17-$25 per month</option>
-                        <option value="5">>$25 per month</option>
-                    </select>
-                </div>
-                <div>
-                    <p>How old do you want your instrument to be?</p>
-                    <select id="kind">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0">I do not know</option>
-                        <option value="1"><5 years</option>
-                        <option value="2">5-10 years</option>
-                        <option value="3">10-25 years</option>
-                        <option value="4">25-50 years</option>
-                        <option value="5">Antique</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <p>What size instrument are you looking for?</p>
-                    <select id="exp">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0">Small</option>
-                        <option value="1">Medium</option>
-                        <option value="2">Large</option>
-                        <option value="3">XL</option>
-                    </select>
-                </div>
-                <div>
-                    <p>What skill level of instrument do you want?</p>
-                    <select id="exp">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0">Beginner</option>
-                        <option value="1">Intermediate</option>
-                        <option value="2">Expert</option>
-                        <option value="3">Professional</option>
-                    </select>
-                </div>
-                <div>
-                    <p>What type of instrument do you want?</p>
-                    <select id="exp">
-                        <option value="none" selected disabled hidden>Select an Option...</option>
-                        <option value="0">Normal</option>
-                        <option value="1">Electric</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" id="submit">Submit</button>
-                </div>
-            </div>
-        </section>
+        
     </main>
+
+    <script src="/javascript/questionnaire.js"></script>
 </body>
 </html>

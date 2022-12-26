@@ -7,7 +7,6 @@ Starter:
 14 = Trumpet
 15 = Drums
 16 = Flute
-17 = Cello
 
 Middle:
 82 = Beginner

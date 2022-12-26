@@ -80,6 +80,33 @@
             "filterid": "138336",
             "nameid": "13",
             "priceid": "36"
+        },
+        {
+            "title": "Bach Stradivarius 180S37",
+            "picture": "/assets/images/trumpet1-pic.jpg",
+            "desc": "A high quality, professional trumpet",
+            "price": 28,
+            "filterid": "148438",
+            "nameid": "14",
+            "priceid": "38"
+        },
+        {
+            "title": "Yamaha YFL261",
+            "picture": "/assets/images/flute1-pic.jpg",
+            "desc": "An affordable, intermediate level instrument",
+            "price": 10,
+            "filterid": "168335",
+            "nameid": "16",
+            "priceid": "35"
+        },
+        {
+            "title": "Roland V-Drums TD-50KV2",
+            "picture": "/assets/images/drum1-pic.jpg",
+            "desc": "An easy to learn, bneginner instrument",
+            "price": 10,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36"
         }
     ]
 }

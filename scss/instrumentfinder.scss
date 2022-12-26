@@ -20,6 +20,7 @@ body{
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
+    position: relative;
 
     &::before {
         content: '';
@@ -27,155 +28,115 @@ body{
         width: 100%;
         height: 50%;
         background-color: $secondary-bg-blue;
-        top: 50%;
+        bottom: 0;
         left: 0;
         z-index: -500;
     }
 }
 
-main.box {
-    width: 53rem;
-    height: 35rem;
-    background-color: $white;
-    border-radius: 7px;
-    padding: 1rem 2rem;
+
+.box {
     display: flex;
     flex-direction: column;
-    transition: all .3s;
+    text-align: center;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 5px;
+    min-height: 27rem;
+    transition: height .5s;
 
-    .heading {
-        display: flex;
-        flex: 1 1 auto;
-        align-content: center;
-        justify-content: space-between;
-        h1 {
-            color: $text-six;
-            font-weight: 600;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        a {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        button {
-            background-color: $primary-blue;
-            color: $white;
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            transition: all .3s;
-            
-
-
-            &:hover {
-                background-color: $primary-blue-hover;
-            }
-        }
-    }
-
-    section.question-rows {
-        flex: 1 1 90%;
+    .header {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 35px;
+        justify-content: center;
+        gap: 10px;
 
-        .row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            row-gap: 5px;
-
-            div {
-                position: relative;
-                margin: 1rem 0rem;
-                width: 100%;
-
-                button {
-                    width: 100%;
-                    padding: 0.6rem;
-                    margin-top: 2.1rem;
-                    background-color: $primary-orange;
-                    color: $white;
-                    border-radius: 5px;
-                    border: none;
-                    cursor: pointer;
-                    transition: all .3s;
-
-                    &:hover {
-                        background-color: $primary-orange-hover;
-                    }
-                    
-                }
-
-                p {
-                    font-size: 1rem;
-                    font-weight: 500;
-                }
-
-                select {
-                    width: 100%;
-                    margin-top: 10px;
-                    padding: 0.4rem;
-                    background-color: $white;
-                    border-radius: 5px;
-                    border: 1.5px solid black;
-                }
+        h1 {
+            span {
+                color: $primary-orange;
             }
+        }
+        img {
+            width: 35px;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        font-weight: 500;
+    }
+}
+
+select {
+    width: 100%;
+    padding: .7rem 0.2rem;
+    // margin: .5rem 0;
+    border: 2px solid rgb(236, 236, 236);
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+
+.selects {
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    // background-color: red;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+
+    button {
+        width: 100%;
+        height: 45px;
+        background-color: $primary-orange;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color .5s ease;
+
+        &:hover {
+            background-color: $primary-orange-hover;
         }
     }
 }
 
-@media (max-width: 53rem) {
-    main.box {
+@media (max-width: 416px) {
+    .box {
+        width: 100%;
+        height: 100vh;
         border-radius: 0;
     }
-}
 
-@media (max-width:763px) {
-    button {
-        margin-top: 0 !important; 
+    #box {
+    //    background-color: red; 
+       max-height: 50px;
     }
-}
 
-@media (max-width:700px) {
-    main.box {
-        height: 40rem !important;
-    }
-}
-
-@media (max-width:523px) {
-    main.box {
-        min-height: 100vh;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        section.question-rows {
-            flex-direction: column;
-            gap: 0;
-            margin-top: 25px;
-            justify-content: center;
-        }
-    }
-}
-
-@media (max-width:379px) {
-    main.box {
-        text-align: center;
-        padding: 1rem;
-        .heading {
-            justify-content: center;
-            button {
-                display: none;
-            }
-        }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

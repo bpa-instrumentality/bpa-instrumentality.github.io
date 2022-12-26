@@ -20,6 +20,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 body::before {
   content: "";
@@ -27,136 +28,97 @@ body::before {
   width: 100%;
   height: 50%;
   background-color: #293740;
-  top: 50%;
+  bottom: 0;
   left: 0;
   z-index: -500;
 }
 
-main.box {
-  width: 53rem;
-  height: 35rem;
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: #ffffff;
-  border-radius: 7px;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s;
-}
-main.box .heading {
-  display: flex;
-  flex: 1 1 auto;
-  align-content: center;
-  justify-content: space-between;
-}
-main.box .heading h1 {
-  color: #2e4049;
-  font-weight: 600;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main.box .heading a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main.box .heading button {
-  background-color: #009687;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-main.box .heading button:hover {
-  background-color: #027468;
-}
-main.box section.question-rows {
-  flex: 1 1 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 35px;
-}
-main.box section.question-rows .row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  row-gap: 5px;
-}
-main.box section.question-rows .row div {
-  position: relative;
-  margin: 1rem 0rem;
-  width: 100%;
-}
-main.box section.question-rows .row div button {
-  width: 100%;
-  padding: 0.6rem;
-  margin-top: 2.1rem;
-  background-color: #DF652B;
-  color: #ffffff;
+  padding: 1rem;
   border-radius: 5px;
-  border: none;
+  min-height: 27rem;
+  transition: height 0.5s;
+}
+.box .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.box .header h1 span {
+  color: #DF652B;
+}
+.box .header img {
+  width: 35px;
   cursor: pointer;
   transition: all 0.3s;
 }
-main.box section.question-rows .row div button:hover {
-  background-color: #a34b21;
+.box .header img:hover {
+  opacity: 0.85;
 }
-main.box section.question-rows .row div p {
-  font-size: 1rem;
+.box p {
+  margin-top: 5px;
   font-weight: 500;
 }
-main.box section.question-rows .row div select {
+
+select {
   width: 100%;
-  margin-top: 10px;
-  padding: 0.4rem;
-  background-color: #ffffff;
+  padding: 0.7rem 0.2rem;
+  border: 2px solid rgb(236, 236, 236);
+  background-color: rgb(248, 248, 248);
   border-radius: 5px;
-  border: 1.5px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+select:hover {
+  background-color: rgb(238, 238, 238);
 }
 
-@media (max-width: 53rem) {
-  main.box {
+.selects {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50px;
+}
+.btn button {
+  width: 100%;
+  height: 45px;
+  background-color: #DF652B;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.btn button:hover {
+  background-color: #a34b21;
+}
+
+@media (max-width: 416px) {
+  .box {
+    width: 100%;
+    height: 100vh;
     border-radius: 0;
   }
-}
-@media (max-width: 763px) {
-  button {
-    margin-top: 0 !important;
+  #box {
+    max-height: 50px;
   }
-}
-@media (max-width: 700px) {
-  main.box {
-    height: 40rem !important;
-  }
-}
-@media (max-width: 523px) {
-  main.box {
-    min-height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  main.box section.question-rows {
-    flex-direction: column;
-    gap: 0;
-    margin-top: 25px;
+  .content {
+    display: flex;
+    align-items: center;
     justify-content: center;
-  }
-}
-@media (max-width: 379px) {
-  main.box {
-    text-align: center;
-    padding: 1rem;
-  }
-  main.box .heading {
-    justify-content: center;
-  }
-  main.box .heading button {
-    display: none;
   }
 }/*# sourceMappingURL=instrumentfinder.css.map */

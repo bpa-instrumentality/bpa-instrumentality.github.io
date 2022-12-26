@@ -8,7 +8,7 @@ if (!localStorage.getItem('users')) {
 let currFile = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 console.log(!(currFile == "indexy.html"));
 
-if ((currFile == "dashboard.html") || (currFile == "instrumentresults.html")){
+if ((currFile == "dashboard.html") || (currFile == "dashboard.html")){
     if (!localStorage.getItem('session')) {
         window.location.replace('./login.html')
     }
