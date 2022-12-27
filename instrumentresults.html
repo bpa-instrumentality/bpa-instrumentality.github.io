@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrumentality | Results</title>
+    <script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/assets/styles/instrumentresults.css">
+
 </head>
 <body>
+    <div class="popup hidden" id="popup">
+        <div class="popup-overlay" onclick="closePopup()"></div>
+        <div class="popup-box">
+            <i data-feather="x" class="popup-x" id="popup-close" onclick="closePopup()"></i>
+            <div class="left" id="left">
+                <img src="/assets/images/yetanothertest.jpg" alt="instrument-picture" id="ipic">
+            </div>
+            <div class="right" id="right">
+                <h1 class="right-title" id="rt">
+                    Eastman Violin
+                </h1>
+                <p class="right-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim numquam amet tempore possimus, sint qui illum. Velit rem saepe, magnam, doloremque consequuntur quas eligendi praesentium officia rerum, at asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam a praesentium eveniet?
+                </p>
+                <p class="right-price">
+                    $<span id="price-amt">18</span> per month
+                </p>
+                <button><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <h1 style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img src="/assets/images/logo-favicon.svg" alt="logo" style="width: 30px;" onclick="window.location.replace('/index.html')"> Finder <span>Results</span></h1>
         <p>Here are the instruments that best satisfy MOST of the options that you selected! Click on an instrument card for more information!</p>
@@ -22,5 +46,9 @@
     <script src="/javascript/instruments-loader.js"></script>
     <script src="/javascript/accounts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script>
+        feather.replace()
+      </script>
+      <script src="/javascript/results-popup.js"></script>
 </body>
 </html>

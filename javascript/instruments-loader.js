@@ -91,6 +91,14 @@ fetch("./instruments.json")
             span2.setAttribute('slot', "price");
             span2.textContent = curr.price;
             irsCard.appendChild(span2)
+            let cardData = {
+                "title": curr.title,
+                "img": curr.picture,
+                "desc": curr.desc,
+                "price": curr.price
+            }
+            let stringified = JSON.stringify(cardData);
+            irsCard.setAttribute('onclick', `openPopup(${stringified})`);
             document.getElementById('results').appendChild(irsCard);
         }
         document.getElementById('searching').style.display = "none";
