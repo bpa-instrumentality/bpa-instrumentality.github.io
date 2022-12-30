@@ -2,7 +2,11 @@ if (!localStorage.getItem('users')) {
     usersData = {
         "usersData": []
     }
+    cartsData = {
+        "cartsData": []
+    }
     localStorage.setItem('users', JSON.stringify(usersData));
+    localStorage.setItem('carts', JSON.stringify(cartsData));
 }
 
 let currFile = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);

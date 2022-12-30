@@ -12,14 +12,32 @@
     <header class="top-nav">
         <div class="nav-wrapper">
             <a href="index.html"><img src="/assets/images/BlackLogo 1.png" alt="logo" id="logo"></a>
-            <div class="user-detail">
-                <div style="display: flex; align-items: center; justify-content: center; gap: 10px"><i class="fa-solid fa-user"></i>
-                    <p id="email">BLANK</p></div>
-
-                    <div class="logout" onclick="localStorage.removeItem('session'); window.location.replace('./login.html');">
-                        <p><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</p>
+            <div class="right-nav">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping" id="cartIcon" onclick="toggleCart()"></i>
+                    <div class="amt" id="amt" onclick="toggleCart()">
+                        0
                     </div>
-        </div>
+                    <div class="cartDetails" id="cartDetails">
+                        <div class="cart-results" id="cr">
+                        <div id="no-items"><i class="fa-regular fa-paper-plane"></i> You have no items in the cart!
+                        
+                            <button onclick="window.location.replace('instrumentresults.html')">Purchase Instruments</button></div>
+                        
+                        </div>
+                        <button class="checkout" id="checkout">Checkout</button>
+                    </div>
+                </div>
+                <div class="user-detail">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px"><i class="fa-solid fa-user"></i>
+                        <p id="email">BLANK</p></div>
+    
+                        <div class="logout" onclick="localStorage.removeItem('session'); window.location.replace('./login.html');">
+                            <p><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</p>
+                        </div>
+            </div>
+            </div>
+            
         </div>
     </header>
 
@@ -33,10 +51,10 @@
                 </div>
             </div>
             <div class="mnp2">
-                <p class="tabSelect" id="instruments">My Instruments</p>
-                <p class="tabSelect" id="details">My Details</p>
-                <p class="tabSelect" id="billing">Billing</p>
-                <p class="tabSelect" id="notifications">Notifications</p>
+                <p class="tabSelect" id="instruments"><i class="fa-solid fa-guitar"></i> My Instruments</p>
+                <p class="tabSelect" id="details"><i class="fa-solid fa-circle-info"></i> My Details</p>
+                <p class="tabSelect" id="billing"><i class="fa-solid fa-wallet"></i> Billing</p>
+                <p class="tabSelect" id="notifications"> <i class="fa-solid fa-bell"></i>Notifications</p>
             </div>
         </section>
         <section class="main-content">
@@ -46,7 +64,7 @@
                         <h1>Instruments</h1>
                         <p>View your rented instruments</p>
                     </div>
-                    <button><i class="fa-solid fa-plus"></i> Rent Instruments</button>
+                    <button onclick="window.location.replace('instrumentresults.html')"><i class="fa-solid fa-plus"></i> Rent Instruments</button>
                 </div>
                 <div class="content">
                     <div class="filters">
@@ -115,5 +133,6 @@
     <script>
         document.getElementById('email').textContent = JSON.parse(localStorage.getItem('session')).email;
     </script>
+    <script src="/javascript/dashboard-cart.js"></script>
 </body>
 </html>
