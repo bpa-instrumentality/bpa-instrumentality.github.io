@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden !important;
-  overflow: scroll !important;
+  overflow-y: auto !important;
 }
 
 #no-items {
@@ -121,62 +121,6 @@ header.top-nav .nav-wrapper .right-nav .cart .amt {
   color: white;
   font-size: 0.7rem;
   font-weight: 600;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails {
-  width: 235px;
-  position: absolute;
-  height: 0px;
-  background-color: white;
-  z-index: 2300;
-  top: 57px;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-  transition: height 0.6s ease;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: column;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .cart-results {
-  flex: 1 1 80%;
-  background-color: none;
-  overflow-y: scroll;
-  cursor: auto;
-  display: flex;
-  flex-direction: column;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .cart-results .result {
-  cursor: pointer;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
-  padding: 0.5rem;
-  transition: all 0.2s;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .cart-results .result h1 {
-  font-size: 1rem;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .cart-results .result p {
-  font-size: 0.7rem;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .cart-results .result:hover {
-  background-color: #fef6ec;
-  color: #DF652B;
-  border-top-color: #DF652B;
-  border-bottom-color: #DF652B;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .checkout {
-  flex: 1 1 auto;
-  position: relative;
-  background-color: #DF652B;
-  border: none;
-  color: #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-header.top-nav .nav-wrapper .right-nav .cart .cartDetails .checkout:hover {
-  background-color: #a34b21;
 }
 header.top-nav .nav-wrapper .user-detail {
   display: flex;
@@ -462,19 +406,6 @@ main.main section.main-content .content .results .billing-card .bill-type {
   font-size: 1rem;
   font-weight: 700;
   margin: 0.5rem 0;
-}
-
-.cart-results::-webkit-scrollbar {
-  width: 4px;
-}
-
-.cart-results::-webkit-scrollbar-track {
-  background: none;
-}
-
-.cart-results::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
 }
 
 .mnp2::-webkit-scrollbar {

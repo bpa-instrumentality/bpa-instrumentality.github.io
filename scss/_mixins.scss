@@ -529,3 +529,77 @@
     
     }
 }
+
+@mixin navbar {
+    .navbarmain{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        position: fixed;
+        background: none;
+        width: 100%;
+        z-index: 1000;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background .3s ease;
+    
+        .nav__logo{
+            cursor: pointer;
+    
+            span{
+                color: $primary-orange;
+            }
+        }
+    
+        li,a,button{
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    
+        .nav__links {
+            list-style: none;
+            position: relative;
+    
+            li {
+                display: inline-block;
+                padding: 0px 20px;
+    
+                .nav__link{
+                    @include navbarlinks;
+                }
+            }
+        }
+    
+        .loginsignup{
+            button{
+                padding: 9px 17px;
+                border-radius: 50px;
+                border: none;
+                background-color: $primary-blue;
+                color: white;
+                margin: 0px 20px;
+                cursor: pointer;
+                transition: all .5s;
+    
+                &:hover{
+                    color: white;
+                    background-color: $primary-blue-hover;
+                }
+            }
+    
+            .loginlink{
+                @include navbarlinks;
+            }
+        }
+    
+        .hamburger-icons {
+            display: none;
+        }
+    
+        .icon {
+            font-size: 1.5em;
+        }
+    }
+}

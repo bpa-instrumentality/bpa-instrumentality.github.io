@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden !important;
-    overflow: scroll !important;
+    overflow-y: auto !important;
 }
 
 #no-items {
@@ -136,74 +136,6 @@ header.top-nav {
                     font-size: 0.7rem;
                     font-weight: 600;
 
-                
-                }
-
-                .cartDetails {
-                    width: 235px;
-                    position: absolute;
-                    height: 0px;
-                    background-color: white;
-                    z-index: 2300;
-                    top: 57px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-                    transition: height .6s ease;
-                    overflow-y: hidden;
-                    display: flex;
-                    flex-direction: column;
-
-                    .cart-results {
-                        flex: 1 1 80%;
-                        background-color: none;
-                        overflow-y: scroll;
-                        cursor: auto;
-                        display: flex;
-                        flex-direction: column;
-                       
-                        
-
-                        .result {
-                            cursor: pointer;
-                            border-top: 1px solid rgba(0, 0, 0, 0.2);
-                            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-                            width: 100%;
-                            padding: .5rem;
-                            transition: all .2s;
-                            h1 {
-                                font-size: 1rem;
-                            }
-
-                            p {
-                                font-size: 0.7rem;
-                            }
-
-                            &:hover {
-                                background-color: #fef6ec;
-                                color: $primary-orange;
-                                border-top-color: $primary-orange;
-                                border-bottom-color: $primary-orange;
-                            }
-                        }
-                    }
-
-                    .checkout{
-                        flex: 1 1 auto;
-                        // height: 300px;
-                        position: relative;
-
-                        background-color: $primary-orange;
-                        border: none;
-                        color: $white;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        transition: background-color .3s;
-
-                        &:hover {
-                            background-color: $primary-orange-hover;
-                        }
-                    }
                 }
             }
         }
@@ -535,19 +467,6 @@ main.main {
             }
         }
     }
-}
-
-.cart-results::-webkit-scrollbar {
-    width: 4px;
-}
-
-.cart-results::-webkit-scrollbar-track {
-    background: none; 
-}
-  
-.cart-results::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
 }
 
 .mnp2::-webkit-scrollbar {

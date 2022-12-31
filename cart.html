@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/styles/cart.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-wrapper">
+            <a href="index.html"><img src="/assets/images/BlackLogo 1.png" alt="logo" id="logo"></a>
+            <div class="right-nav">
+                <div class="cart">
+                    <a href="cart.html" style="color: black;"><i class="fa-solid fa-cart-shopping" id="cartIcon"></i></a>
+                    <div class="amt" id="amt" onclick="toggleCart()">
+                        0
+                    </div>
+                    
+                </div>
+                <div class="user-detail" id="ud" onclick="window.location.replace('dashboard.html')">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px"><i class="fa-solid fa-user"></i>
+                        <p id="email">BLANK</p></div>
+            </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="col1">
+                <div class="promo-section section">
+                    <h1>PROMO STUFF GOES HERE</h1>
+                </div>
+                <div class="cart-items section" id="cartItems">
+                    <div class="cart-header">
+                        <h1>Shopping Cart (<span class="cartAmt">[amt]</span> items)</h1>
+
+                        <p>Price</p>
+                    </div>
+                    
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="checkout-box">
+                  <h1>Subtotal (<span class="cartAmt">[amt]</span> items)</h1> 
+                  <p>$<span id="totalPrice">00</span>.00 (Monthly)</p> 
+                  <button>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/javascript/dashboard-cart.js"></script>
+    <script src="/javascript/cart.js"></script>
+</body>
+</html>

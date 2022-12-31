@@ -27,7 +27,8 @@ function addToCart() {
     if (!(cartFilter.length > 0)) {
         let newItem = {
             "product": document.getElementById('rt').textContent,
-            "price": document.getElementById('price-amt').textContent
+            "price": document.getElementById('price-amt').textContent,
+            "img": document.getElementById('ipic').src
         }
         cart.push(newItem);
         console.log(cart)
