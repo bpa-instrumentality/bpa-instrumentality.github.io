@@ -55,6 +55,52 @@ body {
   transform: translateX(-50%);
   transition: background 0.3s ease;
 }
+.navbarmain .user-dropdown {
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  margin-right: 5%;
+  border-radius: 5px 5px 5px 5px;
+  height: 10rem;
+  width: 20rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+.navbarmain .user-dropdown p {
+  font-weight: 500;
+}
+.navbarmain .user-dropdown .dropdivide {
+  height: 100%;
+  width: 1px;
+  background-color: black;
+  opacity: 0.4;
+}
+.navbarmain .user-dropdown .div1, .navbarmain .user-dropdown .div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  row-gap: 10px;
+}
+.navbarmain .user-dropdown .div1 p, .navbarmain .user-dropdown .div2 p {
+  font-size: 1.05rem;
+}
+.navbarmain .user-dropdown .div1 a, .navbarmain .user-dropdown .div2 a {
+  font-size: 0.8rem;
+  color: #2D3F4A;
+  padding: 0.1rem;
+}
+.navbarmain .user-dropdown .div1 a:hover, .navbarmain .user-dropdown .div2 a:hover {
+  color: #DF652B;
+  text-decoration: underline;
+}
 .navbarmain .nav__logo {
   cursor: pointer;
 }
@@ -125,6 +171,38 @@ body {
 .navbarmain .loginsignup .loginlink:hover::after {
   width: 100%;
   transition: all 0.5s;
+}
+.navbarmain .loggedIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin: -15px 0;
+  height: 5rem;
+  border-radius: 3px;
+}
+.navbarmain .loggedIn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navbarmain .loggedIn div #email {
+  max-width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.navbarmain .loggedIn #angle-down {
+  transition: all 0.2s;
+}
+.navbarmain .loggedIn:hover {
+  opacity: 0.8;
+}
+.navbarmain .loggedIn:hover #angle-down {
+  margin-top: 4px;
 }
 .navbarmain .hamburger-icons {
   display: none;
@@ -942,6 +1020,9 @@ body::-webkit-scrollbar-thumb {
   .navbarmain {
     background-color: #1b242b !important;
     position: fixed;
+  }
+  .navbarmain .user-dropdown {
+    display: none;
   }
   .navbarmain .loginsignup {
     display: none;

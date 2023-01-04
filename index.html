@@ -33,15 +33,36 @@
                     <li id="optionallink1"><a href="#reviews" class="nav__link">Reviews</a></li>
                 </ul>
             </nav>
-            <div class="loginsignup">
-                <a href="login.html" class="loginlink" >Login</a>
+            <div class="loginsignup" id="loginsignup">
+                <a href="login.html" class="loginlink">Login</a>
                 <a href="signup.html"><button>Signup</button></a>
+            </div>
+            <div class="loggedIn" id="loggedin" onmouseleave="hideDropdown()" onclick="showDropdown()"
+            onmouseover="showDropdown()">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                <p id="email">[lols@gmail.com]</p>
+                </div>
+                <i class="fa-solid fa-angle-down" id="angle-down"></i>
             </div>
             <div class="hamburger-icons">
                 <i class="fa-solid fa-bars icon" id="open-hamburger"></i>
                 <i class="fa-solid fa-xmark icon" id="close-hamburger"></i>
             </div>
-
+            <div class="user-dropdown" id="dropdown" onmouseout="hideDropdown()"> 
+                <div class="div1">
+                    <p>Your Account</p>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="#">Logout</a>
+                </div>
+                <div class="dropdivide"></div>
+                <div class="div2">
+                    <p>Instruments</p>
+                    <a href="instrumentresults.html">Purchase</a>
+                    <a href="instrumentresults.html">InstruFinder</a>
+                </div>
+            </div>
         </header>
         <div class="mobile-menu" id="mobile-menu">
             <a href="#" id="top-nav-link" class="mobile-link">Home</a>
@@ -404,5 +425,6 @@
         <script>
         AOS.init();
         </script>
+        <script src="/javascript/landing-dropdown.js"></script>
 </body>
 </html>
