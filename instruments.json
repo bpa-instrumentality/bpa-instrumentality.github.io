@@ -7,7 +7,10 @@
             "price": 18,
             "filterid": "118437",
             "nameid": "11",
-            "priceid": "37"
+            "priceid": "37",
+            "instrument": "violin",
+            "cost": "c3",
+            "diff": "s3"
         },
         {
             "title": "Rickenbacker Guitar",
@@ -16,7 +19,10 @@
             "price": 8,
             "filterid": "128234",
             "nameid": "12",
-            "priceid": "34"
+            "priceid": "34",
+            "instrument": "guitar",
+            "cost": "c1",
+            "diff": "s1"
         },
         {
             "title": "Jean Paul USA AS-400",
@@ -25,7 +31,10 @@
             "price": 13,
             "filterid": "138336",
             "nameid": "13",
-            "priceid": "36"
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c3",
+            "diff": "s2"
         },  
         {
             "title": "Eastman Violin",
@@ -34,7 +43,10 @@
             "price": 18,
             "filterid": "118437",
             "nameid": "11",
-            "priceid": "37"
+            "priceid": "37",
+            "instrument": "violin",
+            "cost": "c3",
+            "diff": "s3"
         },
         {
             "title": "Rickenbacker Guitar",
@@ -43,7 +55,10 @@
             "price": 8,
             "filterid": "128234",
             "nameid": "12",
-            "priceid": "34"
+            "priceid": "34",
+            "instrument": "guitar",
+            "cost": "c1",
+            "diff": "s1"
         },
         {
             "title": "Jean Paul USA AS-400",
@@ -52,7 +67,10 @@
             "price": 13,
             "filterid": "138336",
             "nameid": "13",
-            "priceid": "36"
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c3",
+            "diff": "s2"
         },
         {
             "title": "Eastman Violin",
@@ -61,7 +79,10 @@
             "price": 18,
             "filterid": "118437",
             "nameid": "11",
-            "priceid": "37"
+            "priceid": "37",
+            "instrument": "violin",
+            "cost": "c3",
+            "diff": "s3"
         },
         {
             "title": "Rickenbacker Guitar",
@@ -70,7 +91,10 @@
             "price": 8,
             "filterid": "128234",
             "nameid": "12",
-            "priceid": "34"
+            "priceid": "34",
+            "instrument": "guitar",
+            "cost": "c1",
+            "diff": "s1"
         },
         {
             "title": "Jean Paul USA AS-400",
@@ -79,7 +103,10 @@
             "price": 13,
             "filterid": "138336",
             "nameid": "13",
-            "priceid": "36"
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c3",
+            "diff": "s2"
         },
         {
             "title": "Bach Stradivarius 180S37",
@@ -88,7 +115,10 @@
             "price": 28,
             "filterid": "148438",
             "nameid": "14",
-            "priceid": "38"
+            "priceid": "38",
+            "instrument": "trumpet",
+            "cost": "c4",
+            "diff": "s3"
         },
         {
             "title": "Yamaha YFL261",
@@ -97,7 +127,10 @@
             "price": 10,
             "filterid": "168335",
             "nameid": "16",
-            "priceid": "35"
+            "priceid": "35",
+            "instrument": "flute",
+            "cost": "c2",
+            "diff": "s2"
         },
         {
             "title": "Roland V-Drums TD-50KV2",
@@ -106,7 +139,10 @@
             "price": 10,
             "filterid": "158236",
             "nameid": "15",
-            "priceid": "36"
+            "priceid": "36",
+            "instrument": "drums",
+            "cost": "c2",
+            "diff": "s1"
         }
     ]
 }

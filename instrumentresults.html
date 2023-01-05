@@ -39,23 +39,27 @@
                 <div class="filter-section" id="instrument-type">
                     <p>Instrument Type</p>
                     <div>
-                        <input type="checkbox" id="violin" name="violin" value="violin">
+                        <input type="checkbox" id="violin" name="violin" value="violin" class="inst">
                         <label for="violin">Violin</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="saxophone" name="saxophone" value="saxophone">
+                        <input type="checkbox" id="guitar" name="guitar" value="guitar" class="inst">
+                        <label for="guitar">Guitar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="saxophone" name="saxophone" value="saxophone" class="inst">
                         <label for="saxophone">Saxophone</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="trumpet" name="trumpet" value="trumpet">
+                        <input type="checkbox" id="trumpet" name="trumpet" value="trumpet" class="inst">
                         <label for="trumpet">Trumpet</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="flute" name="flute">
+                        <input type="checkbox" id="flute" name="flute" class="inst">
                         <label for="flute" value="flute">Flute</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="drums" name="drums" value="drums"> 
+                        <input type="checkbox" id="drums" name="drums" value="drums" class="inst"> 
                         <label for="drums">Drums</label>
                     </div>
                 </div>
@@ -63,37 +67,39 @@
                 <div class="filter-section" id="instrument-cost">
                     <p>Cost</p>
                     <div>
-                        <input type="checkbox" id="c1" name="c1" value="c1">
+                        <input type="checkbox" id="c1" name="c1" value="c1" class="cost">
                         <label for="c1"><$8</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="c2" name="c2" value="c2">
+                        <input type="checkbox" id="c2" name="c2" value="c2" class="cost">
                         <label for="c2">$8-$13</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="c3" name="c3">
+                        <input type="checkbox" id="c3" name="c3" class="cost">
                         <label for="c3">$13-$17</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="c4" name="c4" value="c4">
+                        <input type="checkbox" id="c4" name="c4" value="c4" class="cost">
                         <label for="c4">>$18</label>
                     </div>
                 </div>
                 <div class="filter-section" id="instrument-skill">
                     <p>Skill Level</p>
                     <div>
-                        <input type="checkbox" id="s1" name="s1" value="s1">
+                        <input type="checkbox" id="s1" name="s1" value="s1" class="skill">
                         <label for="s1">Beginner</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="s2" name="s2" value="s2">
+                        <input type="checkbox" id="s2" name="s2" value="s2" class="skill">
                         <label for="s2">Intermediate</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="s3" name="s3">
+                        <input type="checkbox" id="s3" name="s3" class="skill">
                         <label for="s3">Advanced</label>
                     </div>
                 </div>
+
+                <button>Search</button>
             </div>
             <div class="col2">
                 <div class="top-results">
@@ -102,7 +108,7 @@
                     <a href="index.html">Go Home</a>
                 </div>
                <section class="results" id="results">
-                
+                <p id="searching" style="opacity: 0.75; font-weight: 600;">Searching for the perfect instruments...</p>
                 
                </section>
             </div>

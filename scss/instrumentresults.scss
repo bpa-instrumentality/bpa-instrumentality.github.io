@@ -252,6 +252,21 @@ main.main {
                     gap: 7px;
                   }
             }
+
+            button {
+                margin-top: 25px;
+                background-color: $primary-orange;
+                color: $white;
+                border: none;
+                height: 35px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color .3s ease;
+
+                &:hover {
+                    background-color: $primary-orange-hover;
+                }
+            }
         }
 
         .col2 {

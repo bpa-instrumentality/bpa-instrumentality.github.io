@@ -66,20 +66,87 @@ fetch("./instruments.json")
           }
 
           const params = new URLSearchParams(window.location.search)
-          let filterParam = params.get('filter');
+        //   let filterParam = params.get('filter');
           
-          if (!filterParam) {
-            filterParam = "1"
-          }
+        //   if (!filterParam) {
+        //     filterParam = "1"
+        //   }
 
-          const fuse = new Fuse(instruments, options)
-          const sorted = fuse.search(filterParam)
+        //   const fuse = new Fuse(instruments, options)
+        //   const sorted = fuse.search(filterParam)
 
-          console.log('fuse: ', sorted)
+        //   console.log('fuse: ', sorted)
+
+        let instParam = params.get('instruments');
+        instParam = JSON.parse(instParam);
+        if (instParam == null) {
+            instParam = ['violin', 'saxophone', 'trumpet', 'flute', 'drums', 'guitar']
+        }
+        for (i in instParam) {
+            console.log(document.getElementById(instParam[i]).checked = true)
+        }
+        let costParam = params.get('costs');
+        costParam = JSON.parse(costParam);
+        if (costParam == null) {
+            costParam = ['c1', 'c2', 'c3', 'c4']
+        }
+        for (i in costParam) {
+            console.log(document.getElementById(costParam[i]).checked = true)
+        }
+        let diffParam = params.get('levels');
+        diffParam = JSON.parse(diffParam);
+        if (diffParam == null) {
+            diffParam = ['s1', 's2', 's3']
+        }
+        for (i in diffParam) {
+            console.log(document.getElementById(diffParam[i]).checked = true)
+        }
+        // console.log(instParam, costParam, diffParam)
+        let sorted1 = instruments.filter((i) => {
+            return instParam.includes(i.instrument)
+        })
+        console.log(sorted1)
+        let sorted2 = sorted1.filter((i) => {
+            return costParam.includes(i.cost)
+        })
+        console.log(sorted2)
+        let sorted = sorted2.filter((i) => {
+            return diffParam.includes(i.diff)
+        })
+        console.log(sorted)
+        
+        let checkboxes = document.querySelectorAll('input');
+        let insts = [];
+        let costs = [];
+        let skills = [];
+        checkboxes.forEach((checkbox) => {
+            if (checkbox.checked == true) {
+                console.log(checkbox)
+                let testClass = checkbox.className;
+                console.log(testClass)
+
+                switch(testClass) {
+                    case "inst":
+                        insts.push(checkbox.value)
+                        break
+                    case "cost":
+                        costs.push(checkbox.value)
+                        break
+                    case "skill":
+                        skills.push(checkbox.value)
+                        break
+                }
+            }
+        })
+        console.log(insts, costs, skills)
+        // let ooga = JSON.stringify(['hi!', 'bye!']);
+        // console.log(`http://127.0.0.1:5500/instrumentresults.html?instruments=[%22violin%22,%20%22guitar%22]&cost=[%22c4%22,%20%22c1%22]&levels=[%22s3%22]`)
+        
           document.getElementById('resultsAmt').textContent = sorted.length;
 
+
         for (i in sorted) {
-            let curr = sorted[i].item;
+            let curr = sorted[i];
             let irsCard = document.createElement('instrument-result-card');
             irsCard.classList.add('irs')
             irsCard.setAttribute('title', curr.title);

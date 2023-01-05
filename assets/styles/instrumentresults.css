@@ -224,6 +224,19 @@ main.main .main-wrapper .col1 div.filter-section div {
   align-items: center;
   gap: 7px;
 }
+main.main .main-wrapper .col1 button {
+  margin-top: 25px;
+  background-color: #DF652B;
+  color: #ffffff;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main.main .main-wrapper .col1 button:hover {
+  background-color: #a34b21;
+}
 main.main .main-wrapper .col2 {
   max-width: 80%;
   flex: 3 0.5 auto;
