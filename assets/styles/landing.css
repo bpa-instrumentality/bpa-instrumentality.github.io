@@ -56,6 +56,7 @@ body {
   transition: background 0.3s ease;
 }
 .navbarmain .user-dropdown {
+  pointer-events: none;
   padding: 1rem;
   background-color: white;
   position: absolute;
@@ -1023,6 +1024,9 @@ body::-webkit-scrollbar-thumb {
   }
   .navbarmain .user-dropdown {
     display: none;
+  }
+  .navbarmain #loggedin {
+    display: none !important;
   }
   .navbarmain .loginsignup {
     display: none;

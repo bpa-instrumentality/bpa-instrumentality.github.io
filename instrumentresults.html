@@ -11,37 +11,103 @@
 
 </head>
 <body>
-    <div class="popup hidden" id="popup">
-        <div class="popup-overlay" onclick="closePopup()"></div>
-        <div class="popup-box">
-            <i data-feather="x" class="popup-x" id="popup-close" onclick="closePopup()"></i>
-            <div class="left" id="left">
-                <img src="/assets/images/yetanothertest.jpg" alt="instrument-picture" id="ipic">
+    <header class="top-nav">
+        <div class="nav-wrapper">
+            <a href="index.html"><img src="/assets/images/logo.png" alt="logo" id="logo"></a>
+            <div class="right-nav">
+                <div class="cart">
+                    <a href="cart.html" style="color: black;"><i class="fa-solid fa-cart-shopping" id="cartIcon"></i></a>
+                    <div class="amt" id="amt" onclick="toggleCart()">
+                        0
+                    </div>
+                    
+                </div>
+                <div class="user-detail" id="ud" onclick="window.location.replace('dashboard.html')">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px"><i class="fa-solid fa-user"></i>
+                        <p id="email">BLANK</p></div>
             </div>
-            <div class="right" id="right">
-                <h1 class="right-title" id="rt">
-                    Eastman Violin
-                </h1>
-                <p class="right-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim numquam amet tempore possimus, sint qui illum. Velit rem saepe, magnam, doloremque consequuntur quas eligendi praesentium officia rerum, at asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quam a praesentium eveniet?
-                </p>
-                <p class="right-price">
-                    $<span id="price-amt">18</span> per month
-                </p>
-                <button onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="col1">
+                <h1>Filters</h1>
+
+                <div class="filter-section" id="instrument-type">
+                    <p>Instrument Type</p>
+                    <div>
+                        <input type="checkbox" id="violin" name="violin" value="violin">
+                        <label for="violin">Violin</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="saxophone" name="saxophone" value="saxophone">
+                        <label for="saxophone">Saxophone</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="trumpet" name="trumpet" value="trumpet">
+                        <label for="trumpet">Trumpet</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="flute" name="flute">
+                        <label for="flute" value="flute">Flute</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="drums" name="drums" value="drums"> 
+                        <label for="drums">Drums</label>
+                    </div>
+                </div>
+
+                <div class="filter-section" id="instrument-cost">
+                    <p>Cost</p>
+                    <div>
+                        <input type="checkbox" id="c1" name="c1" value="c1">
+                        <label for="c1"><$8</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="c2" name="c2" value="c2">
+                        <label for="c2">$8-$13</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="c3" name="c3">
+                        <label for="c3">$13-$17</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="c4" name="c4" value="c4">
+                        <label for="c4">>$18</label>
+                    </div>
+                </div>
+                <div class="filter-section" id="instrument-skill">
+                    <p>Skill Level</p>
+                    <div>
+                        <input type="checkbox" id="s1" name="s1" value="s1">
+                        <label for="s1">Beginner</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="s2" name="s2" value="s2">
+                        <label for="s2">Intermediate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="s3" name="s3">
+                        <label for="s3">Advanced</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="top-results">
+                    <h1>Results (<span id="resultsAmt">0</span>)</h1>
+
+                    <a href="index.html">Go Home</a>
+                </div>
+               <section class="results" id="results">
+                
+                
+               </section>
             </div>
         </div>
-    </div>
-    <div class="header">
-        <h1 style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img src="/assets/images/logo-favicon.svg" alt="logo" style="width: 30px;" onclick="window.location.replace('/index.html')"> Finder <span>Results</span></h1>
-        <p>Here are the instruments that best satisfy MOST of the options that you selected! Click on an instrument card for more information!</p>
-    </div>
-    <section class="results" id="results">
-       <p style="text-align: center; width: 100%; color: #93b1c2;" id="searching">Searching for instruments...</p>
-
-    </section> 
-    <a href="instrumentfinder.html">Search for different instruments</a> 
-
+    </main>
     <script src="/javascript/custom-elements.js"></script>
     <script src="/javascript/instruments-loader.js"></script>
     <script src="/javascript/accounts.js"></script>

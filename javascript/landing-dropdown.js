@@ -15,12 +15,14 @@ if (session) {
 function showDropdown() {
     dropdown.style.top = "100%";
     dropdown.style.opacity = "1";
+    dropdown.style.pointerEvents = "all";
 }
 
 function hideDropdown() {
     if (!(isHover(dropdown))) {
         dropdown.style.top = "80%";
         dropdown.style.opacity = "0";
+        dropdown.style.pointerEvents = "none";
     }
     console.log(isHover(dropdown))
 }

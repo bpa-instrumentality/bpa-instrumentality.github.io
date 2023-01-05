@@ -890,6 +890,9 @@ body::-webkit-scrollbar-track {
         .user-dropdown {
             display: none;
         }
+        #loggedin {
+            display: none !important;
+        }
         .loginsignup{
             display: none;
         }

@@ -76,6 +76,7 @@ fetch("./instruments.json")
           const sorted = fuse.search(filterParam)
 
           console.log('fuse: ', sorted)
+          document.getElementById('resultsAmt').textContent = sorted.length;
 
         for (i in sorted) {
             let curr = sorted[i].item;
@@ -90,7 +91,10 @@ fetch("./instruments.json")
             let span2 = document.createElement("span");
             span2.setAttribute('slot', "price");
             span2.textContent = curr.price;
-            irsCard.appendChild(span2)
+            irsCard.setAttribute("price", curr.price)
+            span2.textContent = curr.price;
+            irsCard.setAttribute("desc", curr.desc)
+            // irsCard.appendChild(span2)
             let cardData = {
                 "title": curr.title,
                 "img": curr.picture,
