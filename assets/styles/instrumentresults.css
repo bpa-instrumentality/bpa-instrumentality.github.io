@@ -150,12 +150,11 @@ header.top-nav .nav-wrapper .user-detail .logout i {
   margin-right: 10px;
 }
 header.top-nav .nav-wrapper .user-detail .logout:hover {
-  background: #fef6ec;
+  background-color: #293740;
   color: #DF652B !important;
 }
 header.top-nav .nav-wrapper .user-detail:hover {
-  background: #fef6ec;
-  color: #DF652B;
+  background-color: #293740;
 }
 header.top-nav .nav-wrapper .user-detail:hover .logout {
   opacity: 1;
@@ -248,7 +247,7 @@ main.main .main-wrapper .col2 {
 main.main .main-wrapper .col2 h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 main.main .main-wrapper .col2 .top-results {
   display: flex;
@@ -262,6 +261,7 @@ main.main .main-wrapper .col2 .results {
   justify-content: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  margin-left: 1rem;
 }
 main.main .main-wrapper .col2 .results .result {
   margin-top: 10px;

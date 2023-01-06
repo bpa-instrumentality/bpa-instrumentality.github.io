@@ -115,30 +115,6 @@ fetch("./instruments.json")
         })
         console.log(sorted)
         
-        let checkboxes = document.querySelectorAll('input');
-        let insts = [];
-        let costs = [];
-        let skills = [];
-        checkboxes.forEach((checkbox) => {
-            if (checkbox.checked == true) {
-                console.log(checkbox)
-                let testClass = checkbox.className;
-                console.log(testClass)
-
-                switch(testClass) {
-                    case "inst":
-                        insts.push(checkbox.value)
-                        break
-                    case "cost":
-                        costs.push(checkbox.value)
-                        break
-                    case "skill":
-                        skills.push(checkbox.value)
-                        break
-                }
-            }
-        })
-        console.log(insts, costs, skills)
         // let ooga = JSON.stringify(['hi!', 'bye!']);
         // console.log(`http://127.0.0.1:5500/instrumentresults.html?instruments=[%22violin%22,%20%22guitar%22]&cost=[%22c4%22,%20%22c1%22]&levels=[%22s3%22]`)
         
@@ -162,6 +138,7 @@ fetch("./instruments.json")
             span2.textContent = curr.price;
             irsCard.setAttribute("desc", curr.desc)
             // irsCard.appendChild(span2)
+            document.getElementById('results').appendChild(irsCard);
             let cardData = {
                 "title": curr.title,
                 "img": curr.picture,
@@ -169,8 +146,8 @@ fetch("./instruments.json")
                 "price": curr.price
             }
             let stringified = JSON.stringify(cardData);
-            irsCard.setAttribute('onclick', `openPopup(${stringified})`);
-            document.getElementById('results').appendChild(irsCard);
+            let addBtn = irsCard.shadowRoot.querySelector('button');
+            addBtn.setAttribute('onclick', `addToCart(${stringified})`);
         }
         document.getElementById('searching').style.display = "none";
          if ((document.getElementById('results').getElementsByTagName('*').length)<2) {
@@ -179,3 +156,78 @@ fetch("./instruments.json")
          }
         
     })
+
+function search() {
+    let checkboxes = document.querySelectorAll('input');
+        let insts = [];
+        let costs = [];
+        let skills = [];
+        checkboxes.forEach((checkbox) => {
+            if (checkbox.checked == true) {
+                console.log(checkbox)
+                let testClass = checkbox.className;
+                console.log(testClass)
+
+                switch(testClass) {
+                    case "inst":
+                        insts.push(checkbox.value)
+                        break
+                    case "cost":
+                        costs.push(checkbox.value)
+                        break
+                    case "skill":
+                        skills.push(checkbox.value)
+                        break
+                }
+            }
+        })
+        if (insts.length == 0) {
+            insts = null;
+        }
+        else {
+            insts = JSON.stringify(insts)
+        }
+        if (costs.length == 0) {
+            costs = null;
+        }
+        else {
+            costs = JSON.stringify(costs)
+        }
+        if (skills.length == 0) {
+            skills = null;
+        }
+        else {
+            skills = JSON.stringify(skills)
+        }
+        console.log(insts, costs, skills)
+        window.location.replace(`instrumentresults.html?instruments=${insts}&costs=${costs}&levels=${skills}`);
+}
+
+function addToCart(data) {
+    console.log(data)
+    let session = localStorage.getItem('session')
+    if (!session) {
+        window.location.replace('login.html')
+    }
+    session = JSON.parse(session)
+    let email = session.email;
+    let cart = JSON.parse(localStorage.getItem(email));
+    let cartFilter = cart.filter((i) => {
+        return i.product == data.title;
+    })
+    console.log(cart, cartFilter)
+    if (!(cartFilter.length > 0)) {
+        let newItem = {
+            "product": data.title,
+            "price": data.price,
+            "img": data.img
+        }
+        cart.push(newItem);
+        console.log(cart)
+        localStorage.removeItem(email)
+        localStorage.setItem(email, JSON.stringify(cart));
+    }
+    else {
+        console.log('item in cart!')
+    }
+} 

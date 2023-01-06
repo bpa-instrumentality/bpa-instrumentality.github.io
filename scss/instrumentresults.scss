@@ -168,14 +168,13 @@ header.top-nav {
                 }
 
                 &:hover {
-                    background: #fef6ec;
+                    background-color: $secondary-bg-blue;
                 color: $primary-orange !important;
                 }
             }
             
             &:hover {
-                background: #fef6ec;
-                color: $primary-orange;
+                background-color: $secondary-bg-blue;
 
                 .logout {
                     opacity: 1;
@@ -281,7 +280,7 @@ main.main {
             h1 {
                 font-size: 1.5rem;
                 font-weight: 600;
-                margin: 1rem 0;
+                margin: 1rem;
             }
 
             .top-results {
@@ -297,6 +296,7 @@ main.main {
                 justify-content: flex-start;
                 gap: 20px;
                 flex-wrap: wrap;
+                margin-left: 1rem;
 
                 .result {
                     margin-top: 10px;
