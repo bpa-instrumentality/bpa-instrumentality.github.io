@@ -5,6 +5,18 @@ if (!detail) {
 }
 detail = JSON.parse(detail)
 document.getElementById('email').textContent = detail.email
+
+let cartItems = localStorage.getItem(JSON.parse(localStorage.getItem('session')).email)
+    cartItems = JSON.parse(cartItems)
+    
+    let amt = cartItems.length;
+    let oAmt = amt
+
+if (oAmt == 0) {
+    document.getElementById('col2').style.display = "none";
+    document.getElementById('cartItems').innerHTML = "<p style='margin-bottom: 20px;'>You dont have any items in your cart! Try adding some instruments to your cart first.</p><a href='instrumentresults.html'>View Instruments</a>"
+}
+
 let amts = document.querySelectorAll('.cartAmt');
 amts.forEach((amtVal) => {
     amtVal.textContent = oAmt
@@ -36,6 +48,9 @@ for (i in cartItems) {
     cw.classList.add('cw');
     cw.innerHTML = `<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <a href="#">Delete</a>`;
+    let delBtn = cw.querySelector('a');
+    delBtn.setAttribute('onclick', `deleteItem(
+        "${curr.product}")`);
     cartDetails.appendChild(cw)
     cItem.appendChild(cartDetails)
     list.appendChild(cItem)
@@ -52,3 +67,36 @@ document.querySelectorAll('.priceAmt').forEach((priceAmt) => {
 console.log(total)
 
 document.getElementById('totalPrice').textContent = total;
+
+
+
+function updateCart2() {
+    let cartItems = localStorage.getItem(JSON.parse(localStorage.getItem('session')).email)
+    cartItems = JSON.parse(cartItems)
+    
+    let amt = cartItems.length;
+    let oAmt = amt
+
+    if (amt > 5) {
+        amt = '5+';
+    }
+    document.getElementById('amt').textContent = amt;
+}
+
+function deleteItem(product) {
+    let currCart = cartItems;
+    let productID = currCart.findIndex(x => x.product === product);
+    console.log(productID)
+    let newCart = [];
+    for (i in currCart) {
+        if (i == productID) {
+            
+        } else {
+            newCart.push(currCart[i])
+        }
+    }
+    console.log(newCart)
+    localStorage.removeItem(email.textContent);
+    localStorage.setItem(email.textContent, JSON.stringify(newCart))
+    window.location.reload();
+}

@@ -48,6 +48,7 @@ header.top-nav {
   width: 100%;
   max-height: 75px;
   min-height: 65px;
+  background-color: #242f38;
   position: relative;
   display: flex;
   align-items: center;
@@ -62,9 +63,10 @@ header.top-nav .nav-wrapper {
   justify-content: space-between;
   max-width: 1280px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #242f38;
   height: 100%;
   padding: 0 2rem;
+  color: #ffffff !important;
 }
 header.top-nav .nav-wrapper img {
   width: 225px;
@@ -90,16 +92,11 @@ header.top-nav .nav-wrapper .right-nav .cart:hover {
   background-color: #fef6ec;
   border-radius: 5px;
 }
-header.top-nav .nav-wrapper .right-nav .cart:hover i {
-  color: #DF652B;
-}
 header.top-nav .nav-wrapper .right-nav .cart i {
   padding: 0.4rem;
   font-size: 1.1rem;
   transition: all 0.3s;
-}
-header.top-nav .nav-wrapper .right-nav .cart i:hover {
-  color: #DF652B;
+  color: #ffffff;
 }
 header.top-nav .nav-wrapper .right-nav .cart .amt {
   cursor: pointer;
@@ -121,6 +118,9 @@ header.top-nav .nav-wrapper .right-nav .cart .amt {
   color: white;
   font-size: 0.7rem;
   font-weight: 600;
+}
+header.top-nav .nav-wrapper .right-nav .cart:hover {
+  background-color: #293740;
 }
 header.top-nav .nav-wrapper .user-detail {
   display: flex;
@@ -157,8 +157,7 @@ header.top-nav .nav-wrapper .user-detail .logout:hover {
   color: #DF652B !important;
 }
 header.top-nav .nav-wrapper .user-detail:hover {
-  background: #fef6ec;
-  color: #DF652B;
+  background: #293740;
 }
 header.top-nav .nav-wrapper .user-detail:hover .logout {
   opacity: 1;

@@ -143,10 +143,35 @@ fetch("./instruments.json")
                 "title": curr.title,
                 "img": curr.picture,
                 "desc": curr.desc,
-                "price": curr.price
+                "price": curr.price,
+                "id": i
             }
+            console.log(cardData)
             let stringified = JSON.stringify(cardData);
             let addBtn = irsCard.shadowRoot.querySelector('button');
+            irsCard.id = i
+
+
+            let session = localStorage.getItem('session')
+    if (!session) {
+        window.location.replace('login.html')
+    }
+    session = JSON.parse(session)
+    let email = session.email;
+    let cart = JSON.parse(localStorage.getItem(email));
+    let cartFilter = cart.filter((i) => {
+        return i.product == cardData.title;
+    })
+    console.log(cart, cartFilter)
+    if (cartFilter.length > 0) {
+        addBtn.textContent = "Added";
+        addBtn.disabled = true;
+        addBtn.style.cursor = "auto"
+        addBtn.style.background = "#a34b21"
+        console.log(addBtn)
+    }
+
+
             addBtn.setAttribute('onclick', `addToCart(${stringified})`);
         }
         document.getElementById('searching').style.display = "none";
@@ -204,7 +229,10 @@ function search() {
 }
 
 function addToCart(data) {
-    console.log(data)
+    let currCard = document.getElementById(data.id).shadowRoot;
+    let addToCartBtn = currCard.querySelector('button');
+    console.log(addToCartBtn)
+    console.log(currCard)
     let session = localStorage.getItem('session')
     if (!session) {
         window.location.replace('login.html')
@@ -217,6 +245,11 @@ function addToCart(data) {
     })
     console.log(cart, cartFilter)
     if (!(cartFilter.length > 0)) {
+        addToCartBtn.textContent = "Added";
+        addToCartBtn.disabled = true;
+        addToCartBtn.style.cursor = "auto"
+        addToCartBtn.style.background = "#a34b21"
+        console.log(addToCartBtn)
         let newItem = {
             "product": data.title,
             "price": data.price,
@@ -226,8 +259,9 @@ function addToCart(data) {
         console.log(cart)
         localStorage.removeItem(email)
         localStorage.setItem(email, JSON.stringify(cart));
+        updateCart()
     }
     else {
         console.log('item in cart!')
     }
-} 
+}
