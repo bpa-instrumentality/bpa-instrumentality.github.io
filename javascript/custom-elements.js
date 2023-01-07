@@ -15,6 +15,7 @@ template.innerHTML = `
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
+    position: relative;
 }
 .result button {
     width: 75px;
@@ -45,6 +46,17 @@ template.innerHTML = `
     max-width: 100%;
     opacity: 0.7;
     margin: 0;
+}
+
+@media (max-width: 563px) {
+    .result {
+        width: 100% !important;
+        max-width: none !important;
+    }
+    .result img {
+        width: 100%;
+        height: auto;
+    }
 }
 </style>
 <div class="result">

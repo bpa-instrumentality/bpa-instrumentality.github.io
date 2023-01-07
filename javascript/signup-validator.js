@@ -58,6 +58,6 @@ function validate() {
             "password": password
         }
         localStorage.setItem('session', JSON.stringify(session))
-        window.location.replace('./dashboard.html')
+        window.location.replace('index.html')
     }
 }

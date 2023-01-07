@@ -34,9 +34,13 @@
     <main class="main">
         <div class="main-wrapper">
             <div class="col1">
-                <h1>Filters</h1>
+                <button class="filterToggle" id="flToggle" onclick="toggleFilter()">
+                    <i class="fa-solid fa-sort"></i>
+                    Filters
+                </button>
+                <h1 class="filterItems">Filters</h1>
 
-                <div class="filter-section" id="instrument-type">
+                <div class="filter-section filterItems" id="instrument-type">
                     <p>Instrument Type</p>
                     <div>
                         <input type="checkbox" id="violin" name="violin" value="violin" class="inst">
@@ -64,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="filter-section" id="instrument-cost">
+                <div class="filter-section filterItems" id="instrument-cost">
                     <p>Cost</p>
                     <div>
                         <input type="checkbox" id="c1" name="c1" value="c1" class="cost">
@@ -83,7 +87,7 @@
                         <label for="c4">>$18</label>
                     </div>
                 </div>
-                <div class="filter-section" id="instrument-skill">
+                <div class="filter-section filterItems" id="instrument-skill">
                     <p>Skill Level</p>
                     <div>
                         <input type="checkbox" id="s1" name="s1" value="s1" class="skill">
@@ -99,11 +103,11 @@
                     </div>
                 </div>
 
-                <button onclick="search()">Search</button>
+                <button onclick="search()" id="searchBtn" class="filterItems">Search</button>
             </div>
             <div class="col2">
                 <div class="top-results">
-                    <h1>Results (<span id="resultsAmt">0</span>)</h1>
+                    <h1>Results (<span id="resultsAmt">Loading...</span>)</h1>
 
                     <a href="index.html">Go Home</a>
                 </div>
@@ -122,6 +126,7 @@
     <script>
         feather.replace()
       </script>
+      <script src="/javascript/filter-toggles.js"></script>
       <!-- <script src="/javascript/results-popup.js"></script> -->
 </body>
 </html>

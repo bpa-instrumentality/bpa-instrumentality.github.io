@@ -191,6 +191,18 @@ main.main .main-wrapper .col2 {
   height: -moz-fit-content;
   height: fit-content;
 }
+main.main .main-wrapper .col2 .two {
+  padding: 1rem 1.5rem !important;
+}
+main.main .main-wrapper .col2 .two button {
+  margin: 0.3rem 0;
+}
+main.main .main-wrapper .col2 .two #btn2 {
+  background-color: #009687;
+}
+main.main .main-wrapper .col2 .two #btn2:hover {
+  background-color: #027468;
+}
 main.main .main-wrapper .col2 .checkout-box {
   width: 100%;
   height: -webkit-fit-content;
@@ -206,6 +218,14 @@ main.main .main-wrapper .col2 .checkout-box h1 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+}
+main.main .main-wrapper .col2 .checkout-box .links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+main.main .main-wrapper .col2 .checkout-box a {
+  color: #DF652B;
 }
 main.main .main-wrapper .col2 .checkout-box p {
   margin-bottom: 0.5rem;
@@ -360,5 +380,16 @@ main.main::-webkit-scrollbar-thumb {
 @media (max-width: 477px) {
   .col1 {
     max-width: 100% !important;
+  }
+}
+@media (max-width: 603px) {
+  .cart-header {
+    flex-wrap: wrap;
+  }
+  .cart-item {
+    flex-direction: column;
+  }
+  .cart-item img {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=cart.css.map */

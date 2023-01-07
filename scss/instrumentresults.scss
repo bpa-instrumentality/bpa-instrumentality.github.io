@@ -30,6 +30,7 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     position: relative;
+    gap: 50px;
 }
 
 @include header-navbar;
@@ -71,6 +72,27 @@ main.main {
             min-width: 23%;
             border-right: 1px solid rgba(0, 0, 0, 0.2);
 
+
+            .filterToggle {
+                display: none;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 0 .5rem;
+                background-color: $primary-orange;
+                color: $white;
+                border-radius: 50px;
+                margin-bottom: 20px;
+                border: none;
+                height: 35px;
+            }
+
+            #flToggle {
+                display: none;
+            }
+
             h1 {
                 font-size: 1.8rem;
                 font-weight: 600;
@@ -100,7 +122,7 @@ main.main {
                   }
             }
 
-            button {
+            #searchBtn {
                 margin-top: 25px;
                 background-color: $primary-orange;
                 color: $white;
@@ -199,5 +221,91 @@ main.main {
                 }
             }
         }
+    }
+}
+
+
+@media (max-width: 960px) {
+    body {
+        display: block !important;
+    }
+
+    header.top-nav {
+        position: sticky !important;
+        min-height: 75px !important;
+    }
+    main.main {
+        height: fit-content !important;
+        max-height: none!important;
+        min-height: none !important;
+        margin: 0 !important;
+    }
+    .col2 {
+        max-width: none !important;
+    }
+    .main-wrapper {
+        max-width: none !important;
+    }
+    .results {
+        justify-content: space-between !important;
+    }
+    .main-wrapper {
+        flex-direction: column;
+        // margin-top: 13rem;
+
+        .col1 {
+            padding: 0 2rem !important;
+            padding-top: 0.5rem !important;
+            // flex-direction: row !important;
+            // margin-top: 500rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 100% !important;
+            width: 100% !important;
+            border: none !important;
+            flex-wrap: wrap;
+
+            #searchBtn {
+                width: 200px;
+            }
+
+            #flToggle {
+                display: flex !important;
+            }
+
+            .hidden {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 563px) {
+    .col1 {
+        margin-top: 0 !important;
+
+        #searchBtn {
+            width: 100% !important;
+        }
+    }
+    .main-wrapper {
+        padding: 0.5rem !important;
+    }
+    .results {
+        justify-content: center !important;
+
+        .result {
+            width: 100% !important;
+            max-width: none !important;
+        }
+    }
+}
+
+@media (max-width: 483px) {
+    .right-nav {
+        display: none !important;
+    }
+    .nav-wrapper {
+        justify-content: center !important;
     }
 }
