@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/styles/checkout.css">
+</head>
+<body>
+    <a href="cart.html"><i class="fa-solid fa-angle-left"></i> Go to cart</a>
+   <section class="col1">
+    <div class="col1wrapper">
+        <div>
+            <p class="heading">Purchase <span id="firstItem"></span><span id="and"> and <span id="amtMore">0</span> more</span> </p>
+            <h1 id="price">$<span class="total"></span>.00</h1>
+            <p class="heading2">Then $<span class="total"></span>.00 per month</p>
+        </div>
+        <div class="items" id="items">
+        </div>
+    </div>
+   </section>
+   <section class="col2">
+    <div class="col2wrapper">
+        <div class="input-field">
+            <p>Card Number</p>
+            <input type="text" placeholder="ie. 1234 1234 1234 1234">
+        </div>
+        <div class="input-field">
+            <p>Expiry</p>
+            <input type="text" placeholder="ie. MM/YY">
+        </div>
+        <div class="input-field">
+            <p>CVC</p>
+            <input type="text" placeholder="ie. 123">
+        </div>
+        <div class="input-field">
+            <p>Name on card</p>
+            <input type="text" placeholder="ie. John Smith">
+        </div>
+        <div class="input-field">
+            <p>Shipping Address</p>
+            <input type="text" placeholder="ie. 1234 Maple Avenue">
+        </div>
+        <button>Pay</button>
+        <p class="tos">By confirming your payment, you allow Instrumentality Co. to charge your card for this payment and future payments in accordance with their terms. You can always cancel your monthly payments.</p>
+    </div>
+   </section>
+
+   <script src="/javascript/checkout.js"></script>
+</body>
+</html>

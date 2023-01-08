@@ -102,15 +102,16 @@
                         <label for="s3">Advanced</label>
                     </div>
                 </div>
-
+                <a href="#" id="filterReset" onclick="resetFilters()">Reset Filters</a>
                 <button onclick="search()" id="searchBtn" class="filterItems">Search</button>
             </div>
             <div class="col2">
                 <div class="top-results">
-                    <h1>Results (<span id="resultsAmt">Loading...</span>)</h1>
+                    <h1>Results (<span id="resultsAmt">Loading...</span><span id="raAdd"></span>)</h1>
 
-                    <a href="index.html">Go Home</a>
+                    <a href="index.html"><button id="goHome">Go Home</button></a>
                 </div>
+                <p id="noResults" style="opacity: 0.75; font-weight: 600; padding: 0 1rem; max-width: 920px;margin-bottom: 1rem;" class="noRes">hii</p>
                <section class="results" id="results">
                 <p id="searching" style="opacity: 0.75; font-weight: 600;">Searching for the perfect instruments...</p>
                 

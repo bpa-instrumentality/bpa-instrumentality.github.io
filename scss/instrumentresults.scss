@@ -30,7 +30,31 @@ body {
     overflow-x: hidden !important;
     overflow-y: auto !important;
     position: relative;
-    gap: 50px;
+    // gap: 50px;
+}
+#filterReset {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: -0.75rem;
+    color: $primary-orange;
+
+    &:hover {
+        color: $primary-orange-hover;
+    }
+}
+#goHome {
+    width: 90px;
+    height: 35px;
+    background-color: $primary-orange;
+    color: $white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: $primary-orange-hover;
+    }
 }
 
 @include header-navbar;
@@ -58,6 +82,7 @@ main.main {
         align-items: flex-start;
         justify-content: center;
         // gap: 20px;
+    
 
         .col1 {
             flex: 1 1 auto;

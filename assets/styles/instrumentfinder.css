@@ -33,12 +33,17 @@ body::before {
   z-index: -500;
 }
 
+#homeLink {
+  margin-top: 0.5rem;
+  color: #DF652B;
+}
+
 .box {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   border-radius: 5px;
   min-height: 27rem;
   transition: height 0.5s;

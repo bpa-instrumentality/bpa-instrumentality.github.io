@@ -30,7 +30,30 @@ body {
   overflow-x: hidden !important;
   overflow-y: auto !important;
   position: relative;
-  gap: 50px;
+}
+
+#filterReset {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: -0.75rem;
+  color: #DF652B;
+}
+#filterReset:hover {
+  color: #a34b21;
+}
+
+#goHome {
+  width: 90px;
+  height: 35px;
+  background-color: #DF652B;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#goHome:hover {
+  background-color: #a34b21;
 }
 
 header.top-nav {

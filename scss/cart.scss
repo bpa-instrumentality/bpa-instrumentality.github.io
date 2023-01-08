@@ -242,6 +242,21 @@ main.main {
                             color: $primary-orange-hover;
                         }
                     }
+
+                    .delBtn {
+                        background: $primary-orange;
+                        border: none;
+                        color: $white;
+                        padding: 0.2rem 0.5rem;
+                        border-radius: 50px;
+                        font-size: 0.75rem;
+                        cursor: pointer;
+                        transition: background .2s ease;
+
+                        &:hover {
+                            background: $primary-orange-hover;
+                        }
+                    }
                 }
             }
         }

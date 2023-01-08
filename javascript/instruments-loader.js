@@ -23,73 +23,38 @@ function test() {
 fetch("./instruments.json")
     .then((response) => response.json())
     .then(json => {
+        document.querySelectorAll('.noRes').forEach((i) => {
+            i.style.display = "none"
+        })
         let instruments = json.instruments;
-        let filter = 13;
-        // const sorted = [...instruments].sort((a, b) => {
-        //     const aValue = getMatchValue(filter, a.filterid)
-        //     const bValue = getMatchValue(filter, b.filterid)
-        //     return aValue < bValue ? 1 : aValue > bValue ? -1 : 0
-        //   })
-          
-        //   console.log(sorted)
-          
-        //   function getMatchValue(original, filterid) {
-        //     const a = original.toString()
-        //     const b = filterid.toString()
-          
-        //     let sum = 0
-          
-        //     for (let i = 0; i < a.length; i += 1) {
-        //       if (a[i] === b[i]) {
-        //         sum += a.length - i
-        //       }
-        //     }
-          
-        //     return sum
-        //   }
-
-          const options = {
-            includeScore: true,
-            keys: [{
-                name: "nameid",
-                weight: 0.7
-            },
-            {
-                name: "filterid",
-                weight: 0.3
-            },
-            {
-                name: "priceid",
-                weight: 0.1
-            }
-        ]
-          }
-
-          const params = new URLSearchParams(window.location.search)
-        //   let filterParam = params.get('filter');
-          
-        //   if (!filterParam) {
-        //     filterParam = "1"
-        //   }
-
-        //   const fuse = new Fuse(instruments, options)
-        //   const sorted = fuse.search(filterParam)
-
-        //   console.log('fuse: ', sorted)
-
+        const instrumentCatalog = ['violin', 'saxophone', 'trumpet', 'flute', 'drums', 'guitar']
+        const costCatalog =  ['c1', 'c2', 'c3', 'c4'];
+        const skillCatalog = ['s1', 's2', 's3'];
+        const params = new URLSearchParams(window.location.search);
         let instParam = params.get('instruments');
         instParam = JSON.parse(instParam);
+
         if (instParam == null) {
             instParam = ['violin', 'saxophone', 'trumpet', 'flute', 'drums', 'guitar']
         }
+        instParam.forEach((item) => {
+            if (!instrumentCatalog.includes(item)) {
+                instParam = instrumentCatalog
+            }
+        })
         for (i in instParam) {
             console.log(document.getElementById(instParam[i]).checked = true)
         }
         let costParam = params.get('costs');
         costParam = JSON.parse(costParam);
         if (costParam == null) {
-            costParam = ['c1', 'c2', 'c3', 'c4']
+            costParam = costCatalog
         }
+        costParam.forEach((item) => {
+            if (!costCatalog.includes(item)) {
+                costParam = ['c1', 'c2', 'c3', 'c4']
+            }
+        })
         for (i in costParam) {
             console.log(document.getElementById(costParam[i]).checked = true)
         }
@@ -98,6 +63,11 @@ fetch("./instruments.json")
         if (diffParam == null) {
             diffParam = ['s1', 's2', 's3']
         }
+        diffParam.forEach((item) => {
+            if (!skillCatalog.includes(item)) {
+                diffParam = skillCatalog
+            }
+        })
         for (i in diffParam) {
             console.log(document.getElementById(diffParam[i]).checked = true)
         }
@@ -114,6 +84,17 @@ fetch("./instruments.json")
             return diffParam.includes(i.diff)
         })
         console.log(sorted)
+
+        if (sorted.length == 0) {
+            
+            document.getElementById('noResults').textContent = "Sorry, but we could not find the instruments that you wanted. You might like some of these related instruments though!"
+            document.querySelectorAll('.noRes').forEach((i) => {
+                i.style.display = "block"
+            })
+            console.log( document.getElementById('noResults'))
+            document.getElementById('raAdd').textContent = " related"
+         }
+         sorted = sorted1;
         
         // let ooga = JSON.stringify(['hi!', 'bye!']);
         // console.log(`http://127.0.0.1:5500/instrumentresults.html?instruments=[%22violin%22,%20%22guitar%22]&cost=[%22c4%22,%20%22c1%22]&levels=[%22s3%22]`)
@@ -174,11 +155,9 @@ fetch("./instruments.json")
 
             addBtn.setAttribute('onclick', `addToCart(${stringified})`);
         }
-        document.getElementById('searching').style.display = "none";
-         if ((document.getElementById('results').getElementsByTagName('*').length)<2) {
-            document.getElementById('searching').textContent = "Sorry, but we could not find the instruments that you wanted."
-            document.getElementById('searching').style.display = "block"
-         }
+        if (!document.getElementById('searching').classList.contains('dontHide')) {
+            document.getElementById('searching').style.display = "none";
+        }
         
     })
 
@@ -264,4 +243,11 @@ function addToCart(data) {
     else {
         console.log('item in cart!')
     }
+}
+
+function resetFilters() {
+    let checkboxes = document.querySelectorAll('input')
+    checkboxes.forEach((i) => {
+        i.checked = false;
+    })
 }

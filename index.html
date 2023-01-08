@@ -54,7 +54,7 @@
                     <p>Your Account</p>
                     <a href="dashboard.html">Dashboard</a>
                     <a href="cart.html">Cart</a>
-                    <a href="#">Logout</a>
+                    <a href="#" onclick="localStorage.removeItem('session'); window.location.replace('index.html')">Logout</a>
                 </div>
                 <div class="dropdivide"></div>
                 <div class="div2">
@@ -148,7 +148,7 @@
                     </p>
                     <div class="btns">
                         <button>Learn More</button>
-                    <button class="get-started">Purchase Violins</button>
+                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22violin%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Violins</button>
                     </div>
             </div>
         </div>
@@ -161,17 +161,17 @@
                 <p>The guitar is a strings instrument that is used in music genres such as country, rock, metal, and even jazz music. The guitar is characterized by its body which is covered in 6 strings. It is also characterized by the sound that it generates. The guitar's sound is very deep, with some bass in it. Guitars will cost you between $30-50 dollars based on the size of the guitar you are renting. 
                     <br></p>
                     <p class="fun-fact">
-                        Fun Fact: This is a random fun fact to fill out later.
+                        Fun Fact: The first guitar was probably made in ancient Greece around 3,000 years ago.
                     </p>
                     <div class="btns">
                         <button>Learn More</button>
-                    <button class="get-started">Purchase Guitars</button>
+                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22guitar%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Guitars</button>
                     </div>
             </div>
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="inner-swipe-content" style="gap: 15% !important">
+        <div class="inner-swipe-content" style="gap: 8% !important">
             <img src="/assets/images/drum-cover1.png" alt="drums" class="instrument-swipe" style="width: 450px; margin: 0;">
             <div class="info-card">
                 <h1>The <span>Drums</span></h1>
@@ -182,14 +182,14 @@
                     </p>
                     <div class="btns">
                         <button>Learn More</button>
-                    <button class="get-started">Purchase Guitars</button>
+                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22drums%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')" >Purchase Guitars</button>
                     </div>
             </div>
         </div>
       </div>
-      <div class="swiper-slide">
+      <!--  <div class="swiper-slide">
         More images/slides to be added soon
-      </div>
+      </div> -->
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>

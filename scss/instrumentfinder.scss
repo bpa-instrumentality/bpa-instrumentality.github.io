@@ -34,13 +34,17 @@ body{
     }
 }
 
+#homeLink {
+    margin-top: .5rem;
+    color: $primary-orange;
+}
 
 .box {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: $white;
-    padding: 1rem;
+    padding: 1rem 1rem .5rem 1rem;
     border-radius: 5px;
     min-height: 27rem;
     transition: height .5s;

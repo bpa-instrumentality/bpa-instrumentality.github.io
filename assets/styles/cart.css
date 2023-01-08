@@ -337,6 +337,19 @@ main.main .main-wrapper .col1 .cart-items .cart-item a {
 main.main .main-wrapper .col1 .cart-items .cart-item a:hover {
   color: #a34b21;
 }
+main.main .main-wrapper .col1 .cart-items .cart-item .delBtn {
+  background: #DF652B;
+  border: none;
+  color: #ffffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+main.main .main-wrapper .col1 .cart-items .cart-item .delBtn:hover {
+  background: #a34b21;
+}
 
 main.main::-webkit-scrollbar {
   width: 10px;
