@@ -202,7 +202,7 @@ body a:hover {
 }
 
 .items::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.02);
   border-radius: 6px;
 }
 

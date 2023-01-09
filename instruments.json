@@ -104,6 +104,18 @@
             "instrument": "drums",
             "cost": "c2",
             "diff": "s1"
+        },
+        {
+            "title": "Ashtrophe Drums",
+            "picture": "/assets/images/snare-drum-pic.png",
+            "desc": "An intermediate level drum that works well with multiple instruments",
+            "price":12,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "drums",
+            "cost": "c2",
+            "diff": "s2"
         }
     ]
 }
