@@ -139,6 +139,7 @@ fetch("./instruments.json")
     }
     session = JSON.parse(session)
     let email = session.email;
+    document.getElementById('email').textContent = email;
     let cart = JSON.parse(localStorage.getItem(email));
     let cartFilter = cart.filter((i) => {
         return i.product == cardData.title;

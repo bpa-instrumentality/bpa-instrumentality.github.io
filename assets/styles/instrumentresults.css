@@ -409,7 +409,7 @@ main.main .main-wrapper .col2 .results .result .desc {
     max-width: none !important;
   }
 }
-@media (max-width: 483px) {
+@media (max-width: 550px) {
   .right-nav {
     display: none !important;
   }
