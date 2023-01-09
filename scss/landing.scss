@@ -1254,3 +1254,10 @@ body::-webkit-scrollbar-track {
         display: none !important;
     }
 }
+
+@media (max-height: 801px) {
+    .info-card {
+        height: 550px !important;
+        font-size: 0.86rem !important;
+    }
+}

@@ -1275,4 +1275,10 @@ body::-webkit-scrollbar-thumb {
   div#signup-popup {
     display: none !important;
   }
+}
+@media (max-height: 801px) {
+  .info-card {
+    height: 550px !important;
+    font-size: 0.86rem !important;
+  }
 }/*# sourceMappingURL=landing.css.map */
