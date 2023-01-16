@@ -411,7 +411,10 @@ section.browse .swiper .swiper-slide .inner-swipe-content img.instrument-swipe {
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card {
   width: 500px;
-  height: 625px;
+  min-height: 625px;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
   background-color: #2D3F4A;
   border-radius: 5px;
   border: 2px solid #374c58;
@@ -435,6 +438,32 @@ section.browse .swiper .swiper-slide .inner-swipe-content .info-card p span {
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card p.fun-fact {
   color: #7a95a5;
   margin-top: 15px;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card .hearSection {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 10px;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card .hearSection p {
+  margin: 0;
+  color: #7a95a5;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card .hearSection button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #DF652B;
+  color: #ffffff;
+  border: none;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+section.browse .swiper .swiper-slide .inner-swipe-content .info-card .hearSection button:hover {
+  background-color: #a34b21;
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns {
   display: flex;

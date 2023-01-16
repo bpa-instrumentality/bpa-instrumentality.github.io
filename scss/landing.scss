@@ -263,7 +263,8 @@ section.browse {
 
                 .info-card {
                     width: 500px;
-                    height: 625px;
+                    min-height: 625px;
+                    height: fit-content !important;
                     background-color: $primary-bg-blue;
                     border-radius: 5px;
                     border: 2px solid $outline-contrast;
@@ -289,6 +290,36 @@ section.browse {
                     p.fun-fact {
                         color: $text-one;
                         margin-top: 15px;
+                    }
+
+                    .hearSection {
+                        flex-wrap: wrap;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // background-color: red;
+                        margin: 2rem 0;
+                        gap: 10px;
+
+                        p {
+                            margin: 0;
+                            color: $text-one;
+                        }
+                        button {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            background-color: $primary-orange;
+                            color: $white;
+                            border: none;
+                            font-size: 0.7rem;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                background-color: $primary-orange-hover;
+                            }
+                        }
                     }
 
                     div.btns {
