@@ -1309,5 +1309,6 @@ body::-webkit-scrollbar-thumb {
   .info-card {
     height: 550px !important;
     font-size: 0.86rem !important;
+    min-height: 0px !important;
   }
 }/*# sourceMappingURL=landing.css.map */

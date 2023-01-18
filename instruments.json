@@ -116,6 +116,90 @@
             "instrument": "drums",
             "cost": "c2",
             "diff": "s2"
+        },
+        {
+            "title": "Struass 6400",
+            "picture": "/assets/images/struass-pic.jpg",
+            "desc": "An advanced instrument that produces amazing sound and has great quality",
+            "price":19,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c4",
+            "diff": "s3"
+        },
+        {
+            "title": "Yamaha YFL-222",
+            "picture": "/assets/images/yfl222-pic.jpg",
+            "desc": "An advanced instrument that comes with a very low price",
+            "price":7,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "flute",
+            "cost": "c1",
+            "diff": "s3"
+        },
+        {
+            "title": "Pearl F305",
+            "picture": "/assets/images/pearl305-pic.jpg",
+            "desc": "A well rounded beginner level starter instrument",
+            "price":12,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "flute",
+            "cost": "c2",
+            "diff": "s1"
+        },
+        {
+            "title": "YAS-62 Saxophone",
+            "picture": "/assets/images/yas62-pic.jpg",
+            "desc": "An intermediate, easy to handle instrument",
+            "price":15,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c3",
+            "diff": "s2"
+        },
+        {
+            "title": "Yamaha YVN",
+            "picture": "/assets/images/yvn-pic.jpg",
+            "desc": "An intermediate yet good quality violin",
+            "price":11,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c2",
+            "diff": "s2"
+        },
+        {
+            "title": "OM-28 Guitar",
+            "picture": "/assets/images/om28-pic.jpg",
+            "desc": "An intermediate, well sounding instrument that will please your ears",
+            "price":17,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "guitar",
+            "cost": "c3",
+            "diff": "s2"
+        },
+        {
+            "title": "Bongo 5000",
+            "picture": "/assets/images/bongo5000-pic.jpg",
+            "desc": "A traditional and tribal instrument with clear sound production",
+            "price":6,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "drums",
+            "cost": "c1",
+            "diff": "s1"
         }
     ]
 }

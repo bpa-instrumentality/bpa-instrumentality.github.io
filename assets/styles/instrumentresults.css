@@ -251,6 +251,9 @@ main.main .main-wrapper .col1 div.filter-section input[type=checkbox] {
   width: 17px;
   height: 17px;
 }
+main.main .main-wrapper .col1 div.filter-section label {
+  cursor: pointer;
+}
 main.main .main-wrapper .col1 div.filter-section div {
   display: flex;
   align-items: center;

@@ -92,9 +92,9 @@ fetch("./instruments.json")
                 i.style.display = "block"
             })
             console.log( document.getElementById('noResults'))
-            document.getElementById('raAdd').textContent = " related"
+            document.getElementById('raAdd').textContent = " related";
+            sorted = sorted1;
          }
-         sorted = sorted1;
         
         // let ooga = JSON.stringify(['hi!', 'bye!']);
         // console.log(`http://127.0.0.1:5500/instrumentresults.html?instruments=[%22violin%22,%20%22guitar%22]&cost=[%22c4%22,%20%22c1%22]&levels=[%22s3%22]`)
