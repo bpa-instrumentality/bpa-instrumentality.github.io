@@ -125,7 +125,7 @@
             "filterid": "158236",
             "nameid": "15",
             "priceid": "36",
-            "instrument": "saxophone",
+            "instrument": "trumpet",
             "cost": "c4",
             "diff": "s3"
         },
@@ -200,6 +200,90 @@
             "instrument": "drums",
             "cost": "c1",
             "diff": "s1"
+        },
+        {
+            "title": "Stendor 1500",
+            "picture": "/assets/images/stendor-pic.jpg",
+            "desc": "A beginner friendly instrument that is low cost and amazing for people just beginning their music journey",
+            "price":8,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c1",
+            "diff": "s1"
+        },
+        {
+            "title": "Pearl Roadshow",
+            "picture": "/assets/images/roadshow-pic.jpg",
+            "desc": "An intermediate level drum set that is perfect for performances and shows!",
+            "price":16,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "drums",
+            "cost": "c3",
+            "diff": "s2"
+        },
+        {
+            "title": "Gibson-Les Electric",
+            "picture": "/assets/images/gibsonles-pic.jpg",
+            "desc": "An advanced electric guitar that is great for concerts",
+            "price":12,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "guitar",
+            "cost": "c2",
+            "diff": "s3"
+        },
+        {
+            "title": "Etude EAS",
+            "picture": "/assets/images/etudeeas-pic.jpg",
+            "desc": "A beginner friendly trumpet that has great potential, especially in performances",
+            "price":13,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "trumpet",
+            "cost": "c2",
+            "diff": "s1"
+        },
+        {
+            "title": "JUXAAN Brass",
+            "picture": "/assets/images/juxaanbrass-pic.jpg",
+            "desc": "A brass trumpet designed to enhance sound quality and ease-of-play",
+            "price":25,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "trumpet",
+            "cost": "c4",
+            "diff": "s2"
+        },
+        {
+            "title": "YAS-204 Sax",
+            "picture": "/assets/images/yas204-pic.jpg",
+            "desc": "A saxophone targeted towards beginners meant for ease of play.",
+            "price":22,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c4",
+            "diff": "s1"
+        },
+        {
+            "title": "Catalina Drums",
+            "picture": "/assets/images/catalina-pic.jpg",
+            "desc": "A beautiful drum set meant for use in large bands.",
+            "price":16,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "drums",
+            "cost": "c3",
+            "diff": "s3"
         }
     ]
 }
