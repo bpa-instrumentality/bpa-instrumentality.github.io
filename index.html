@@ -51,17 +51,20 @@
             </div>
             <div class="user-dropdown" id="dropdown" onmouseout="hideDropdown()"> 
                 <div class="div1">
-                    <p>Your Account</p>
+                    <button onclick="window.location.replace('dashboard.html')"><i class="fa-solid fa-table-columns"></i> Dashboard</button>
+                    <button onclick="window.location.replace('cart.html')"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+                    <button onclick="localStorage.removeItem('session'); window.location.replace('index.html')"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+                    <!-- <p>Your Account</p>
                     <a href="dashboard.html">Dashboard</a>
-                    <a href="cart.html">Cart</a>
-                    <a href="#" onclick="localStorage.removeItem('session'); window.location.replace('index.html')">Logout</a>
+                    <a href="cart.html">Cart</a> -->
+                    <!-- <a href="#" onclick="localStorage.removeItem('session'); window.location.replace('index.html')">Logout</a> -->
                 </div>
-                <div class="dropdivide"></div>
+                <!-- <div class="dropdivide"></div>
                 <div class="div2">
                     <p>Instruments</p>
                     <a href="instrumentresults.html">Purchase</a>
                     <a href="instrumentfinder.html">InstruFinder</a>
-                </div>
+                </div> -->
             </div>
         </header>
         <div class="mobile-menu" id="mobile-menu">
@@ -87,6 +90,44 @@
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Create Password" class="popup-pwd">
                     <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="ifpopup" id="ifpopup">
+            <div class="overlay2" id="o2"></div>
+            <div class="box" id="box">
+                <i data-feather="x" class="popup-x" id="popup-close2"></i>
+                <div class="header">
+                    <a href="index.html"><img src="/assets/images/logo-favicon.svg" alt="logo"></a>
+                    <h1>Instru<span>Finder</span></h1>
+                </div>
+                <p>Answer a few questions, and we will do the rest!</p>
+                <div class="selects">
+                    <select name="test" id="select1">
+                        <option value="none" selected disabled hidden>What instrument do you prefer?</option>
+                        <option value="violin" >Violin</option>
+                        <option value="guitar">Guitar</option>
+                        <option value="saxophone">Saxophone</option>
+                        <option value="trumpet">Trumpet</option>
+                        <option value="drums">Drums</option>
+                        <option value="flute">Flute</option>
+                    </select>
+                    <select name="test" id="select2">
+                        <option value="none" selected disabled hidden>What skill level of instrument?</option>
+                        <option value="s1" >Beginner</option>
+                        <option value="s2">Intermediate</option>
+                        <option value="s3">Advanced</option>
+                    </select>
+                    <select name="test" id="select3">
+                        <option value="none" selected disabled hidden>What is your price range?</option>
+                        <option value="c1" ><$8</option>
+                        <option value="c2" >$8-$13</option>
+                        <option value="c3" >$14-$17</option>
+                        <option value="c4" >>$18</option>
+                    </select>
+                </div>
+                <div class="btn">
+                    <button onclick="submit()">Submit</button>
                 </div>
             </div>
         </div>
@@ -282,7 +323,7 @@
                 your needs. Just answer some questions, and let us do the rest!</p>
                 <p id="paragraph2" data-aos="zoom-out" data-aos-delay="150">Don‘t worry. We’ve got you covered. Fill out our questionnaire and we will find you a perfect instrument!</p>
                 <div style="width: 100%;" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="500">
-                    <button onclick="window.location.replace('instrumentfinder.html')" >Help me out!</button>
+                    <button onclick="openPopup2()" >Help me out!</button>
                 </div>
                 
     </section>
@@ -507,5 +548,6 @@
         </script>
         <script src="/javascript/landing-dropdown.js"></script>
         <script src="/javascript/audio.js"></script>
+        <script src="/javascript/questionnaire.js"></script>
 </body>
 </html>

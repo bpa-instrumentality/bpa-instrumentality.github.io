@@ -25,29 +25,30 @@
     <div class="col2wrapper">
         <div class="input-field">
             <p>Card Number</p>
-            <input type="text" placeholder="ie. 1234 1234 1234 1234">
+            <input type="text" placeholder="1234 1234 1234 1234" maxlength="16">
         </div>
         <div class="input-field">
             <p>Expiry</p>
-            <input type="text" placeholder="ie. MM/YY">
+            <input type="date" placeholder="MM/YY">
         </div>
         <div class="input-field">
             <p>CVC</p>
-            <input type="text" placeholder="ie. 123">
+            <input type="text" placeholder="123" maxlength="3">
         </div>
         <div class="input-field">
             <p>Name on card</p>
-            <input type="text" placeholder="ie. John Smith">
+            <input type="text" placeholder="John Smith">
         </div>
         <div class="input-field">
             <p>Shipping Address</p>
-            <input type="text" placeholder="ie. 1234 Maple Avenue">
+            <input type="text" placeholder="1234 Maple Avenue">
         </div>
-        <button>Pay</button>
+        <button onclick="pay()">Pay</button>
         <p class="tos">By confirming your payment, you allow Instrumentality Co. to charge your card for this payment and future payments in accordance with their terms. You can always cancel your monthly payments.</p>
     </div>
    </section>
 
    <script src="/javascript/checkout.js"></script>
+   <script src="/javascript/checkout-validator.js"></script>
 </body>
 </html>

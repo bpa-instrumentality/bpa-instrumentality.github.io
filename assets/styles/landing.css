@@ -57,21 +57,44 @@ body {
 }
 .navbarmain .user-dropdown {
   pointer-events: none;
-  padding: 1rem;
   background-color: white;
   position: absolute;
   top: 80%;
   right: 0;
-  margin-right: 5%;
   border-radius: 5px 5px 5px 5px;
-  height: 10rem;
-  width: 20rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 10rem;
   opacity: 0;
   transition: all 0.3s ease;
+  gap: 0;
+  margin: 0 !important;
+  margin-right: 5% !important;
+  overflow: hidden;
+  color: black;
+}
+.navbarmain .user-dropdown button {
+  width: 100%;
+  flex: 1 1 auto;
+  height: 50px !important;
+  margin: 0 !important;
+  cursor: pointer;
+  background-color: rgb(252, 252, 252);
+  border: none;
+  transition: background-color 0.15s;
+  font-size: 0.85rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: black;
+  justify-content: center;
+  gap: 5px;
+}
+.navbarmain .user-dropdown button:hover {
+  background-color: #DF652B;
+  color: white;
+}
+.navbarmain .user-dropdown button:last-child:hover {
+  background-color: #009687;
 }
 .navbarmain .user-dropdown p {
   font-weight: 500;
@@ -88,7 +111,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   height: 100%;
-  row-gap: 10px;
 }
 .navbarmain .user-dropdown .div1 p, .navbarmain .user-dropdown .div2 p {
   font-size: 1.05rem;
@@ -254,6 +276,139 @@ div.bg-blur {
   transition: opacity 0.6s;
 }
 
+.ifpopup {
+  position: fixed;
+  z-index: 50000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #282a32;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.ifpopup .overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.ifpopup .box {
+  position: relative;
+}
+.ifpopup .box #popup-close2 {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  right: 15px;
+  top: 15px;
+  position: absolute;
+}
+.ifpopup .box #popup-close2:hover {
+  color: #DF652B;
+}
+.ifpopup #homeLink {
+  margin-top: 0.5rem;
+  color: #DF652B;
+}
+.ifpopup .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+  min-height: 33rem;
+  transition: height 0.5s;
+}
+.ifpopup .box .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.ifpopup .box .header h1 span {
+  color: #DF652B;
+}
+.ifpopup .box .header img {
+  width: 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.ifpopup .box .header img:hover {
+  opacity: 0.85;
+}
+.ifpopup .box p {
+  margin-top: 5px;
+  font-weight: 500;
+}
+.ifpopup select {
+  width: 100%;
+  height: 50px;
+  padding: 0.7rem 0.2rem;
+  border: 2px solid rgb(236, 236, 236);
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.ifpopup select:hover {
+  background-color: rgb(238, 238, 238);
+}
+.ifpopup .selects {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ifpopup .btn {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50px;
+}
+.ifpopup .btn button {
+  width: 100%;
+  height: 45px;
+  background-color: #DF652B;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.ifpopup .btn button:hover {
+  background-color: #a34b21;
+}
+@media (max-width: 416px) {
+  .ifpopup .box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .ifpopup #box {
+    max-height: 550px;
+  }
+  .ifpopup .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.ifpopup .box {
+  padding: 4rem 2rem !important;
+}
+
+@media (max-width: 416px) {
+  .ifpopup, #o2 {
+    background-color: white !important;
+  }
+}
 .hero__section {
   height: calc(100vh + 1px);
   max-height: 1240px;

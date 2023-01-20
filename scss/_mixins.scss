@@ -1,3 +1,119 @@
+@mixin ifpopup {
+    
+#homeLink {
+    margin-top: .5rem;
+    color: $primary-orange;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $white;
+    padding: 1rem 1rem .5rem 1rem;
+    border-radius: 5px;
+    min-height: 33rem;
+    transition: height .5s;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        h1 {
+            span {
+                color: $primary-orange;
+            }
+        }
+        img {
+            width: 35px;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        font-weight: 500;
+    }
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    padding: .7rem 0.2rem;
+    // margin: .5rem 0;
+    border: 2px solid rgb(236, 236, 236);
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+
+.selects {
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    // background-color: red;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+
+    button {
+        width: 100%;
+        height: 45px;
+        background-color: $primary-orange;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color .5s ease;
+
+        &:hover {
+            background-color: $primary-orange-hover;
+        }
+    }
+}
+
+@media (max-width: 416px) {
+    .box {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    #box {
+    //    background-color: red; 
+       max-height: 550px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+}
+
 @mixin navbarlinks {
     color: #fff;
     position: relative;
@@ -553,20 +669,51 @@
 
         .user-dropdown {
             pointer-events: none;
-            padding: 1rem;
+            // padding: 1rem;
             background-color: white;
             position: absolute;
             top: 80%;
             right: 0;
-            margin-right: 5%;
             border-radius: 5px 5px 5px 5px;
-            height: 10rem;
-            width: 20rem;
+            height: fit-content;
+            width: 10rem;
             opacity: 0;
             transition: all .3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-around;
+            // flex-direction: column;
+            gap: 0;
+            margin: 0 !important;
+            margin-right: 5% !important;
+            overflow: hidden;
+
+            button {
+                // border-radius: 5px 5px 5px 5px;
+                width: 100%;
+                flex: 1 1 auto;
+                height: 50px !important;
+                margin: 0 !important;
+                // padding: 1rem 0;
+                cursor: pointer;
+                background-color: rgb(252, 252, 252);
+                border: none;
+                transition: background-color .15s;
+                font-size: 0.85rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                &:hover {
+                    background-color: $primary-orange;
+                    color: white;
+                }
+
+                &:last-child:hover {
+                    background-color: $primary-blue;
+                }
+            }
 
             // &::after {
             //     content: '';
@@ -599,7 +746,7 @@
                 align-items: center;
                 justify-content: flex-start;
                 height: 100%;
-                row-gap: 10px;
+                // row-gap: 10px;
 
                 p {
                     font-size: 1.05rem;
