@@ -393,9 +393,9 @@ main.main section.main-content .content .results input:disabled {
   border: 1px solid rgb(180, 180, 180);
 }
 main.main section.main-content .content .results .billing-card {
+  transition: all 0.2s ease;
   padding: 1rem;
   flex-grow: 1;
-  background-color: #ffffff;
   border-radius: 5px;
   border: 2px solid #DF652B;
   position: relative;
@@ -414,6 +414,10 @@ main.main section.main-content .content .results .billing-card .bill-type {
   font-size: 1rem;
   font-weight: 700;
   margin: 0.5rem 0;
+}
+main.main section.main-content .content .results .billing-card:hover {
+  background-color: #DF652B;
+  color: #ffffff;
 }
 
 .mnp2::-webkit-scrollbar {

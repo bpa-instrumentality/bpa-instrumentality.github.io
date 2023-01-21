@@ -141,7 +141,7 @@ body {
 }
 
 .img-section {
-  background-image: url("/assets/images/sebastian-mark-e36JILL-JWk-unsplash.jpg");
+  background-image: linear-gradient(rgba(223, 101, 43, 0.25), rgba(223, 101, 43, 0.25)), url("/assets/images/signup-test.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

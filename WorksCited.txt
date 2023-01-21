@@ -71,3 +71,7 @@ Etude EAS Picture: https://pixabay.com/photos/instrument-saxophone-musi-2643928/
 YAS-204 Picture: https://pixabay.com/photos/saxophone-instrument-music-546303/
 
 Catalina Drums Picture: https://pixabay.com/photos/drums-musical-instrument-music-246840/
+
+Signup Page Img: https://pixabay.com/photos/violins-instruments-music-1868064/
+
+Login Page Img: https://pixabay.com/photos/violin-string-instrument-music-3131551/

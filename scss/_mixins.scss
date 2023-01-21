@@ -601,11 +601,19 @@ select {
     }
     
     .img-section {
-        background-image: url('/assets/images/sebastian-mark-e36JILL-JWk-unsplash.jpg');
+        // background-image: url('/assets/images/sebastian-mark-e36JILL-JWk-unsplash.jpg');
+        // background-image: url('/assets/images/signup-test.jpg');
+        background-image: 
+    linear-gradient(rgba(223, 101, 43, 0.25), rgba(223, 101, 43, 0.25)),
+    url('/assets/images/signup-test.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    // .tint {
+    //     filter: sepia(100%) saturate(200%) brightness(70%) hue-rotate(330deg);
+    // }
     
     
     @media (max-width: 1015px) {

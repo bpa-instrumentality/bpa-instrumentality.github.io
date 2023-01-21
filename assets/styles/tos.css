@@ -147,6 +147,7 @@ main.main {
   margin-top: 2rem;
 }
 main.main .main-wrapper {
+  padding: 1rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -155,8 +156,35 @@ main.main .main-wrapper {
   text-align: center;
   position: relative;
 }
+main.main .main-wrapper h1 {
+  margin-bottom: 3rem;
+}
 main.main .main-wrapper .other-content {
   width: 100%;
   height: 100%;
   text-align: left;
+}
+main.main .main-wrapper .other-content .tos h3, main.main .main-wrapper .other-content .tos p {
+  margin-left: 1rem;
+}
+main.main .main-wrapper .other-content .tos h2 {
+  margin-bottom: 0.45rem;
+}
+main.main .main-wrapper .other-content .rr h3, main.main .main-wrapper .other-content .rr p {
+  margin-left: 1rem;
+}
+main.main .main-wrapper .other-content .rr h2 {
+  margin-bottom: 1.35rem;
+}
+main.main .main-wrapper .other-content #ftos, main.main .main-wrapper .other-content #rrl {
+  margin: 0;
+}
+main.main .main-wrapper .other-content #rrl {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 437px) {
+  #gohome {
+    display: none;
+  }
 }/*# sourceMappingURL=tos.css.map */

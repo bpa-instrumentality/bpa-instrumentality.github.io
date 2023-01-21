@@ -29,6 +29,7 @@ main.main {
     margin-top: 2rem;
 
     .main-wrapper {
+        padding: 1rem;
         width: fit-content;
         height: 100%;
         // background-color: green;
@@ -36,11 +37,52 @@ main.main {
         text-align: center;
         position: relative;
 
+        h1 {
+            margin-bottom: 3rem;
+        }
+
         .other-content {
             width: 100%;
             height: 100%;
             // background-color: red;
             text-align: left;
+
+            .tos {
+                h3, p {
+                    margin-left: 1rem;
+                }
+
+                h2 {
+                    margin-bottom: .45rem;
+                }
+            }
+
+            .rr {
+
+                h3, p {
+                    margin-left: 1rem;
+                }
+                h2 {
+                    margin-bottom: 1.35rem;
+                }
+            }
+
+            #ftos, #rrl {
+                margin: 0;
+            }
+
+            #rrl {
+                margin-bottom: .75rem;
+            }
+
+
         }
+    }
+}
+
+
+@media (max-width: 437px) {
+    #gohome {
+        display: none;
     }
 }

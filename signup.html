@@ -28,6 +28,7 @@
                 <div class="underline"></div>
             </div>
             <p class="alternate">Already have an account? <a href="login.html">Login</a> or <a href="index.html">Go Home</a></p>
+            <p class="alternate" style="margin-top: .5rem; margin-bottom: -.5rem;">By signing up, you agree to our <a href="tos.html">Terms of Service</a></p>
             <button onclick="validate()">Sign Up</button>
             <p class="error" id="emailerror1">Email cannot be empty</p>
             <p class="error" id="emailerror2">Email is linked to another account</p>
@@ -36,7 +37,7 @@
 
         </div>
     </section>
-    <section class="img-section section"></section>
+    <section class="img-section section tint"></section>
     <script>
         if (localStorage.getItem('session')) {
         window.location.replace('./dashboard.html')

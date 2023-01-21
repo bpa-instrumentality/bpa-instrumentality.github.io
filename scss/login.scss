@@ -6,7 +6,7 @@
 
 .img-section {
     // background: red;
-    background-image: url('/assets/images/sax-login-test.jpg');
+    background-image: url('/assets/images/login-test2.jpg');
     position: relative;
     &::after  {
         content: '';
@@ -15,7 +15,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, .03);
+        background-color: rgba(223, 101, 43, .15);
         backdrop-filter: blur(2.5px);
     }
 }
