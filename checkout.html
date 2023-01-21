@@ -23,32 +23,44 @@
    </section>
    <section class="col2">
     <div class="col2wrapper">
-        <div class="input-field">
+        <div class="input-field if">
             <p>Card Number</p>
-            <input type="text" placeholder="1234 1234 1234 1234" maxlength="16">
+            <input type="text" placeholder="1234 1234 1234 1234" maxlength="16" id="cn" data-mask="9999 9999 9999 9999">
         </div>
-        <div class="input-field">
+        <div class="input-field if">
             <p>Expiry</p>
             <input type="date" placeholder="MM/YY">
         </div>
-        <div class="input-field">
+        <div class="input-field if">
             <p>CVC</p>
-            <input type="text" placeholder="123" maxlength="3">
+            <input type="text" placeholder="123" maxlength="3" data-mask="999" id="cvc">
         </div>
-        <div class="input-field">
+        <div class="input-field if">
             <p>Name on card</p>
             <input type="text" placeholder="John Smith">
         </div>
-        <div class="input-field">
+        <div class="input-field if">
             <p>Shipping Address</p>
             <input type="text" placeholder="1234 Maple Avenue">
         </div>
-        <button onclick="pay()">Pay</button>
-        <p class="tos">By confirming your payment, you allow Instrumentality Co. to charge your card for this payment and future payments in accordance with their terms. You can always cancel your monthly payments.</p>
+        <button onclick="pay()" class="if">Pay</button>
+        <p class="tos if">By confirming your payment, you allow Instrumentality Co. to charge your card for this payment and future payments in accordance with their terms. You can always cancel your monthly payments.</p>
+        <div class="submittedPayment" id="sp">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+
+              <h1>Your Payment was Successful! Thank you for using Instrumentality!</h1>
+              <p>Your instrument should arrive to you anywhere between 5-10 business days depending on your location.</p>
+              <button onclick="window.location.replace('index.html')">Go Home</button>
+        </div>
     </div>
    </section>
 
    <script src="/javascript/checkout.js"></script>
    <script src="/javascript/checkout-validator.js"></script>
+   <script src="/javascript/input-masking.js"></script>
+
 </body>
 </html>

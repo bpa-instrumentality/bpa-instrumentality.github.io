@@ -37,14 +37,13 @@
         <section class="main-nav">
             <div class="mnp1">
                 <h1>Account</h1>
-                <div>
+                <!-- <div>
                     <input type="text" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </div> -->
             </div>
             <div class="mnp2">
                 <p class="tabSelect" id="instruments"><i class="fa-solid fa-guitar"></i> My Instruments</p>
-                <p class="tabSelect" id="details"><i class="fa-solid fa-circle-info"></i> My Details</p>
                 <p class="tabSelect" id="billing"><i class="fa-solid fa-wallet"></i> Billing</p>
                 <p class="tabSelect" id="notifications"> <i class="fa-solid fa-bell"></i>Notifications</p>
             </div>
@@ -61,32 +60,10 @@
                 <div class="content">
                     <div class="filters">
                         <button class="filter-active">View All</button>
-                        <button>Currently Renting</button>
-                        <button>Previously Rented</button>
                     </div>
-                    <div class="results">
-                        You have not rented any instruments.
-                    </div>
-                </div>
-            </div>
-            <div class="tab details">
-                <div class="desc">
-                    <div>
-                        <h1>Account Details</h1>
-                        <p>View your account details</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="filters">
-                        <button class="filter-active">Account Info</button>
-                        <button>Contact Info</button>
-                    </div>
-                    <div class="results">
-                       <a href="#">Edit</a>
-                       <p>Email: </p>
-                       <input type="text" disabled placeholder="example.email@mail.com" class="accInfoBtn">
-                       <p>Password: </p>
-                       <input type="password" disabled class="accInfoBtn" value="testpass">
+                    <div class="results" id="isr">
+                        <!-- You have not rented any instruments. -->
+
                     </div>
                 </div>
             </div>
@@ -100,19 +77,8 @@
                 <div class="content">
                     <div class="filters">
                         <button class="filter-active">Billing Cycles</button>
-                        <button>Payment History</button>
                     </div>
                     <div class="results billing-res" id="billing-res">
-                        <div class="billing-card">
-                            <h1>$18 per month</h1>
-                            <p class="bill-type">Eastman Violin</p>
-                            <p>Payment due in 12 days</p>
-                        </div>
-                        <div class="billing-card">
-                            <h1>$18 per month</h1>
-                            <p class="bill-type">Eastman Violin</p>
-                            <p>Payment due in 12 days</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -126,5 +92,7 @@
         document.getElementById('email').textContent = JSON.parse(localStorage.getItem('session')).email;
     </script>
     <script src="/javascript/dashboard-cart.js"></script>
+    <script src="/javascript/custom-elements.js"></script>
+    <script src="/javascript/dashboard-instrument-loader.js"></script>
 </body>
 </html>

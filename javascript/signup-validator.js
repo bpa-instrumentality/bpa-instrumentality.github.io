@@ -53,6 +53,7 @@ function validate() {
         localStorage.setItem('users', JSON.stringify(push));
         let newCart = []
         localStorage.setItem(`${email}`, JSON.stringify(newCart));
+        localStorage.setItem(`${email}Items`, JSON.stringify(newCart))
         let session = {
             "email": email,
             "password": password

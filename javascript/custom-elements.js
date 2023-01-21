@@ -61,10 +61,11 @@ template.innerHTML = `
 </style>
 <div class="result">
 <img src="/assets/images/yetanothertest.jpg" alt="violin">
-<button>Add</button>
+<button class="addBtn">Add</button>
 <h1 class="img-title">Eastman Violin</h1>
 <p class="price">$<span class="priceAmt"></span>.00</p>
 <p class="desc" id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit beatae rem minima!</p>
+<button class="cancelBtn" style="display: none">Cancel</button>
 </div>
 `
 
@@ -76,7 +77,7 @@ class InstrumentResultCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["title", "picture", "price", "desc"]
+        return ["title", "picture", "price", "desc", "hide-btn", "cancel-btn"]
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -87,6 +88,14 @@ class InstrumentResultCard extends HTMLElement {
         this.shadowRoot.querySelector(".priceAmt").innerText = this.getAttribute("price");
 
         this.shadowRoot.querySelector(".desc").innerText = this.getAttribute("desc");
+
+        if (this.getAttribute("hide-btn") == "true") {
+            this.shadowRoot.querySelector(".addBtn").style.display = "none"
+        }
+
+        if (this.getAttribute("cancel-btn") == "true") {
+            this.shadowRoot.querySelector(".cancelBtn").style.display = "block"
+        }
     }
 }
 

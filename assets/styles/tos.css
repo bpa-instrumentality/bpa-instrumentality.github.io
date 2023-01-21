@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header.top-nav {
+  width: 100%;
+  max-height: 75px;
+  min-height: 65px;
+  background-color: #242f38;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eff1f6;
+  flex: 1 1 auto;
+}
+header.top-nav .nav-wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #242f38;
+  height: 100%;
+  padding: 0 2rem;
+  color: #ffffff !important;
+}
+header.top-nav .nav-wrapper img {
+  width: 225px;
+  height: auto;
+  cursor: pointer;
+}
+header.top-nav .nav-wrapper .right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+header.top-nav .nav-wrapper .right-nav .cart {
+  position: relative;
+  background-color: none;
+  cursor: pointer;
+  padding: 0.4rem 0.5rem;
+}
+header.top-nav .nav-wrapper .right-nav .cart .fullHeight {
+  height: 400px !important;
+}
+header.top-nav .nav-wrapper .right-nav .cart:hover {
+  background-color: #fef6ec;
+  border-radius: 5px;
+}
+header.top-nav .nav-wrapper .right-nav .cart i {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  color: #ffffff;
+}
+header.top-nav .nav-wrapper .right-nav .cart .amt {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #DF652B;
+  border-radius: 50px;
+  min-width: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0.3rem;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+header.top-nav .nav-wrapper .right-nav .cart:hover {
+  background-color: #293740;
+}
+header.top-nav .nav-wrapper .user-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+header.top-nav .nav-wrapper .user-detail .logout {
+  background-color: white;
+  position: absolute;
+  top: 42px;
+  border-radius: 7px;
+  padding: 0.7rem 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100000;
+  opacity: 0;
+  color: #282a32 !important;
+  pointer-events: none;
+  border: 2px solid #fef6ec;
+}
+header.top-nav .nav-wrapper .user-detail .logout i {
+  color: #DF652B;
+  margin-right: 10px;
+}
+header.top-nav .nav-wrapper .user-detail .logout:hover {
+  background: #fef6ec;
+  color: #DF652B !important;
+}
+header.top-nav .nav-wrapper .user-detail:hover {
+  background: #293740;
+}
+header.top-nav .nav-wrapper .user-detail:hover .logout {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.top-nav {
+  min-height: 75px !important;
+}
+
+main.main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+main.main .main-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
+}
+main.main .main-wrapper .other-content {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}/*# sourceMappingURL=tos.css.map */

@@ -251,6 +251,17 @@ main.main {
                 flex-direction: row !important;
                 display: flex !important;
                 gap: 15px;
+                flex-wrap: wrap;
+            }
+
+
+            #isr {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 30px;
             }
 
             .results {
@@ -417,5 +428,11 @@ main.main {
         flex-wrap: wrap;
         gap: 0 !important;
         z-index: 5000;
+    }
+}
+
+@media (max-width: 600px) {
+    .right-nav {
+        display: none !important;
     }
 }

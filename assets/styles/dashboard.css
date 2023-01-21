@@ -344,6 +344,15 @@ main.main section.main-content .content .billing-res {
   flex-direction: row !important;
   display: flex !important;
   gap: 15px;
+  flex-wrap: wrap;
+}
+main.main section.main-content .content #isr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
 }
 main.main section.main-content .content .results {
   color: rgb(80, 75, 72);
@@ -477,5 +486,10 @@ main.main section.main-content .content .results .billing-card .bill-type {
     flex-wrap: wrap;
     gap: 0 !important;
     z-index: 5000;
+  }
+}
+@media (max-width: 600px) {
+  .right-nav {
+    display: none !important;
   }
 }/*# sourceMappingURL=dashboard.css.map */
