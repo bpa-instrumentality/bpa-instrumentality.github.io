@@ -253,6 +253,54 @@ main.main {
                 gap: 15px;
                 flex-wrap: wrap;
             }
+            
+            
+            #notifs-res {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+                .ns {
+                    transition: all .3s ease;
+                    cursor: pointer;
+                    border: 2px solid $primary-orange;
+                    border-radius: 5px;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 1rem;
+                    // background-color: red;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    row-gap: 3px;
+
+                    i {
+                        font-size: 1.3rem;
+                    }
+                    #p1 {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+
+
+                    &:hover {
+                        background-color: $primary-orange;
+                        color: $white;
+                    }
+                }
+            }
 
 
             #isr {

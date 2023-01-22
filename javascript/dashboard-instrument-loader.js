@@ -3,6 +3,7 @@ let email = session.email;
 
 
 let owned = JSON.parse(localStorage.getItem(`${email}Items`));
+let notifs = JSON.parse(localStorage.getItem(`${email}Notifs`));
 let results = document.getElementById("isr");
     console.log(owned)
     if (owned.length == 0) {
@@ -10,6 +11,12 @@ let results = document.getElementById("isr");
         console.log('e')
         document.getElementById('billing-res').textContent = "You do not have any active billing cycles."
     }
+let ns = document.getElementById("notifs-res");
+console.log(notifs)
+if (notifs.length == 0) {
+    ns.textContent = "You do not have any instruments"
+    // console.log('e')
+}
 for (i in owned) {
     let curr = owned[i];
 
@@ -39,6 +46,21 @@ for (i in owned) {
     console.log(irs)
 }
 
+console.log(notifs)
+for (i in notifs) {
+    let curr = notifs[i];
+
+    let ns = document.getElementById("notifs-res");
+
+    let res = document.createElement("div");
+    res.innerHTML = `<i class="fa-solid fa-dollar-sign"></i>
+    <p id="p1">New Purchase!</p>
+    <p>Your OrderID is <span id="oid">${JSON.parse(curr).orderid}</span></p>`
+    res.classList.add('ns')
+
+    ns.appendChild(res)
+}
+
 
 function cancel(product) {
     // alert(product)
@@ -51,3 +73,9 @@ function cancel(product) {
     localStorage.setItem(`${email}Items`, JSON.stringify(owned));
     window.location.reload()
 }
+
+{/* <div class="ns">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p id="p1">New Purchase!</p>
+                            <p>Your OrderID is <span id="oid">123456</span></p>
+                        </div> */}

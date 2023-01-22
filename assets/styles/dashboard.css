@@ -346,6 +346,50 @@ main.main section.main-content .content .billing-res {
   gap: 15px;
   flex-wrap: wrap;
 }
+main.main section.main-content .content #notifs-res {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main.main section.main-content .content #notifs-res .ns {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #DF652B;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3px;
+}
+main.main section.main-content .content #notifs-res .ns i {
+  font-size: 1.3rem;
+}
+main.main section.main-content .content #notifs-res .ns #p1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+main.main section.main-content .content #notifs-res .ns p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+main.main section.main-content .content #notifs-res .ns p span {
+  font-weight: 600;
+}
+main.main section.main-content .content #notifs-res .ns:hover {
+  background-color: #DF652B;
+  color: #ffffff;
+}
 main.main section.main-content .content #isr {
   display: flex;
   flex-direction: row;

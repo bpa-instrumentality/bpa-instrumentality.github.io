@@ -32,7 +32,9 @@ function pay() {
     console.log(err)
     if (err == 0) {
         let is = `${email}Items`
+        let ns = `${email}Notifs`
         let ownedItems = JSON.parse(localStorage.getItem(is));
+        let notifs = JSON.parse(localStorage.getItem(ns));
         let currCart = JSON.parse(localStorage.getItem(email))
         for (i in currCart) {
             ownedItems.push(currCart[i])
@@ -58,6 +60,23 @@ function pay() {
         while (codes.includes(randNum)) {
             let randNum = randomNumber();
         }
+
+        let newNotif = {
+            "type": "purchase",
+            "orderid": randNum,
+        }
+        console.log(notifs)
+        notifs.push(JSON.stringify(newNotif));
+
+        console.log(notifs)
+
+
+        console.log(JSON.stringify(notifs))
+
+
+        localStorage.removeItem(ns);
+        localStorage.setItem(ns, JSON.stringify(notifs))
+
         codes.push(JSON.stringify(randNum))
         localStorage.removeItem('codes')
         localStorage.setItem('codes', JSON.stringify(codes))
