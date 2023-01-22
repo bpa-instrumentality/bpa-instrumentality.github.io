@@ -1,0 +1,53 @@
+@import "_variables";
+@import "_mixins";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth
+}
+
+*{
+    @include htmlreset;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: $primary-bg-blue;
+    color: $white;
+    text-align: center;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem;
+    padding: 1rem;
+}
+
+.compDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .wrapper {
+        max-width: 1500px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+    }
+    img {
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    h3, p {
+        align-self: flex-start;
+    }
+}

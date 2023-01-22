@@ -1,3 +1,11 @@
+function randomNumber() {
+    const array = new Uint16Array(1);
+    crypto.getRandomValues(array)
+    
+    return array.join(" ");
+}
+
+
 function showError(item) {
     item.style.boxShadow = "0 0 0 2px #ff2727b7, 0 4px 4px 0 rgba(247, 85, 85, 0.3), 0 1px 1.5px 0  rgba(255, 86, 86, 0.2)"
 }
@@ -43,6 +51,17 @@ function pay() {
             i.style.display = "none"
         })
         document.getElementById("sp").style.display = "flex";
+
+
+        let randNum = randomNumber();
+        let codes = JSON.parse(localStorage.getItem('codes'))
+        while (codes.includes(randNum)) {
+            let randNum = randomNumber();
+        }
+        codes.push(JSON.stringify(randNum))
+        localStorage.removeItem('codes')
+        localStorage.setItem('codes', JSON.stringify(codes))
+        document.getElementById('oid').textContent = randNum
 
         let mql = window.matchMedia('(max-width: 600px)');
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/contact.css">
+    <script src="https://kit.fontawesome.com/3149170a21.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-wrapper">
+            <a href="index.html"><img src="/assets/images/logo.png" alt="logo" id="logo"></a>
+            <div class="right-nav">
+                <div class="user-detail" id="ud" onclick="window.location.replace('index.html')">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px">
+                        <i class="fa-solid fa-house"></i> 
+                        <p id="gohome">Go Home</p></div>
+            </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <h1>Contact Us</h1>
+
+            <div class="form">
+                <div class="input-field if">
+                    <p>Order ID (If Applicable)</p>
+                    <input type="number" placeholder="ie. 123456">
+                </div>
+                <div class="input-field if">
+                    <p>Email</p>
+                    <input type="email" placeholder="ie. johnsmith@test.com" class="input">
+                </div>
+                <div class="input-field if">
+                    <p>How may we help you?</p>
+                    <textarea placeholder="Enter your questions or inquiries here" class="input"></textarea>
+                </div>
+                <button class="if" onclick="contact()">Contact</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="success" id="s">
+        Your message has successfully been delivered!
+    </div>
+
+
+    <script src="/javascript/contact.js"></script>
+</body>
+</html>

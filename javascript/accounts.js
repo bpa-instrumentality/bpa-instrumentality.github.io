@@ -9,6 +9,11 @@ if (!localStorage.getItem('users')) {
     localStorage.setItem('carts', JSON.stringify(cartsData));
 }
 
+if (!localStorage.getItem('codes')) {
+    let codes = []
+    localStorage.setItem('codes', JSON.stringify(codes));
+}
+
 let currFile = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 console.log(!(currFile == "indexy.html"));
 

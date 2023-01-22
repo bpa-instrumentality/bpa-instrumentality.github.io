@@ -1,0 +1,155 @@
+@import "_variables";
+@import "_mixins";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+*{
+    @include htmlreset;
+}
+
+@include header-navbar;
+
+.top-nav {
+    min-height: 75px !important;
+}
+
+
+main.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    // background: green;
+
+
+    .wrapper {
+        max-width: 1750px;
+        // background-color: blue;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        position: relative;
+        width: 100%;
+        // background: red;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+            max-width: 100vh;
+            width: 100%;
+            min-width: 3px;
+            // background: red;
+
+            .input-field {
+                position: relative;
+                background-color: none;
+                width: 100%;
+                margin: .7rem 0;
+    
+                p {
+                    margin-bottom: 7px;
+                    opacity: 0.5;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                }
+    
+                input, textarea {
+                    width: 100%;
+                    padding: 0.65rem 1rem;
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    
+                    &:focus, &:hover {
+                        box-shadow: 0 0 0 1px #e0e0e0, 0 4px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0  rgb(0 0 0 / 5%);
+                        outline: none;
+                        border: none;
+                    }
+                }
+
+                textarea {
+                    width: auto;
+                    max-width: 100%;
+                    min-width: 100%;
+                    min-height: 125px;
+                }
+    
+                &:first-child {
+                    margin: 0;
+                    margin-bottom: 0.7rem;
+                }
+            }
+
+            .if {
+                display: flex;
+            flex-direction: column;
+            }
+        }
+    }
+}
+
+button {
+    width: 100%;
+    margin-top: 1.4rem;
+    height: 50px;
+    cursor: pointer;
+    background-color: $primary-orange;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $primary-orange-hover;
+    }
+}
+
+
+.success {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: $white;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: top .3s ease;
+    transition-delay: .5s;
+    height: fit-content;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    animation: fadein .5s ease, fadeout .5s ease 2.5s;
+    opacity: 1;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 15px; opacity: 1;}
+  }
+
+  @keyframes fadeout {
+    from {bottom: 15px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
