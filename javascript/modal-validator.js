@@ -43,6 +43,10 @@ function modalSignup() {
             "email": email,
             "password": password
         }
+        let newCart = []
+        localStorage.setItem(`${email}`, JSON.stringify(newCart));
+        localStorage.setItem(`${email}Items`, JSON.stringify(newCart));
+        localStorage.setItem(`${email}Notifs`, JSON.stringify(newCart));
         localStorage.setItem('session', JSON.stringify(session))
         localStorage.setItem('users', JSON.stringify(push));
         window.location.reload()
