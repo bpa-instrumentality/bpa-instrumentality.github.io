@@ -233,6 +233,7 @@ function addToCart(data) {
         let newItem = {
             "product": data.title,
             "price": data.price,
+            "desc": data.desc,
             "img": data.img
         }
         cart.push(newItem);

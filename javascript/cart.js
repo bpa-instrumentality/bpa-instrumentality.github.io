@@ -46,7 +46,7 @@ for (i in cartItems) {
     cartDetails.appendChild(ch);
     let cw = document.createElement('div');
     cw.classList.add('cw');
-    cw.innerHTML = `<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    cw.innerHTML = `<p class="desc">${curr.desc}</p>
     <button class="delBtn">Delete</button>`;
     let delBtn = cw.querySelector('button');
     delBtn.setAttribute('onclick', `deleteItem(
