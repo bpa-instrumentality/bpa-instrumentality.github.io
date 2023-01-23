@@ -88,9 +88,10 @@
                     <p>Get started for free and enjoy a cheap, easy, and fast rental experience</p>
                 </div>
                 <div class="popup-form">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Create Password" class="popup-pwd">
-                    <button>Get Started</button>
+                    <input type="email" placeholder="Email" class="minput" id="memail">
+                    <input type="password" placeholder="Create Password" class="popup-pwd minput" id="mpass">
+                    <button onclick="modalSignup()">Get Started</button>
+                    <p id="error-modal">Email linked to another account</p>
                 </div>
             </div>
         </div>
@@ -510,7 +511,7 @@
                     <h2 class="footer-title">Useful Links</h2>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="signup.html">Signup</a></li>
-                    <li><a href="#">Finder Tool</a>
+                    <!-- <li><a href="#">Finder Tool</a> -->
                     </li>
                     <!-- <li><a href="#">Pricing</a></li> -->
                 </div>
@@ -548,6 +549,7 @@
       }
       </script>
       <script src="/javascript/signup-modal.js"></script>
+      <script src="/javascript/modal-validator.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
         AOS.init();

@@ -18,13 +18,17 @@ when possible."
 
 https://pixabay.com/photos/drum-drums-music-285596/
 https://pixabay.com/photos/drums-musical-instrument-music-246840/
+https://pixabay.com/photos/flute-music-instrument-played-wind-893911/
 https://pixabay.com/photos/flute-music-instrument-woodwinds-4006386/
 https://pixabay.com/photos/guitar-music-acoustic-guitar-1836655/
 https://pixabay.com/photos/instrument-saxophone-musi-2643928/
 https://pixabay.com/photos/instruments-craft-saxophone-3839655/
 https://pixabay.com/photos/music-flute-instrument-1065209/
+https://pixabay.com/photos/sax-saxophone-jazz-music-4085168/
 https://pixabay.com/photos/saxophone-instrument-music-546303/
 https://pixabay.com/photos/saxophone-musical-instrument-1538743/
+https://pixabay.com/photos/saxophone-sax-instrument-music-6192863/
+https://pixabay.com/photos/trumpet-jazz-brass-band-7311155/
 https://pixabay.com/photos/trumpet-wind-instrument-instrument-7681312/
 https://pixabay.com/photos/violin-musical-instrument-fiddle-5709254/
 https://pixabay.com/photos/violin-string-instrument-music-3131551/
@@ -36,6 +40,7 @@ https://pixabay.com/sound-effects/reveilli-mix-33299/
 https://pixabay.com/sound-effects/sax-solo-loop-ms-79295/
 https://pixabay.com/sound-effects/synthethic-violin-6750/
 https://unsplash.com/photos/1E-PFrorFUA
+https://unsplash.com/photos/75icZwPTDpI
 https://unsplash.com/photos/CNDp7FoHEGo
 https://unsplash.com/photos/JzZ8MofTlQw
 https://unsplash.com/photos/TmZI74uzxqQ
@@ -45,15 +50,11 @@ https://unsplash.com/photos/cLpUPT5PLTU
 https://unsplash.com/photos/d9_2kPJBG0U
 https://unsplash.com/photos/fTPSm7KD_d0
 https://unsplash.com/photos/hz3g5dxWS30
+https://unsplash.com/photos/kG-UNTwqyso
 https://unsplash.com/photos/ogUUERktOcY
 https://unsplash.com/photos/wzft0w9Y39o
-https://unsplash.com/photos/kG-UNTwqyso
-https://www.pexels.com/photo/focal-point-photo-string-of-violin-752535/
 https://unsplash.com/photos/ysyRG_lkmiM
 https://www.pexels.com/photo/acoustic-bowed-string-instrument-bowed-stringed-instrument-classical-462447/
 https://www.pexels.com/photo/close-up-photo-of-violin-3120109/
-https://pixabay.com/photos/trumpet-jazz-brass-band-7311155/
-https://pixabay.com/photos/sax-saxophone-jazz-music-4085168/
-https://pixabay.com/photos/saxophone-sax-instrument-music-6192863/
-https://unsplash.com/photos/75icZwPTDpI
-https://pixabay.com/photos/flute-music-instrument-played-wind-893911/
+https://www.pexels.com/photo/focal-point-photo-string-of-violin-752535/
+ 

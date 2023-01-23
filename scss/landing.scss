@@ -41,6 +41,13 @@ body{
 }
 
 
+#error-modal {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+
+
 @include navbar;
 
 div.mobile-menu {

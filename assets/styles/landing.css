@@ -43,6 +43,12 @@ body {
   transition-duration: 3s !important;
 }
 
+#error-modal {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
 .navbarmain {
   display: flex;
   justify-content: space-between;
