@@ -284,6 +284,126 @@
             "instrument": "drums",
             "cost": "c3",
             "diff": "s3"
+        },
+        {
+            "title": "Glartt Violin",
+            "picture": "/assets/images/glart.jpg",
+            "desc": "A beautiful violin perfect for intermediate musicians",
+            "price":13,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c2",
+            "diff": "s2"
+        },
+        {
+            "title": "Godecour Violin",
+            "picture": "/assets/images/gvio.jpg",
+            "desc": "A well made and intricately crafted instrument that is perfect for beginners",
+            "price":22,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c4",
+            "diff": "s1"
+        },
+        {
+            "title": "Aileen Violin",
+            "picture": "/assets/images/aileen.jpg",
+            "desc": "A advanced and high quality affordable violin perfect for performances and recitals",
+            "price":7,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c1",
+            "diff": "s3"
+        },
+        {
+            "title": "Cremona SV-130 Violin",
+            "picture": "/assets/images/cremona130.jpg",
+            "desc": "A beginner, easy to accustom violin",
+            "price":15,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c2",
+            "diff": "s2"
+        },
+        {
+            "title": "Cervini HV-100 Violin",
+            "picture": "/assets/images/cervini.jpg",
+            "desc": "A novice violin that is well crafted and suitable for performances",
+            "price":7,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c1",
+            "diff": "s1"
+        },
+        {
+            "title": "Etude Student Violin",
+            "picture": "/assets/images/etude.jpg",
+            "desc": "A student violin that is well made and fun to play",
+            "price":7,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "violin",
+            "cost": "c3",
+            "diff": "s2"
+        },
+        {
+            "title": "Etude Bb Trumpet",
+            "picture": "/assets/images/etudetrumpet.jpg",
+            "desc": "A student trumpet that is easy to learn and play",
+            "price":14,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "trumpet",
+            "cost": "c2",
+            "diff": "s2"
+        },
+        {
+            "title": "Glarry Saxophone",
+            "picture": "/assets/images/glarry.jpg",
+            "desc": "An advanced proffessional trumpet that is made with quality materials",
+            "price":14,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c2",
+            "diff": "s3"
+        },
+        {
+            "title": "JUXAAN Saxophone",
+            "picture": "/assets/images/juxaansax.jpg",
+            "desc": "A novice saxophone that is easy to learn and use.",
+            "price":17,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c3",
+            "diff": "s1"
+        },
+        {
+            "title": "Ammoon Saxophone",
+            "picture": "/assets/images/ammoonsax.jpg",
+            "desc": "A professional saxophone that is affordable and high quality",
+            "price":12,
+            "filterid": "158236",
+            "nameid": "15",
+            "priceid": "36",
+            "instrument": "saxophone",
+            "cost": "c2",
+            "diff": "s3"
         }
     ]
 }

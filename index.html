@@ -195,8 +195,8 @@
                         <source src="/audio/cover-violin-sound.mp3" type="audio/mp3">
                     </audio>
                     <div class="btns">
-                        <button>Learn More</button>
-                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22violin%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Violins</button>
+                        <!-- <button>Learn More</button> -->
+                    <button class="get-started1" onclick="window.location.replace('instrumentresults.html?instruments=[%22violin%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Violins</button>
                     </div>
             </div>
         </div>
@@ -216,8 +216,8 @@
                         <source src="/audio/cover-guitar-sound.mp3" type="audio/mp3">
                     </audio>
                     <div class="btns">
-                        <button>Learn More</button>
-                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22guitar%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Guitars</button>
+                        <!-- <button>Learn More</button> -->
+                    <button class="get-started1" onclick="window.location.replace('instrumentresults.html?instruments=[%22guitar%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Guitars</button>
                     </div>
             </div>
         </div>
@@ -237,8 +237,8 @@
                         <source src="/audio/cover-drum-sound.mp3" type="audio/mp3">
                     </audio>
                     <div class="btns">
-                        <button>Learn More</button>
-                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22drums%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')" >Purchase Drums</button>
+                        <!-- <button>Learn More</button> -->
+                    <button class="get-started1" onclick="window.location.replace('instrumentresults.html?instruments=[%22drums%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')" >Purchase Drums</button>
                     </div>
             </div>
         </div>
@@ -258,8 +258,8 @@
                         <source src="/audio/cover-sax-sound.mp3" type="audio/mp3">
                     </audio>
                     <div class="btns">
-                        <button>Learn More</button>
-                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22saxophone%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Saxophones</button>
+                        <!-- <button>Learn More</button> -->
+                    <button class="get-started1" onclick="window.location.replace('instrumentresults.html?instruments=[%22saxophone%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Saxophones</button>
                     </div>
             </div>
         </div>
@@ -279,29 +279,33 @@
                         <source src="/audio/cover-trumpet-sound.mp3" type="audio/mp3">
                     </audio>
                     <div class="btns">
-                        <button>Learn More</button>
-                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22trumpet%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Trumpets</button>
+                        <!-- <button>Learn More</button> -->
+                    <button class="get-started1" onclick="window.location.replace('instrumentresults.html?instruments=[%22trumpet%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Trumpets</button>
                     </div>
             </div>
         </div>
       </div>
-      <!-- <div class="swiper-slide">
+      <div class="swiper-slide">
         <div class="inner-swipe-content" style="gap: 0%">
             <img src="/assets/images/cover-flute-pic.png" alt="guitar" class="instrument-swipe" style="transform: rotate(70deg); height: 200px; width: auto;">
             <div class="info-card">
                 <h1>The <span>Flute</span></h1>
                 <p>The flute is a woodwind instrument played by blowing air across a hole at the top. It is known for its clear, high-pitched sound and is often used in classical, jazz, and popular music. The flute has a long history and is a common instrument in orchestras, bands, and ensembles, as well as being played as a solo instrument. The monthly price of flutes are around $5-$18 
                     <br></p>
-                    <p class="fun-fact">
-                        Fun Fact: [FILL HERE]
-                    </p>
+                    <div class="hearSection">
+                        <button onclick="playAudio(this, 'fluteAudio')" class="playBtn"><i class="fa-solid fa-play" id="pb6"></i></button>
+                        <p>Listen to what a flute sounds like</p>
+                    </div>
+                    <audio id="fluteAudio" class="audio" loop>
+                        <source src="/audio/flute-sound.mp3" type="audio/mp3">
+                    </audio>
                     <div class="btns">
-                        <button>Learn More</button>
-                    <button class="get-started" onclick="window.location.replace('instrumentresults.html?instruments=[%22flute%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Flutes</button>
+                        <!-- <button>Learn More</button> -->
+                    <button class="get-started1" onclick="window.location.replace('instrumentresults.html?instruments=[%22flute%22]&costs=[%22c1%22,%22c2%22,%22c3%22,%22c4%22]&levels=[%22s1%22,%22s2%22,%22s3%22]')">Purchase Flutes</button>
                     </div>
             </div>
         </div>
-      </div> -->
+      </div>
       <!--  <div class="swiper-slide">
         More images/slides to be added soon
       </div> -->
@@ -499,7 +503,7 @@
                     <h2 class="footer-title">Company</h2>
                     <li><a href="aboutus.html">About</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="tos.html">TOS and Rules</a></li>
                 </div>
                 <div class="footer-column">

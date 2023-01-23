@@ -572,7 +572,7 @@ section.browse .swiper .swiper-slide .inner-swipe-content img.instrument-swipe {
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card {
   width: 500px;
-  min-height: 625px;
+  min-height: 500px;
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
@@ -605,7 +605,7 @@ section.browse .swiper .swiper-slide .inner-swipe-content .info-card .hearSectio
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   gap: 10px;
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card .hearSection p {
@@ -635,8 +635,8 @@ section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns {
 }
 section.browse .swiper .swiper-slide .inner-swipe-content .info-card div.btns button {
   width: 100%;
-  margin: 10px 0;
-  height: 40px;
+  margin: 1rem 0;
+  height: 45px;
   color: #ffffff;
   background-color: #DF652B;
   border-radius: 5px;

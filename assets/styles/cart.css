@@ -324,6 +324,7 @@ main.main .main-wrapper .col1 .cart-items .cart-item span.header {
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
+  margin-right: 7px;
 }
 main.main .main-wrapper .col1 .cart-items .cart-item span.header p {
   font-weight: 600;

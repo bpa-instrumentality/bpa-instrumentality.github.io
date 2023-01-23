@@ -317,7 +317,7 @@ section.browse {
 
                 .info-card {
                     width: 500px;
-                    min-height: 625px;
+                    min-height: 500px;
                     height: fit-content !important;
                     background-color: $primary-bg-blue;
                     border-radius: 5px;
@@ -352,7 +352,7 @@ section.browse {
                         align-items: center;
                         justify-content: center;
                         // background-color: red;
-                        margin: 2rem 0;
+                        margin: 3rem 0;
                         gap: 10px;
 
                         p {
@@ -385,8 +385,8 @@ section.browse {
 
                         button {
                             width: 100%;
-                            margin: 10px 0;
-                            height: 40px;
+                            margin: 1rem 0;
+                            height: 45px;
                             color: $white;
                             background-color: $primary-orange;
                             border-radius: 5px;
