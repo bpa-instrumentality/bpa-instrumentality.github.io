@@ -11,6 +11,61 @@
 
 </head>
 <body>
+
+    <section class="chatCenter">
+        <div class="chatCenterChat" id="CCC">
+            <div class="cccTitle"><p>Instru<span>Support</span></p></div>
+            <div class="cccChats" id="cccChats">
+                <!-- <div class="message other">
+                    Hello! Welcome to InstruSupport! How may I help you today?
+                </div>
+                <div class="message yours">
+                    Hello! I have a question...
+                </div>
+                <div class="message other">
+                    Hello! Welcome to InstruSupport! How may I help you today?
+                </div>
+                <div class="message yours">
+                    Hello! I have a question...
+                </div> -->
+            </div>
+            <div class="cccInput">
+                <input type="text" placeholder="Enter message for InstruSupport..." id="cccInput">
+                <button onclick="sendMsg(document.getElementById('cccInput').value)">Send</button>
+            </div>
+        </div>
+        <button onclick="document.getElementById('CCC').classList.toggle('cccShown')"><i class="fa-solid fa-comments"></i></button>
+    </section>
+
+
+    <section class="modal" id="modal">
+        <div class="modal__overlay" onclick="closeModal()"></div>
+        <div class="modal__box">
+            <i class="fa-solid fa-xmark close__modal" onclick="closeModal()"></i>
+            <img src="./assets/images/yetanothertest.jpg" alt="image" id="modalImg">
+            <div class="modal__gradient"></div>
+            <div class="modal__info">
+                <div><i class="fa-solid fa-gears"></i>
+                <p id="modal__skill">Beginner</p></div>
+                <div><i class="fa-solid fa-truck-fast"></i><p>Free Shipping</p></div>
+                <div><i class="fa-solid fa-box-open"></i><p>In Stock</p></div>
+            </div>
+            <div class="modal__content">
+                <div>
+                    <h1 class="title" id="modalTitle">Eastman Violin - Premium Quality Instrument</h1>
+                    <p class="desc" id="longDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi.</p>
+                </div>
+                <div> <p class="cost" id="modalPrice">$12.00 per month</p>
+                    <button id="addButton"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+
+                </div>
+                <div>
+                    <p class="disclaimer"><span>Availability</span>: This item is currently in stock.</p>
+                    <p class="disclaimer"><span>Shipping</span>: Product dispatched in 3-5 business days, depending on location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <header class="top-nav">
         <div class="nav-wrapper">
             <a href="index.html"><img src="/assets/images/logo.png" alt="logo" id="logo"></a>
@@ -128,6 +183,8 @@
         feather.replace()
       </script>
       <script src="/javascript/filter-toggles.js"></script>
+      <script src="./javascript/instrument-results-modal.js"></script>
       <!-- <script src="/javascript/results-popup.js"></script> -->
+      <script src="./javascript/chat-center.js"></script>
 </body>
 </html>

@@ -107,7 +107,6 @@ header.top-nav .nav-wrapper .right-nav .cart .amt {
   background-color: #DF652B;
   border-radius: 50px;
   min-width: 15px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 0.3rem;
@@ -359,10 +358,8 @@ main.main section.main-content .content #notifs-res .ns {
   cursor: pointer;
   border: 2px solid #DF652B;
   border-radius: 5px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
@@ -401,21 +398,18 @@ main.main section.main-content .content #isr {
 main.main section.main-content .content .results {
   color: rgb(80, 75, 72);
   flex: 1 1 auto;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 0.5rem 0rem 0 3rem;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 main.main section.main-content .content .results a {
   text-decoration: none;
   color: #DF652B;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }

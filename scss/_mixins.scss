@@ -1024,3 +1024,154 @@ header.top-nav {
     }
 }
 }
+
+@mixin chatCenter {
+    .chatCenter {
+        position: absolute;
+        right: 25px;
+        bottom:25px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+        button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $primary-orange;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease;
+    
+            &:hover {
+                background-color: $primary-orange-hover;
+            }
+            
+    
+            i {
+                color: white;
+                opacity: 0.85;
+                font-size: 1rem;
+            }
+        }
+    
+    
+    
+        .chatCenterChat {
+            display: none;
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            // position: absolute;
+            // bottom: 100%;
+            // right: 100%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    
+    
+            .cccTitle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                height: 50px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                p {
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    font-size: 1.05rem;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+    
+                    span {
+                        color: $primary-orange;
+                    }
+                }
+            }
+    
+            .cccChats::-webkit-scrollbar {
+                width: 0px;
+              }
+    
+            .cccChats {
+                width: 100%;
+                height: calc(100% - 50px - 50px);
+                // background-color: red;
+                // background-color: red;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                overflow-y: auto;
+    
+                .message {
+                    max-width: 80%;
+                    margin: 10px 0;
+                    padding: 0.5rem 0.75rem;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    font-size: 0.95rem;
+                }
+    
+                .other {
+                    background-color: rgb(231, 231, 231);
+                    margin-left: 20px;
+                    border-bottom-left-radius: 0px;
+                    color: black !important;
+                }
+                .yours {
+                    background-color: $primary-orange;
+                    color: white;
+                    margin-left: 20px;
+                    border-bottom-right-radius: 0px;
+                    align-self: flex-end;
+                    margin-right: 20px;
+                }
+            }
+    
+            .cccInput {
+                // border-top: 1px solid rgba(0, 0, 0, 0.1);
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                bottom: 70px;
+                border-bottom-left-radius: inherit;
+                border-bottom-right-radius: inherit;
+                // background-color: red;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+    
+                input {
+                    width: 80%;
+                    margin-left: 20px;
+                    height: 35px;
+                    padding: 0 0.75rem;
+                    border: 1.5px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+    
+                button {
+                    height: 35px;
+                    border-radius: 5px;
+                    color: white;
+                }
+            }
+        }
+    
+        .cccShown {
+            display: block !important;
+        }
+    }
+    
+}

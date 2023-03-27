@@ -47,7 +47,6 @@ body {
 }
 .form div.box {
   max-width: 500px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -102,7 +101,6 @@ body {
 }
 .form div.box .input-field {
   position: relative;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 2.5rem 0;

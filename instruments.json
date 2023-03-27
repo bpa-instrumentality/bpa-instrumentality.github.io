@@ -10,7 +10,8 @@
             "priceid": "37",
             "instrument": "violin",
             "cost": "c3",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "The Eastman Strings is a handcrafted violin with a spruce top and maple back and sides, creating a warm and rich sound. The instrument features ebony fittings and a hand-carved bridge, giving it an elegant and traditional look. The VL305 has received positive reviews from both students and professional musicians, with many praising its playability and tone. Overall, the Eastman Strings VL305 is a great choice for intermediate to advanced players looking for a high-quality instrument at a reasonable price."
         },
         {
             "title": "Cremona SV-75 Novice Violin",
@@ -19,7 +20,8 @@
             "price": 14,
             "instrument": "violin",
             "cost": "c2",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "The Cremona SV-75 is a great violin for novice players, offering a balance of affordability and quality. It features a solid spruce top and maple back and sides, with an attractive finish that gives it a traditional look. The instrument comes with a lightweight tailpiece and four fine tuners, making it easy to tune and play. The Cremona SV-75 also includes a padded case and bow, providing beginners with all the necessary equipment to get started. Overall, the Cremona SV-75 is an excellent choice for those starting their musical journey on the violin."
         },
         {
             "title": "Rickenbacker Guitar",
@@ -31,7 +33,8 @@
             "priceid": "34",
             "instrument": "guitar",
             "cost": "c4",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "The Rickenbacker Guitar is an iconic instrument known for its unique design and sound. It was first introduced in the 1930s and has since been used by many famous musicians, including John Lennon and Tom Petty. The guitar features a distinctive body shape, with a top that curves inward and a lower bout that flares out. Rickenbacker guitars are typically made of solid maple, with a rosewood fingerboard and two single-coil pickups that provide a bright, jangly sound. Overall, the Rickenbacker Guitar is a highly sought-after instrument, valued both for its playability and its place in music history."
         },
         {
             "title": "Yamaha FG800",
@@ -43,7 +46,8 @@
             "priceid": "34",
             "instrument": "guitar",
             "cost": "c1",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "The Yamaha FG800 is a popular acoustic guitar, known for its quality and affordability. It features a solid spruce top and nato/okoume back and sides, creating a warm and resonant sound. The instrument also includes a rosewood fingerboard and bridge, providing a comfortable playing experience. The FG800 has received positive reviews from both beginner and experienced players, with many praising its playability and tone. Overall, the Yamaha FG800 is a great choice for those looking for a high-quality acoustic guitar at an affordable price point."
         },
         {
             "title": "Jean Paul AS-400 Sax",
@@ -55,7 +59,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c3",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "The Jean Paul AS-400 is a popular alto saxophone, known for its affordability and quality. The instrument also includes a high F# key and an adjustable thumb rest, allowing for comfortable and precise playing. The AS-400 has received positive reviews from both beginner and experienced saxophonists, with many praising its easy playability and reliable construction. Overall, the Jean Paul AS-400 is an excellent choice for those in the middle of their musical journey on the saxophone or for those looking for a reliable and affordable upgrade."
         }, 
         {
             "title": "Eastar Student Alto Sax",
@@ -67,7 +72,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c1",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "The Eastar Student Alto Saxophone is a great choice for beginner and intermediate players, offering a balance of affordability and quality. It features a brass body and a gold lacquered finish, providing a warm and mellow sound. The instrument includes a high F# key and an adjustable thumb rest, allowing for comfortable and precise playing. The Eastar Student Alto Sax has received positive reviews from many players who are impressed with its sound and easy playability."
         }, 
         {
             "title": "Bach Stradivarius 180S37",
@@ -79,7 +85,8 @@
             "priceid": "38",
             "instrument": "trumpet",
             "cost": "c4",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "The Bach Stradivarius 180S37 is a highly sought-after trumpet, known for its exceptional quality and craftsmanship. It features a yellow brass body and a silver-plated finish, creating a bright and powerful sound. The instrument also includes a reverse leadpipe and a one-piece hand-hammered bell, providing a quick and responsive feel. The 180S37 has received high praise from both professional and advanced players, with many considering it to be one of the best trumpets on the market."
         },
         {
             "title": "Yamaha YFL261",
@@ -91,7 +98,8 @@
             "priceid": "35",
             "instrument": "flute",
             "cost": "c2",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "The Yamaha YFL261 is a popular flute for intermediate to advanced players. It features a silver-plated nickel body and headjoint, providing a clear and bright sound. The instrument also includes closed-hole keys and an offset G, allowing for comfortable and precise playing. The YFL261 has received positive reviews from many players who appreciate its responsive action and well-balanced tone. Overall, the Yamaha YFL261 is a great choice for those looking for a high-quality flute that can handle a variety of playing styles."
         },
         {
             "title": "Roland V-Drums TD-50KV2",
@@ -103,7 +111,8 @@
             "priceid": "36",
             "instrument": "drums",
             "cost": "c2",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "The Roland V-Drums TD-50KV2 is an advanced drum kit, designed for professional and studio use. It features Roland's TD-50 sound module, which offers high-quality sound and a wide range of customization options. The kit also includes a digital snare and ride cymbal, providing a natural and responsive playing experience. The TD-50KV2 has received positive reviews from many drummers who appreciate its realistic sound and versatility. Overall, the Roland V-Drums TD-50KV2 is a great choice for those looking for an electronic drum kit that can deliver professional-level performance."
         },
         {
             "title": "Ashtrophe Drums",
@@ -115,7 +124,8 @@
             "priceid": "36",
             "instrument": "drums",
             "cost": "c2",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "The Ashtrophe Drums are a set of percussion instruments with a unique sound and appearance. They are made from a rare, resonant wood found only in remote forests. Crafted by skilled artisans using ancient techniques, the drums are intricately designed with ornate patterns. Each drum in the set produces a distinct sound, ranging from deep, booming tones to high-pitched, shimmering notes."
         },
         {
             "title": "Struass 6400",
@@ -127,7 +137,8 @@
             "priceid": "36",
             "instrument": "trumpet",
             "cost": "c4",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Yamaha YFL-222",
@@ -139,7 +150,8 @@
             "priceid": "36",
             "instrument": "flute",
             "cost": "c1",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Pearl F305",
@@ -151,7 +163,8 @@
             "priceid": "36",
             "instrument": "flute",
             "cost": "c2",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "YAS-62 Saxophone",
@@ -163,7 +176,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c3",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Yamaha YVN",
@@ -175,7 +189,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c2",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "OM-28 Guitar",
@@ -187,7 +202,8 @@
             "priceid": "36",
             "instrument": "guitar",
             "cost": "c3",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Bongo 5000",
@@ -199,7 +215,8 @@
             "priceid": "36",
             "instrument": "drums",
             "cost": "c1",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Stendor 1500",
@@ -211,7 +228,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c1",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Pearl Roadshow",
@@ -223,7 +241,8 @@
             "priceid": "36",
             "instrument": "drums",
             "cost": "c3",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Gibson-Les Electric",
@@ -235,7 +254,8 @@
             "priceid": "36",
             "instrument": "guitar",
             "cost": "c2",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Etude EAS",
@@ -247,7 +267,8 @@
             "priceid": "36",
             "instrument": "trumpet",
             "cost": "c2",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "JUXAAN Brass",
@@ -259,7 +280,8 @@
             "priceid": "36",
             "instrument": "trumpet",
             "cost": "c4",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "YAS-204 Sax",
@@ -271,7 +293,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c4",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Catalina Drums",
@@ -283,7 +306,8 @@
             "priceid": "36",
             "instrument": "drums",
             "cost": "c3",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Glartt Violin",
@@ -295,7 +319,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c2",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Godecour Violin",
@@ -307,7 +332,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c4",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Aileen Violin",
@@ -319,7 +345,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c1",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Cremona SV-130 Violin",
@@ -331,7 +358,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c2",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Cervini HV-100 Violin",
@@ -343,7 +371,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c1",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Etude Student Violin",
@@ -355,7 +384,8 @@
             "priceid": "36",
             "instrument": "violin",
             "cost": "c3",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Etude Bb Trumpet",
@@ -367,7 +397,8 @@
             "priceid": "36",
             "instrument": "trumpet",
             "cost": "c2",
-            "diff": "s2"
+            "diff": "s2",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Glarry Saxophone",
@@ -379,7 +410,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c2",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "JUXAAN Saxophone",
@@ -391,7 +423,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c3",
-            "diff": "s1"
+            "diff": "s1",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         },
         {
             "title": "Ammoon Saxophone",
@@ -403,7 +436,8 @@
             "priceid": "36",
             "instrument": "saxophone",
             "cost": "c2",
-            "diff": "s3"
+            "diff": "s3",
+            "longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, est! Impedit magnam quibusdam dicta sit quo minus necessitatibus, fuga, assumenda tenetur iure dolorum ex commodi, officia nostrum? Odit, nisi repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo expedita enim quasi nostrum tenetur eveniet at odit dicta ratione, esse assumenda et facilis nisi minus numquam sed nesciunt excepturi."
         }
     ]
 }

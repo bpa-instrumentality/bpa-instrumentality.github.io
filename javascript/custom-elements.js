@@ -61,7 +61,7 @@ template.innerHTML = `
 </style>
 <div class="result">
 <img src="/assets/images/yetanothertest.jpg" alt="violin">
-<button class="addBtn">Add</button>
+<button class="addBtn">View</button>
 <h1 class="img-title">Eastman Violin</h1>
 <p class="price">$<span class="priceAmt"></span>.00</p>
 <p class="desc" id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit beatae rem minima!</p>

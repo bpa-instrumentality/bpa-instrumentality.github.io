@@ -125,6 +125,8 @@ fetch("./instruments.json")
                 "img": curr.picture,
                 "desc": curr.desc,
                 "price": curr.price,
+                "longDesc": curr.longDesc,
+                "diff": curr.diff,
                 "id": i
             }
             console.log(cardData)
@@ -145,16 +147,18 @@ fetch("./instruments.json")
         return i.product == cardData.title;
     })
     console.log(cart, cartFilter)
+    let added = false;
     if (cartFilter.length > 0) {
-        addBtn.textContent = "Added";
-        addBtn.disabled = true;
-        addBtn.style.cursor = "auto"
-        addBtn.style.background = "#a34b21"
-        console.log(addBtn)
+        // addBtn.textContent = "Added";
+        // addBtn.disabled = true;
+        // addBtn.style.cursor = "auto"
+        // addBtn.style.background = "#a34b21"
+        // console.log(addBtn)
+        added = true
     }
 
 
-            addBtn.setAttribute('onclick', `addToCart(${stringified})`);
+            addBtn.setAttribute('onclick', `openModal(${stringified}, ${added})`);
         }
         if (!document.getElementById('searching').classList.contains('dontHide')) {
             document.getElementById('searching').style.display = "none";
@@ -225,11 +229,11 @@ function addToCart(data) {
     })
     console.log(cart, cartFilter)
     if (!(cartFilter.length > 0)) {
-        addToCartBtn.textContent = "Added";
-        addToCartBtn.disabled = true;
-        addToCartBtn.style.cursor = "auto"
-        addToCartBtn.style.background = "#a34b21"
-        console.log(addToCartBtn)
+        // addToCartBtn.textContent = "Added";
+        // addToCartBtn.disabled = true;
+        // addToCartBtn.style.cursor = "auto"
+        // addToCartBtn.style.background = "#a34b21"
+        // console.log(addToCartBtn)
         let newItem = {
             "product": data.title,
             "price": data.price,

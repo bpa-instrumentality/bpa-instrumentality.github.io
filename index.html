@@ -133,12 +133,36 @@
                 </div>
             </div>
         </div>
+        <section class="chatCenter" style="position: fixed; z-index: 999999;">
+            <div class="chatCenterChat" id="CCC">
+                <div class="cccTitle"><p style="color: black;">Instru<span>Support</span></p></div>
+                <div class="cccChats" id="cccChats">
+                    <!-- <div class="message other">
+                        Hello! Welcome to InstruSupport! How may I help you today?
+                    </div>
+                    <div class="message yours">
+                        Hello! I have a question...
+                    </div>
+                    <div class="message other">
+                        Hello! Welcome to InstruSupport! How may I help you today?
+                    </div>
+                    <div class="message yours">
+                        Hello! I have a question...
+                    </div> -->
+                </div>
+                <div class="cccInput">
+                    <input type="text" placeholder="Enter message for InstruSupport..." id="cccInput">
+                    <button onclick="sendMsg(document.getElementById('cccInput').value)">Send</button>
+                </div>
+            </div>
+            <button onclick="document.getElementById('CCC').classList.toggle('cccShown')"><i class="fa-solid fa-comments"></i></button>
+        </section>
         <!-- HERO SECTION -->
         <section class="hero__section" id="home">
             <div class="hero__content">
                 <div class="hero__text">
                     <h1>Helping Students Fuel Their Purpose and Passion For Music.</h1>
-                    <p>Here at Intrumentality, we strive to provide
+                    <p>Here at Instrumentality, we strive to provide
                         music students with low cost and simplistic instrument rentals
                         so they can further follow their dreams and passions as a musician, without the hefty
                     price tag. </p>
@@ -518,7 +542,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© Instrumentality 2022</p>
+            <p>© Instrumentality 2022-2023</p>
             <!-- <div class="footer-bottom-divider fend"></div>
             <p class="fend">Created By Rohit, Akhil, Aayan, Sriram</p>
             <div class="footer-bottom-divider second-divider fend"></div>
@@ -557,5 +581,7 @@
         <script src="/javascript/landing-dropdown.js"></script>
         <script src="/javascript/audio.js"></script>
         <script src="/javascript/questionnaire.js"></script>
+        <!-- Smooth Scrolling -->
+        <script src="./javascript/chat-center.js"></script>
 </body>
 </html>

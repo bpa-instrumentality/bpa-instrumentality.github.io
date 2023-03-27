@@ -55,6 +55,20 @@ body {
 // }
 
 
+button.if {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contShopBtn {
+    background-color: $primary-blue !important;
+
+    &:hover {
+        background-color: $primary-blue-hover !important;
+    }
+}
 .submittedPayment {
 
     text-align: center;

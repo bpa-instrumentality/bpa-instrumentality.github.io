@@ -32,6 +32,22 @@ body {
 
 @include header-navbar;
 
+
+.noInstrumentsHaha {
+    padding: 0.6rem 1rem;
+    background-color: $primary-orange;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+}
+
 main.main {
     flex: 1 1 auto;
     background-color: #F6F6F6;
@@ -191,6 +207,16 @@ main.main {
                     justify-content: flex-start;
                     margin: 1.5rem 0;
                     gap: 15px;
+
+                    .cartDetails {
+                        // background-color: red;
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 5px;
+                    }
 
                     .cw {
                         max-width: 75%;

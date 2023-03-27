@@ -14,7 +14,7 @@ let cartItems = localStorage.getItem(JSON.parse(localStorage.getItem('session'))
 
 if (oAmt == 0) {
     document.getElementById('col2').style.display = "none";
-    document.getElementById('cartItems').innerHTML = "<p style='margin-bottom: 20px;'>You dont have any items in your cart! Try adding some instruments to your cart first.</p><a href='instrumentresults.html'>View Instruments</a>"
+    document.getElementById('cartItems').innerHTML = "<p style='margin-bottom: 20px;'>You dont have any items in your cart! Try adding some instruments to your cart first.</p> <a href='instrumentresults.html'><button class='noInstrumentsHaha'>View Instruments</button></a><p style='margin-top: 20px'>Don't know what to look for? Take a look at some of our recommended instruments.</p><a href='instrumentresults.html?instruments=[\"violin\",\"guitar\",\"trumpet\"]&costs=[\"c1\",\"c2\",\"c4\"]&levels=[\"s1\",\"s2\"]'><button class='noInstrumentsHaha' style='margin-top: 20px;'>Our Top Picks</button></a>"
 }
 
 let amts = document.querySelectorAll('.cartAmt');
