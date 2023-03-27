@@ -537,10 +537,6 @@ div.bg-blur {
     background-color: white !important;
   }
 }
-section {
-  max-height: 1240px !important;
-}
-
 .hero__section {
   height: calc(100vh + 1px);
   max-height: 1240px;
