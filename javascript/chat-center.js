@@ -41,7 +41,7 @@ function refreshChats() {
 if (chats.length == 0) {
     let chatData = [{
         "sender": "other",
-        "message": "Hello! Welcome to InstruSupport! How may I help you today? (Question, Associate, Bugs, or Other)"
+        "message": "Hello! Welcome to InstruSupport! How may I help you today? (Question, Associate, or Other)"
     }]
 
     let safeChatData = JSON.stringify(chatData);

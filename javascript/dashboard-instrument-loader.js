@@ -53,7 +53,7 @@ for (i in notifs) {
     let ns = document.getElementById("notifs-res");
 
     let res = document.createElement("div");
-    res.innerHTML = `<i class="fa-solid fa-dollar-sign"></i>
+    res.innerHTML = `<div style='display: flex; align-items: center; justify-content: center; gap: 5px;'><i class="fa-solid fa-dollar-sign"></i><strong style='font-size: 1.4rem'>${JSON.parse(curr).totalcost}.00</strong></div>
     <p id="p1">New Purchase!</p>
     <p>Your OrderID is <span id="oid">${JSON.parse(curr).orderid}</span></p>`
     res.classList.add('ns')

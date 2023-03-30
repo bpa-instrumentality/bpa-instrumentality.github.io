@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    allowTouchMove: false,
+    allowTouchMove: true,
   
     // If we need pagination
     pagination: {
@@ -29,14 +29,14 @@ const swiper = new Swiper('.swiper', {
   });
 
 
-let myMediaQuery = window.matchMedia('(max-width: 500px)');
+// let myMediaQuery = window.matchMedia('(max-width: 500px)');
  
-function widthChangeCallback(myMediaQuery) {
-  if(myMediaQuery.matches) {
-    swiper.allowTouchMove = true
-   } else {
-     swiper.allowTouchMove = false
-   }
-}
+// function widthChangeCallback(myMediaQuery) {
+//   if(myMediaQuery.matches) {
+//     swiper.allowTouchMove = true
+//    } else {
+//      swiper.allowTouchMove = false
+//    }
+// }
  
-myMediaQuery.addEventListener('change', widthChangeCallback);
+// myMediaQuery.addEventListener('change', widthChangeCallback);

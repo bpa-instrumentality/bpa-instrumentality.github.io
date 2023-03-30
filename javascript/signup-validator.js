@@ -5,6 +5,14 @@ function resetErrors() {
     })
 }
 
+function validateEmail(inputText) {
+    var mailFormat =  /\S+@\S+\.\S+/;
+    if (inputText.match(mailFormat)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 
 function validate() {
@@ -15,6 +23,7 @@ function validate() {
     let emailError2 = document.getElementById('emailerror2');
     let passError1 = document.getElementById('passerror1');
     let passError2 = document.getElementById('passerror2');
+    let invalidemail = document.getElementById('invalidemail');
     let errors = 0
 
     if (email.trim() == "") {
@@ -27,6 +36,12 @@ function validate() {
     }
     if (!(password == confirmPassword)) {
         passError2.classList.add('active-error')
+        errors += 1;
+    }
+    if (validateEmail(email.trim())) {
+        console.log("email valid!")
+    } else {
+        invalidemail.classList.add('active-error')
         errors += 1;
     }
 

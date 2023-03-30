@@ -63,6 +63,7 @@ function pay() {
 
         let newNotif = {
             "type": "purchase",
+            "totalcost": document.getElementById("totalcost").textContent,
             "orderid": randNum,
         }
         console.log(notifs)
