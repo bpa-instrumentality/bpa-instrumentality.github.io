@@ -12,9 +12,9 @@
 </head>
 <body>
 
-    <section class="chatCenter">
+    <section class="chatCenter" style="position: fixed;">
         <div class="chatCenterChat" id="CCC">
-            <div class="cccTitle"><p>Instru<span>Support</span></p></div>
+            <div class="cccTitle"><p style="color: black;">Instru<span>Support</span></p></div>
             <div class="cccChats" id="cccChats">
                 <!-- <div class="message other">
                     Hello! Welcome to InstruSupport! How may I help you today?
@@ -59,7 +59,7 @@
                     <button id="addButton"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
 
                 </div>
-                <div>
+                <div class="disclaimers">
                     <p class="disclaimer"><span>Availability</span>: This item is currently in stock.</p>
                     <p class="disclaimer"><span>Shipping</span>: Product dispatched in 3-5 business days, depending on location.</p>
                 </div>
@@ -163,7 +163,7 @@
             <div class="col2">
                 <div class="top-results">
                     <h1>Results (<span id="resultsAmt">Loading...</span><span id="raAdd"></span>)</h1>
-
+                    <a href="cart.html" id="cartRedirect"><button id="goHome" style="width: 50px;"><i class="fa-solid fa-cart-shopping"></i></button></a>
                     <a href="index.html"><button id="goHome">Go Home</button></a>
                 </div>
                 <p id="noResults" style="opacity: 0.75; font-weight: 600; padding: 0 1rem; max-width: 920px;margin-bottom: 1rem;" class="noRes"></p>

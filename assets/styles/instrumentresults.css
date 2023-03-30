@@ -154,6 +154,10 @@ body {
   display: block !important;
 }
 
+#cartRedirect {
+  display: none;
+}
+
 section.modal {
   position: fixed;
   height: 100dvh;
@@ -678,6 +682,9 @@ main.main .main-wrapper .col2 .results .result .desc {
   .nav-wrapper {
     justify-content: center !important;
   }
+  #cartRedirect {
+    display: block;
+  }
 }
 @media (max-width: 870px) {
   .modal {
@@ -687,6 +694,9 @@ main.main .main-wrapper .col2 .results .result .desc {
   .close__modal {
     color: #ffffff !important;
   }
+  .modal__info, .modal__gradient {
+    display: none !important;
+  }
   .modal__box {
     width: 100%;
     min-height: 100dvh;
@@ -694,6 +704,10 @@ main.main .main-wrapper .col2 .results .result .desc {
     height: fit-content;
     flex-direction: column;
     border-radius: 0px !important;
+  }
+  .modal__box #addButton {
+    height: 45px !important;
+    width: 125px !important;
   }
   .modal__box img {
     width: 100% !important;
@@ -706,6 +720,21 @@ main.main .main-wrapper .col2 .results .result .desc {
     height: 100%;
     overflow-y: auto !important;
   }
+  .modal__box .modal__content #longDesc {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.95rem;
+  }
+  .modal__box .modal__content #modalPrice {
+    font-size: 0.95rem;
+  }
+  .modal__box .modal__content .disclaimer {
+    font-size: 0.9rem !important;
+  }
+  .modal__box .modal__content .disclaimers {
+    max-height: 75px;
+    overflow-y: auto;
+  }
 }
 @media (max-width: 513px) {
   .modal__content h1 {
@@ -713,8 +742,11 @@ main.main .main-wrapper .col2 .results .result .desc {
     margin-top: 20px;
   }
 }
-@media (max-width: 377px) {
-  .modal__content h1 {
-    margin-top: 200px !important;
+@media (max-width: 530px) {
+  .chatCenterChat, .cccTitle {
+    width: calc(100% - 0px) !important;
+  }
+  .chatCenter {
+    right: 5px;
   }
 }/*# sourceMappingURL=instrumentresults.css.map */

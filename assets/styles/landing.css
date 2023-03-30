@@ -1592,4 +1592,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 0.86rem !important;
     min-height: 0px !important;
   }
+}
+@media (max-width: 530px) {
+  .chatCenterChat, .cccTitle {
+    width: calc(100% - 0px) !important;
+  }
+  .chatCenter {
+    right: 5px;
+  }
 }/*# sourceMappingURL=landing.css.map */
